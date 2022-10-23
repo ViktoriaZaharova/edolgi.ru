@@ -1,0 +1,121 @@
+@import "vars"
+
+/*==========  section footer ==========*/
+footer
+  background: #1E3A8A
+  color: #D1D5DB
+  position: relative
+  .logo
+    color: #fff
+  .logo-title
+    color: #fff
+    &:first-letter
+      color: #3B82F6
+  .application-links
+    margin: 133px 0 0
+    flex-wrap: nowrap
+  .header-contacts
+    margin: 0 0 16px
+    a
+      color: #fff
+      font-size: 16px
+      font-weight: 500
+      &:hover
+        color: $accent
+    span
+      color: #9CA3AF
+      font-size: 12px
+      font-weight: 500
+    &__icon
+      stroke: #fff
+
+.description-company
+  margin: 16px 0 0
+  font-size: 14px
+  font-weight: 600
+
+.footer-top
+  padding: 40px 0
+
+.footer-box
+  padding: 56px 0 0 40px
+  &__title
+    margin: 0 0 16px
+    font-size: 16px
+    font-weight: 600
+    text-transform: uppercase
+
+.footer-menu
+  font-size: 14px
+  line-height: 150%
+  li
+    a
+      color: #D1D5DB
+      &:hover
+        color: #fff
+
+.list-social
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    margin: 0 8px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 32px
+      height: 32px
+      @include d-flex
+      fill: #fff
+      &:hover
+        fill: $accent
+
+
+.footer-text
+  color: #D1D5DB
+  font-size: 12px
+  line-height: 150%
+  margin: 40px 0 0
+
+.footer-bottom
+  padding: 24px 0
+  border-top: 1px solid #F9FAFB
+
+.menu-documents
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 14px
+  li
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #D1D5DB
+      &:hover
+        color: #fff
+
+
+
+/*==========  section footer end  ==========*/
+
+
+
+/*==========  section  ==========*/
+.btn-scroll-top
+  position: absolute
+  z-index: 10
+  right: 52px
+  top: 24px
+  width: 60px
+  height: 60px
+  background: #fff
+  @include d-flex
+  border-radius: 8px
+  fill: none
+  stroke: #2563EB
+  padding: 22px 15px
+  &:hover
+    background: $accent
+    stroke: #fff
+/*==========  section end  ==========*/

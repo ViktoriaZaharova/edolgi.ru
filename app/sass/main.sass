@@ -1,0 +1,218 @@
+@import "vars"
+
+/*==========  section home ==========*/
+.home
+  color: #fff
+  padding: 128px 0 0
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: calc(100% - 137px)
+    background: linear-gradient(0deg, rgba(59, 130, 246, 0.25) 0%, #2563EB 102.08%)
+    z-index: -1
+  h1
+    margin: 0 0 16px
+
+.home-box-text
+  font-size: 18px
+  max-width: 855px
+
+.form-examination
+  margin: 64px 0 71px
+
+
+.advantages-box
+  width: 100%
+  height: 100%
+  background: #F3F4F6
+  box-shadow: 0 32px 64px -12px rgba(16, 24, 40, 0.2)
+  border-radius: 4px
+  padding: 24px
+  color: #374151
+  font-size: 14px
+  h3
+    color: #1E3A8A
+    font-size: 22px
+    font-weight: 600
+    margin: 0 0 8px
+  &__icon
+    @include d-flex
+    margin: 0 0 64px
+    background: #3B82F6
+    width: 48px
+    height: 48px
+    border-radius: 10px
+    padding: 12px
+    img
+      width: 100%
+  p
+    line-height: 150%
+/*==========  section home end  ==========*/
+
+/*==========  section statistics ==========*/
+.statistics
+  margin: 76px 0 96px
+
+.td-base, .td-department
+  width: 26%
+
+.td-sum
+  width: 19%
+/*==========  section statistics end  ==========*/
+
+/*==========  section working ==========*/
+.working
+  padding: 96px 0 76px
+
+.working-box
+  .advantages-box__icon
+    width: 80px
+    height: 80px
+    margin: 0 0 40px
+
+
+
+/*==========  section working end  ==========*/
+
+/*==========  section question ==========*/
+.accordion
+  max-width: 960px
+  width: 100%
+  margin: 0 auto
+  .card
+    border: none
+      bottom: 1px solid #D1D5DB
+      radius: 0
+    padding: 0 0 16px
+    .card-header
+      margin-bottom: 0
+      border: none
+    &:first-child
+      border-top: 1px solid #D1D5DB
+
+
+.card-header
+  padding: 24px 16px 8px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  line-height: 120%
+  font-size: 18px
+  font-weight: 500
+  color: #101828
+  background: #fff
+  cursor: pointer
+  h3
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    &:after
+      content: ''
+      @include d-flex
+      width: 40px
+      height: 42px
+      min-width: 40px
+      transition: .3s ease
+      background: url("../img/minus.svg") no-repeat center
+        size: 100%
+      margin: 0 0 0 40px
+    &.collapsed
+      &:after
+        background: url("../img/plus.svg") no-repeat center
+          size: 100%
+
+
+.accordion>.card:not(:last-of-type)
+  border-bottom: 1px solid #D1D5DB
+
+.card-body
+  padding: 0 16px
+  color: #4B5563
+  font-size: 16px
+  line-height: 24px
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+  ol
+    margin: 20px 0
+
+/*==========  section question end  ==========*/
+
+/*==========  section application ==========*/
+.application
+  margin: 0 0 21px
+  h2
+    margin: 0 0 20px
+
+.application-wrapper
+  width: 100%
+  max-width: 1152px
+  margin: 0 auto
+  color: #fff
+  background: #2563EB
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.1), 0px 8px 8px -4px rgba(16, 24, 40, 0.04)
+  border-radius: 4px
+
+.application-image
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: flex-end
+  img
+    width: 100%
+
+.application-content
+  padding: 64px 50px 64px 64px
+  .box-text
+    color: #D1D5DB
+    line-height: 150%
+
+.application-links
+  width: 100%
+  margin: 40px 0 0
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  &__item
+    margin: 0 12px 0 0
+    @include d-flex
+    &:last-child
+      margin: 0
+/*==========  section application end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
