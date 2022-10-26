@@ -69,7 +69,7 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0;
+  padding: 0 10px 0 42px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Inter", sans-serif;
@@ -83,15 +83,16 @@ input, textarea, select {
     border-radius: 4px;
   background: #fff;
   -webkit-box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
-          box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05); }
+          box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  color: #333; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-    color: inherit; }
+    color: #9CA3AF; }
   input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-    color: inherit; }
+    color: #9CA3AF; }
   input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
-    color: inherit; }
+    color: #9CA3AF; }
   input::placeholder, textarea::placeholder, select::placeholder {
-    color: inherit; }
+    color: #9CA3AF; }
   input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
     outline: none;
     -webkit-box-shadow: none;
@@ -99,6 +100,7 @@ input, textarea, select {
 
 label {
   display: block;
+  position: relative;
   width: 100%; }
 
 button, .btn {
@@ -128,13 +130,17 @@ button, .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center; }
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 4px; }
 
 .btn-accent {
   color: #fff;
   background: #2563EB; }
   .btn-accent:hover, .btn-accent:focus {
-    background: #255dca;
+    background: #1D4ED8;
     color: #fff; }
 
 .svg-icon {
@@ -191,6 +197,12 @@ h2 {
 .color-green {
   color: #00850D; }
 
+.color-accent {
+  color: #2563EB; }
+
+.text-decoration {
+  text-decoration: underline; }
+
 .bg-light-blue {
   background: #F7FBFF; }
 
@@ -213,3 +225,84 @@ thead {
 
 tbody tr:nth-child(even) {
   background: #F3F4F6; }
+
+.checkbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px 0 0;
+  color: #6B7280;
+  font-size: 14px; }
+  .checkbox input {
+    display: none; }
+    .checkbox input:checked + .checkbox-custom {
+      background: #EFF6FF url("../img/checkbox.svg") no-repeat center;
+        background-size: 14px; }
+
+.checkbox-custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 8px 0 0;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: #EFF6FF;
+  border: 1px solid #2563EB;
+    border-radius: 6px; }
+
+.select2-container--default .select2-selection--single {
+  height: 48px;
+  border: 1px solid #D0D5DD;
+    border-radius: 4px; }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 48px;
+  padding: 0 30px 0 42px;
+  color: #9CA3AF;
+  font-size: 16px;
+  font-family: "Inter", sans-serif; }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 100%;
+  background: url("../img/arrow-select.svg") no-repeat center;
+    background-size: 100%;
+  right: 14px;
+  width: 16px; }
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    display: none; }
+
+.select2-search--dropdown {
+  display: none; }
+
+.select2-dropdown {
+  border: 1px solid #D0D5DD; }
+
+.select2-container--default .select2-results__option--selected {
+  background: #2563EB;
+  color: #fff; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }

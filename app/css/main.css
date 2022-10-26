@@ -60,6 +60,54 @@
   .advantages-box p {
     line-height: 150%; }
 
+.form-examination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.form-group {
+  max-width: 280px;
+  width: 100%;
+  margin: 0 16px 0 0; }
+  .form-group:last-child {
+    margin: 0; }
+
+.form-group-select {
+  max-width: 320px; }
+
+.form-group-date {
+  max-width: 220px; }
+
+.input-title {
+  width: 100%;
+  display: block;
+  margin: 0 0 6px;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 500; }
+
+.input-icon {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /*==========  section home end  ==========*/
 /*==========  section statistics ==========*/
 .statistics {

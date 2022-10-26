@@ -21,6 +21,8 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -31,6 +33,234 @@
 
 <body>
 
+
+<div class="search-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="search-hidden-wrapper">
+          <h2>Поиск услуг</h2>
+
+          <form method="post" class="form-search form-search-modal">
+            <label>
+              <span class="search-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </span>
+              <input type="text" placeholder="Поиск услуги">
+            </label>
+            <button type="submit" class="btn btn-accent">Поиск</button>
+          </form>
+
+          <div class="result-search-modal">
+            <h3>Мы нашли для вас следующие услуги:</h3>
+
+            <div class="list-result-search">
+              <a href="#" class="list-result-search__item">
+                <strong>ФССП</strong>
+                <span>Проверка задолженности у физических лиц</span>
+              </a>
+              <a href="#" class="list-result-search__item">
+                <strong>ФНС</strong>
+                <span>Провека задоженности у физ лица по ИНН</span>
+              </a>
+              <a href="#" class="list-result-search__item">
+                <strong>ФССП</strong>
+                <span>Проверка задолженности у физических лиц</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-menu">
+  <a href="#" class="mobile-menu__close">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+  </a>
+  <a href="index.html" class="logo">
+    <img src="img/logo-max.svg" alt="">
+  </a>
+
+  <ul class="menu-mobile my-ul">
+    <li>
+      <a href="#">Задолженности физических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Задолженности юридических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Задолженности физических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Задолженности физических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Задолженности физических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">Задолженности физических лиц</a>
+
+      <div class="submenu-mobile">
+        <a href="#" class="link-prev">
+          <span class="link-prev__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+          <span class="link-prev__text">Назад</span>
+        </a>
+        <ul class="submenu-mobile-list my-ul">
+          <li><a href="#">Проверка долгов по ФИО</a></li>
+          <li><a href="#">Долги по ИНН</a></li>
+          <li><a href="#">Долги по паспорту</a></li>
+          <li><a href="#">Долги по СНИЛС</a></li>
+          <li><a href="#">Долги у приставов ООО</a></li>
+          <li><a href="#">Долги у приставов по ИП</a></li>
+          <li><a href="#">Долги выава</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+
+  <div class="footer-box">
+    <div class="footer-box__title">наши контакты</div>
+    <div class="header-contacts">
+      <div class="header-contacts__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+      </div>
+      <div class="header-contacts__text">
+        <a href="tel:+74951234567" class="phone">+7 (495) 123-45-67</a>
+        <span>время работы с 9:00 до 21:00</span>
+      </div>
+    </div>
+
+    <div class="header-contacts">
+      <div class="header-contacts__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#mail"></use>
+        </svg>
+      </div>
+      <div class="header-contacts__text">
+        <a href="mailto:support@edolgi.ru" target="_blank" class="phone">support@edolgi.ru</a>
+        <span>служба поддержки</span>
+      </div>
+    </div>
+
+    <div class="header-contacts">
+      <div class="header-contacts__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#tg"></use>
+        </svg>
+      </div>
+      <div class="header-contacts__text">
+        <a href="https://telegram.im/@support-edolgi.ru" target="_blank" class="phone">@support-edolgi.ru</a>
+        <span>наш телеграмм канал</span>
+      </div>
+    </div>
+    <ul class="list-social my-ul">
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#ok"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#youtube"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+</div>
 
 <header>
   <div class="container">
@@ -50,13 +280,13 @@
           </span>
         </a>
 
-        <form method="post" class="form-search">
+        <form method="post" class="form-search form-search-header">
           <label>
-            <button type="submit">
+            <span class="search-icon">
               <svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#search"></use>
               </svg>
-            </button>
+            </span>
             <input type="text" placeholder="Поиск услуги">
           </label>
         </form>
@@ -90,7 +320,7 @@
         <h1>Проверка задолженности по фамилии в ФССП</h1>
       </div>
 
-      <div class="col-12 col-lg-8">
+      <div class="col-12 col-lg-9">
         <div class="home-box-text">
           <p>Узнать задолженности у судебных приставов можно указав при этом ФИО, регион и дату рождения все данные
             полученные в сервсие являются официальными данными ФССП России</p>
@@ -101,11 +331,50 @@
     <div class="row">
       <div class="col-12">
         <form method="post" class="form-examination">
-          <div class="row">
-            <div class="col-12">
-              form
-            </div>
+          <div class="form-group">
+            <div class="input-title">ФИО</div>
+            <label>
+              <span class="input-icon"><img src="img/user-icon.svg" alt=""></span>
+              <input type="text" placeholder="Кузякин Сидор Петрович" name="name">
+            </label>
           </div>
+
+          <div class="form-group form-group-select">
+            <div class="input-title">Выберите регион проверки:</div>
+            <label>
+              <span class="input-icon"><img src="img/location.svg" alt=""></span>
+              <select name="select" class="js-example-basic-single select-my">
+                <option value="Выберите регион">Выберите регион</option>
+                <option value="Московская область">Московская область</option>
+                <option value="Алтайский край">Алтайский край</option>
+                <option value="Амурский край">Амурский край</option>
+                <option value="Архангельская область">Архангельская область</option>
+                <option value="Белгородская область">Белгородская область</option>
+                <option value="Алтайский край">Алтайский край</option>
+                <option value="Амурский край">Амурский край</option>
+                <option value="Архангельская область">Архангельская область</option>
+                <option value="Белгородская область">Белгородская область</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-group form-group-date">
+            <div class="input-title">Дата рождения</div>
+            <label>
+              <span class="input-icon"><img src="img/calendar.svg" alt=""></span>
+              <input type="text" placeholder="ДД ММ ГГГГ" class="datepicker1 datepicker">
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-step-next">Проверить задолженность</button>
+
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
+                                                                    class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
+          </label>
         </form>
       </div>
     </div>
@@ -176,87 +445,87 @@
           </thead>
           <tbody class="tbody">
           <tr class="tr">
-            <td class="td-number">
+            <td class="td-number" data-table="Номер производства">
               <p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
             </td>
-            <td class="td-department">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
+            <td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
               от 10.10.2022
             </td>
-            <td class="td-base">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
+            <td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
               РЕСПУБЛИКИ САХА 1435153396
             </td>
-            <td class="td-sum">
+            <td class="td-sum" data-table="Сумма к погашению">
               <p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
             </td>
-            <td class="td-status">
+            <td class="td-status" data-table="Статус">
               Не оплачено
             </td>
           </tr>
           <tr class="tr">
-            <td class="td-number">
+            <td class="td-number" data-table="Номер производства">
               <p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
             </td>
-            <td class="td-department">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
+            <td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
               от 10.10.2022
             </td>
-            <td class="td-base">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
+            <td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
               РЕСПУБЛИКИ САХА 1435153396
             </td>
-            <td class="td-sum">
+            <td class="td-sum" data-table="Сумма к погашению">
               <p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
             </td>
-            <td class="td-status">
+            <td class="td-status" data-table="Статус">
               Не оплачено
             </td>
           </tr>
           <tr class="tr">
-            <td class="td-number">
+            <td class="td-number" data-table="Номер производства">
               <p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
             </td>
-            <td class="td-department">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
+            <td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
               от 10.10.2022
             </td>
-            <td class="td-base">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
+            <td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
               РЕСПУБЛИКИ САХА 1435153396
             </td>
-            <td class="td-sum">
+            <td class="td-sum" data-table="Сумма к погашению">
               <p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
             </td>
-            <td class="td-status color-green">
+            <td class="td-status color-green" data-table="Статус">
               Оплачено
             </td>
           </tr>
           <tr class="tr">
-            <td class="td-number">
+            <td class="td-number" data-table="Номер производства">
               <p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
             </td>
-            <td class="td-department">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
+            <td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
               от 10.10.2022
             </td>
-            <td class="td-base">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
+            <td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
               РЕСПУБЛИКИ САХА 1435153396
             </td>
-            <td class="td-sum">
+            <td class="td-sum" data-table="Сумма к погашению">
               <p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
             </td>
-            <td class="td-status">
+            <td class="td-status" data-table="Статус">
               Не оплачено
             </td>
           </tr>
           <tr class="tr">
-            <td class="td-number">
+            <td class="td-number" data-table="Номер производства">
               <p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
             </td>
-            <td class="td-department">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
+            <td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
               от 10.10.2022
             </td>
-            <td class="td-base">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
+            <td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
               РЕСПУБЛИКИ САХА 1435153396
             </td>
-            <td class="td-sum">
+            <td class="td-sum" data-table="Сумма к погашению">
               <p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
             </td>
-            <td class="td-status">
+            <td class="td-status" data-table="Статус">
               Не оплачено
             </td>
           </tr>
@@ -625,8 +894,16 @@
               </div>
             </div>
             <ul class="list-social my-ul">
-              <li><a href="#"><svg class="svg-icon"><use xlink:href="img/sprite.svg#ok"></use></svg></a></li>
-              <li><a href="#"><svg class="svg-icon"><use xlink:href="img/sprite.svg#youtube"></use></svg></a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a></li>
             </ul>
           </div>
         </div>
@@ -673,6 +950,8 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/common.js"></script>
 
 </body>

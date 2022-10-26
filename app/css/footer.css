@@ -2,7 +2,8 @@
 footer {
   background: #1E3A8A;
   color: #D1D5DB;
-  position: relative; }
+  position: relative;
+  z-index: 3; }
   footer .logo {
     color: #fff; }
   footer .logo-title {
