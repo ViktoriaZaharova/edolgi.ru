@@ -3,7 +3,14 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width: 1300px)
+  .search-base-wrapper
+    &__top
+      padding: 40px
+    &__bottom
+      padding: 20px 40px
+
+@media only screen and (max-width: 1200px)
   .form-search-header
     margin: 0 15px
     max-width: 160px
@@ -28,8 +35,10 @@
 
   .menu
     font-size: 14px
+
     li
       margin: 0 15px 0 0
+
       &:last-child
         margin: 0
 
@@ -43,22 +52,27 @@
   .mobile-menu
     max-width: 400px
     padding: 30px 20px
+
     .logo
       max-width: 200px
       margin: 0 0 30px
+
     .footer-box
       margin: 50px 0 0
+
       &__title
         font-size: 18px
 
   .menu-mobile
-    >li
+    > li
       margin: 0 0 20px
-      >a
+
+      > a
         font-size: 16px
 
   .submenu-mobile
     padding: 30px 20px
+
     .link-prev
       margin: 0 0 30px
 
@@ -68,26 +82,40 @@
   .link-prev
     font-size: 18px
 
+  .search-base
+    padding: 40px 0
+
+  .form-search-base
+    .form-group
+      max-width: 600px
+
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 1100px)
+@media only screen and (max-width: 1100px)
   .form-group
     max-width: calc(50% - 10px)
     margin: 0 0 10px
 
   .form-examination
     justify-content: space-between
+
     button
       max-width: calc(50% - 10px)
       width: 100%
       margin: 0 0 10px
 
-@media only screen and (max-width : 992px)
+
+  .form-search-base .form-group
+    margin: 0 20px 0 0
+
+@media only screen and (max-width: 992px)
   .form-search-header
     max-width: none
     width: fit-content
     margin: 0 20px 0 auto
+
     input
       display: none
+
     .search-icon
       position: relative
       transform: none
@@ -128,6 +156,7 @@
   .menu-documents
     li
       margin: 0 10px 5px 0
+
       &:last-child
         margin: 0
 
@@ -137,13 +166,49 @@
   .footer-box
     padding-left: 0
 
+  .form-search-base .form-group
+    max-width: none
+    margin: 0 0 10px
+
+  .application-v2
+    .application-image
+      margin: 0 auto
+      min-width: auto
+      float: none
+    .application-content
+      padding: 20px 30px
+
+  .result-search-text
+    h3
+      font-size: 22px
+    p
+      font-size: 16px
+
 /* Small Devices, Tablets */
-@media only screen and (max-width : 860px)
+@media only screen and (max-width: 860px)
   header
     .menu
       display: none
 
-@media only screen and (max-width : 768px)
+  .mobile-menu
+    .menu
+      font-size: 18px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      li
+        margin: 0 0 10px
+
+  .search-base-wrapper h1
+    font-size: 30px
+
+  .form-search-base
+    margin: 30px 0 0
+
+
+
+@media only screen and (max-width: 768px)
   .text-title
     font-size: 16px
     line-height: normal
@@ -162,8 +227,16 @@
     height: 60px
     min-width: 60px
 
+  .search-base-wrapper__bottom
+    flex-wrap: wrap
+    .btn
+      margin: 20px 0 0
+    h3
+      font-size: 20px
+
+
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 576px)
+@media only screen and (max-width: 576px)
   header
     .header-contacts
       display: none
@@ -186,6 +259,7 @@
     td
       padding: 8px
       width: 50%
+
       &:before
         content: attr(data-table)
         display: block
@@ -208,11 +282,52 @@
   .btn-scroll-top
     right: 20px
 
-@media only screen and (max-width : 480px)
-	h1
+  .btn-group
+    flex-direction: column
+    align-items: center
+
+    .btn
+      margin: 0 0 10px
+
+  .base-section__image
+    margin: 30px auto
+
+  .result-search-modal
+    padding: 20px
+
+  .search-hidden-wrapper
+    h2
+      margin: 0 0 30px
+
+
+  .search-base-info
+    margin: 40px 0 0
+
+  .search-base-wrapper__top
+    padding: 30px
+
+  .search-base-wrapper__bottom
+    padding: 20px 30px
+
+  .search-base-wrapper h1
+    font-size: 24px
+
+@media only screen and (max-width: 480px)
+  h1
     font-size: 32px
 
-@media only screen and (max-width : 420px)
+  //.form-search-modal
+  //  button
+  //    display: none
+  //
+  //  label
+  //    width: 100%
+  //    margin: 0
+
+  .result-search-modal
+    width: 100%
+
+@media only screen and (max-width: 420px)
   .application-links
     margin: 30px 0 0
 
@@ -220,11 +335,15 @@
       justify-content: flex-start
       width: 100%
       margin: 0 0 10px
+
       &:last-child
         margin: 0
 
+  .btn
+    padding: 12px 20px
+
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 360px)
+@media only screen and (max-width: 360px)
   .table
     td
       width: 100%

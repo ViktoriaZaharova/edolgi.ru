@@ -142,7 +142,7 @@
   color: #101828
   background: #fff
   cursor: pointer
-  h3
+  h3, &__title
     display: flex
     align-items: center
     justify-content: space-between
@@ -222,19 +222,237 @@
       margin: 0
 /*==========  section application end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section base-section ==========*/
+.base-section
+  background: #F7FBFF
+  margin: 0 0 21px
+  &__image
+    margin: 32px auto 64px
+    @include d-flex
+/*==========  section base-section end  ==========*/
 
-/*==========  section end  ==========*/
+
+/*==========  section search-base ==========*/
+.search-base
+  padding: 64px 0
+
+.search-base-wrapper
+  width: 100%
+  background: #DBEAFE
+  h1
+    font-size: 40px
+    margin: 0 0 16px
+  .text-title
+    text-align: left
+
+  &__bottom
+    width: 100%
+    display: flex
+    align-items: center
+    padding: 40px 64px
+    background: #FEE2E2
+    box-shadow: 0 20px 24px -4px rgba(16, 24, 40, 0.1), 0px 8px 8px -4px rgba(16, 24, 40, 0.04)
+    color: #111827
+    font-size: 18px
+    h3
+      font-size: 22px
+      font-weight: 600
+      margin: 0 0 8px
+    .btn
+      margin: 0 0 0 auto
+      max-width: 260px
+      width: 100%
+
+  &__top
+    padding: 64px
+
+.search-base-info
+  margin: 56px 0 0
+  display: flex
+  align-items: flex-start
+  font-size: 16px
+  color: #6B7280
+  line-height: 150%
+  &__icon
+    @include d-flex
+    margin: 0 8px 0 0
+    width: 24px
+    min-width: 24px
+  span
+    font-size: 14px
+
+.form-search-base
+  width: 100%
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+  margin: 38px 0 0
+  .form-group
+    max-width: 809px
+  .checkbox
+    margin: 24px 0 0
 
 
+.example-item
+  width: 100%
+  color: #4B5563
+  font-size: 14px
+  span
+    text-decoration: underline
+    color: #1E3A8A
+/*==========  section search-base end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section base-page ==========*/
+.base-page
+  background: transparent
 
-/*==========  section end  ==========*/
+.result-search-text
+  p
+    font-size: 20px
+    font-weight: 600
+    color: #4B5563
+  h3
+    margin: 32px auto 0
+    color: #059669
+    font-size: 28px
+    font-weight: 600
+    max-width: 768px
+    width: 100%
 
-/*==========  section  ==========*/
+.application-v2
+  .application-wrapper
+    background: #DBEAFE
+    box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.1), 0px 8px 8px -4px rgba(16, 24, 40, 0.04)
+    color: #111827
+    .box-text
+      margin: 20px 0 40px
+      color: #4B5563
+  .application-image
+    min-width: 415px
+    margin: 0 0 -93px
+    float: right
+  .application-content
+    padding: 40px 64px
 
-/*==========  section end  ==========*/
+.notification-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 21px auto
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.1), 0px 8px 8px -4px rgba(16, 24, 40, 0.04)
+  border-radius: 4px
+  background: #DBEAFE
+  padding: 40px 24px
+  color: #4B5563
+  font-size: 18px
+  h3
+    color: #111827
+    font-size: 22px
+    font-weight: 600
+    margin: 0 0 8px
+
+.form-subscribe
+  display: flex
+  align-items: flex-end
+  .form-group
+    width: 300px
+    max-width: none
+
+.base-page-home
+  padding: 96px 0 0
+
+.base-result-item
+  width: 100%
+  margin: 32px 0 0
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  background: #ECFDF5
+  border-radius: 8px
+  padding: 40px 64px
+  .btn-group
+    flex-direction: column
+    align-items: flex-end
+    justify-content: flex-end
+    flex-wrap: nowrap
+    margin: 0 0 0 auto
+    .btn
+      margin: 0 0 24px
+      width: 100%
+      &:last-child
+        margin: 0
+  &__text
+    width: calc(100% - 263px)
+  h3
+    font-size: 22px
+    font-weight: 600
+  .box-text
+    margin: 16px 0
+    font-size: 18px
+    line-height: 150%
+  span
+    color: #4B5563
+    font-size: 14px
+
+
+.form-filter
+  margin: 48px 0 32px
+  display: flex
+  align-items: flex-start
+  justify-content: flex-end
+  flex-wrap: wrap
+  label
+    margin: 0 0 0 24px
+    width: 100%
+    max-width: 260px
+
+.select
+  padding: 0 38px 0 14px
+  background: #fff url("../img/arrow-select.svg") no-repeat calc(100% - 16px) center
+    size: 16px
+  color: #1F2937
+  cursor: pointer
+
+.accordion-table
+  max-width: none
+  .card
+    padding: 0
+    border: none
+    &:not(:last-of-type)
+      border: none
+    .card-header
+      background: #F3F4F6
+      padding: 24px 16px
+      &__title
+        &:after
+          margin: 0
+      &__name
+        max-width: 732px
+        margin: 0 auto 0 0
+      span
+        margin: 0 40px 0 0
+  .card-body
+    padding: 0
+
+.table-result
+  margin: 0
+  .td-sum
+    width: 11%
+  .td-bailiff
+    width: 13%
+  .td-department, .td-executive-doc, .td-office
+    width: 13%
+  p
+    margin: 0
+  a
+    font-size: 16px
+  .link
+    font-size: 12px
+
+
+/*==========  section base-page end  ==========*/
 
 /*==========  section  ==========*/
 

@@ -102,7 +102,7 @@ footer
 
 
 
-/*==========  section  ==========*/
+/*==========  section modal ==========*/
 .btn-scroll-top
   position: absolute
   z-index: 10
@@ -119,4 +119,37 @@ footer
   &:hover
     background: $accent
     stroke: #fff
-/*==========  section end  ==========*/
+
+//.modal
+.modal-dialog
+  max-width: 600px
+
+.modal-content
+  border: none
+    radius: 8px
+  box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.2)
+  padding: 24px 40px
+
+.modal-header
+  border: none
+  flex-wrap: wrap
+  justify-content: center
+  padding: 0
+  .btn-close
+    position: absolute
+    top: 8px
+    right: 8px
+    width: 24px
+    height: 24px
+    min-width: 24px
+    @include d-flex
+    background: transparent
+    padding: 0
+    stroke: #2563EB
+
+.modal-title
+  display: flex
+  align-items: center
+
+
+/*==========  section modal end  ==========*/

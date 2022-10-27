@@ -121,6 +121,8 @@ button, .btn
   font-weight: 500
   padding: 12px 24px
   border-radius: 4px
+  strong
+    margin: 0 0 0 5px
 
 .btn-accent
   color: #fff
@@ -129,6 +131,25 @@ button, .btn
   &:hover, &:focus
     background: $hover
     color: #fff
+
+.btn-border
+  border: 1px solid #2563EB
+    radius: 4px
+  color: #2563EB
+  &:hover
+    background: $hover
+    color: #fff
+
+
+.btn-group
+  flex-wrap: wrap
+  .btn
+    margin: 0 30px 0 0
+    &:last-child
+      margin: 0
+
+.btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child), .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle)
+  border-radius: 4px
 
 .svg-icon
   display: inline-block
@@ -189,6 +210,9 @@ h2
 
 .color-accent
   color: $accent
+
+.color-red
+  color: #DC2626
 
 .text-decoration
   text-decoration: underline
@@ -285,4 +309,39 @@ tbody
   display: flex
   align-items: center
   justify-content: center
+
+.breadcrumb-section
+  background: #ffffff
+  padding: 16px 0
+
+.breadcrumb
+  background: transparent
+  padding: 0
+  border: none
+    radius: 0
+  margin: 0
+  align-items: flex-start
+  font-size: 14px
+  font-weight: 500
+  color: #1E3A8A
+  a
+    color: #667085
+    &:hover
+      color: #1E3A8A
+
+.breadcrumb-item.active
+  color: #1E3A8A
+
+.breadcrumb-item+.breadcrumb-item
+  padding: 0
+  display: flex
+  align-items: center
+  &:before
+    content: ''
+    padding: 0
+    width: 16px
+    height: 16px
+    min-width: 16px
+    background: url("../img/arrow-right-breadcrumb.svg") no-repeat center
+      size: 100%
 

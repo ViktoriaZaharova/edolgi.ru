@@ -135,13 +135,34 @@ button, .btn {
   font-weight: 500;
   padding: 12px 24px;
   border-radius: 4px; }
+  .btn strong {
+    margin: 0 0 0 5px; }
 
 .btn-accent {
   color: #fff;
   background: #2563EB; }
   .btn-accent:hover, .btn-accent:focus {
-    background: #1D4ED8;
+    background: #1E3A8A;
     color: #fff; }
+
+.btn-border {
+  border: 1px solid #2563EB;
+    border-radius: 4px;
+  color: #2563EB; }
+  .btn-border:hover {
+    background: #1E3A8A;
+    color: #fff; }
+
+.btn-group {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .btn-group .btn {
+    margin: 0 30px 0 0; }
+    .btn-group .btn:last-child {
+      margin: 0; }
+
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child), .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-radius: 4px; }
 
 .svg-icon {
   display: inline-block;
@@ -199,6 +220,9 @@ h2 {
 
 .color-accent {
   color: #2563EB; }
+
+.color-red {
+  color: #DC2626; }
 
 .text-decoration {
   text-decoration: underline; }
@@ -306,3 +330,44 @@ tbody tr:nth-child(even) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.breadcrumb-section {
+  background: #ffffff;
+  padding: 16px 0; }
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  border: none;
+    border-radius: 0;
+  margin: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1E3A8A; }
+  .breadcrumb a {
+    color: #667085; }
+    .breadcrumb a:hover {
+      color: #1E3A8A; }
+
+.breadcrumb-item.active {
+  color: #1E3A8A; }
+
+.breadcrumb-item + .breadcrumb-item {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .breadcrumb-item + .breadcrumb-item:before {
+    content: '';
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    background: url("../img/arrow-right-breadcrumb.svg") no-repeat center;
+      background-size: 100%; }

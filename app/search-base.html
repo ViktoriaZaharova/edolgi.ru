@@ -319,107 +319,85 @@
   </div>
 </header>
 
-<section class="home">
+<div class="breadcrumb-section">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Проверка задолженности по фамилии в ФССП</h1>
-      </div>
-
-      <div class="col-12 col-lg-9">
-        <div class="home-box-text">
-          <p>Узнать задолженности у судебных приставов можно указав при этом ФИО, регион и дату рождения все данные
-            полученные в сервсие являются официальными данными ФССП России</p>
-        </div>
+        <nav class="nav-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><img src="img/home.svg" alt=""></a></li>
+            <li class="breadcrumb-item"><a href="#">Наши услуги</a></li>
+            <li class="breadcrumb-item"><a href="#">...</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Задолженности по фамилии Колесник Александр
+              Анатольевич 08.10.1970
+            </li>
+          </ol>
+        </nav>
       </div>
     </div>
+  </div>
+</div>
 
+<section class="search-base">
+  <div class="container">
     <div class="row">
       <div class="col-12">
-        <form method="post" class="form-examination">
-          <div class="form-group">
-            <div class="input-title">ФИО</div>
-            <label>
-              <span class="input-icon"><img src="img/user-icon.svg" alt=""></span>
-              <input type="text" placeholder="Кузякин Сидор Петрович" name="name">
-            </label>
-          </div>
+        <div class="search-base-wrapper">
+          <div class="search-base-wrapper__top">
+            <h1>Поиск задолженности по номеру ИП в ФССП России</h1>
+            <div class="text-title">
+              <p>Узнать информацию по исполнительному производству в банке данных исполнительных производств онлайн</p>
+            </div>
 
-          <div class="form-group form-group-select">
-            <div class="input-title">Выберите регион проверки:</div>
-            <label>
-              <span class="input-icon"><img src="img/location.svg" alt=""></span>
-              <select name="select" class="js-example-basic-single select-my">
-                <option value="Выберите регион">Выберите регион</option>
-                <option value="Московская область">Московская область</option>
-                <option value="Алтайский край">Алтайский край</option>
-                <option value="Амурский край">Амурский край</option>
-                <option value="Архангельская область">Архангельская область</option>
-                <option value="Белгородская область">Белгородская область</option>
-                <option value="Алтайский край">Алтайский край</option>
-                <option value="Амурский край">Амурский край</option>
-                <option value="Архангельская область">Архангельская область</option>
-                <option value="Белгородская область">Белгородская область</option>
-              </select>
-            </label>
-          </div>
+            <form method="post" class="form-search-base">
+              <div class="form-group">
+                <div class="input-title">Номер исполнительного производства:</div>
+                <label>
+                  <span class="input-icon"><img src="img/case.svg" alt=""></span>
+                  <input type="text" placeholder="123456/2022/77001-ИП" name="number_document">
+                </label>
+              </div>
 
-          <div class="form-group form-group-date">
-            <div class="input-title">Дата рождения</div>
-            <label>
-              <span class="input-icon"><img src="img/calendar.svg" alt=""></span>
-              <input type="text" placeholder="ДД ММ ГГГГ" class="datepicker1 datepicker">
-            </label>
-          </div>
+              <button type="submit" class="btn btn-accent">Проверить задолженность</button>
 
-          <button type="submit" class="btn btn-accent btn-step-next">Проверить задолженность</button>
+              <div class="example-item">Пример: <span>125-56-89</span></div>
 
 
-          <label class="checkbox">
-            <input type="checkbox" class="checkbox" checked>
-            <span class="checkbox-custom"></span>
-            <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
-                                                                    class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
-          </label>
-        </form>
-      </div>
-    </div>
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox" checked>
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
+                                                                        class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
+              </label>
+            </form>
 
-    <div class="row">
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
-          <div class="advantages-box__text">
-            <h3>Официальные источники</h3>
-            <p>Все данные полученные в сервисе являются официальными данными баз РФ</p>
+            <div class="search-base-info">
+              <div class="search-base-info__icon"><img src="img/question-icon.svg" alt=""></div>
+              <div class="search-base-info__text">
+                <p>Как расшифровать номер исполнительного производства:</p>
+                <ul>
+                  <li><strong>123456</strong>/2022/77001-ИП - номер ИП</li>
+                  <li>123456/<strong>2022</strong>/77001-ИП - год возбуждения ИП</li>
+                  <li>123456/2022/<strong>77</strong>001-ИП - номер региона в котором возбуждено ИП</li>
+                  <li>123456/2022/77<strong>001</strong>-ИП - номер структурного подразделения которое ведет ИП</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="search-base-info">
+              <div class="search-base-info__icon"><img src="img/attention-icon.svg" alt=""></div>
+              <div class="search-base-info__text">
+                <span>Поиск и проверка долгов граждан РФ осуществляется в открытом и свободном доступе через официальную базу Федеральной Службы Судебных Приставов России ФССП в режиме онлайн. Сервис предоставляет сведения для ознакомления и носит исключительно информационный характер. Официальный сайт ФССП - fssp.gov.ru</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
-          <div class="advantages-box__text">
-            <h3>Платежные документы</h3>
-            <p>После оплаты вы получаете платежную квитанцию которая подтверждает полную оплату!</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
-          <div class="advantages-box__text">
-            <h3>Платежи в бюджет</h3>
-            <p>Все платежи мы передаем в казну РФ посредством ООО НКО «Перспектива» ЦБ РФ № 3532-К от 21 июля 2015
-              года.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
-          <div class="advantages-box__text">
-            <h3>Быстрый поиск по фамилии</h3>
-            <p>У нас есть прямой доступ к базе ФССП, именно по этому вы получаете информацию быстро!</p>
+          <div class="search-base-wrapper__bottom">
+            <div class="text">
+              <h3>Не знаете номер исполнительного производства? </h3>
+              <p>Произведите проверку задолженности по ФИО</p>
+            </div>
+
+            <a href="#" class="btn btn-accent">Проверить по ФИО</a>
           </div>
         </div>
       </div>
@@ -427,165 +405,6 @@
   </div>
 </section>
 
-<section class="statistics">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center mb-32">
-        <h2>Статистика проверок задолженностей
-          у приставов</h2>
-        <div class="text-title">
-          <p>Онлайн статистика проверки задолженности в базе судебных приставов на текущий день</p>
-        </div>
-      </div>
-
-      <div class="col-12">
-        <table class="table">
-          <thead class="thead">
-          <tr class="tr">
-            <td class="td-number">Номер производства</td>
-            <td class="td-department">Отдел</td>
-            <td class="td-base">Основание</td>
-            <td class="td-sum">Сумма к погашению</td>
-            <td class="td-status">Статус</td>
-          </tr>
-          </thead>
-          <tbody class="tbody">
-          <tr class="tr">
-            <td class="td-number" data-table="Номер производства">
-              <p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
-            </td>
-            <td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
-              от 10.10.2022
-            </td>
-            <td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
-              РЕСПУБЛИКИ САХА 1435153396
-            </td>
-            <td class="td-sum" data-table="Сумма к погашению">
-              <p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
-            </td>
-            <td class="td-status" data-table="Статус">
-              Не оплачено
-            </td>
-          </tr>
-          <tr class="tr">
-            <td class="td-number" data-table="Номер производства">
-              <p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
-            </td>
-            <td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
-              от 10.10.2022
-            </td>
-            <td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
-              РЕСПУБЛИКИ САХА 1435153396
-            </td>
-            <td class="td-sum" data-table="Сумма к погашению">
-              <p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
-            </td>
-            <td class="td-status" data-table="Статус">
-              Не оплачено
-            </td>
-          </tr>
-          <tr class="tr">
-            <td class="td-number" data-table="Номер производства">
-              <p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
-            </td>
-            <td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
-              от 10.10.2022
-            </td>
-            <td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
-              РЕСПУБЛИКИ САХА 1435153396
-            </td>
-            <td class="td-sum" data-table="Сумма к погашению">
-              <p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
-            </td>
-            <td class="td-status color-green" data-table="Статус">
-              Оплачено
-            </td>
-          </tr>
-          <tr class="tr">
-            <td class="td-number" data-table="Номер производства">
-              <p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
-            </td>
-            <td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
-              от 10.10.2022
-            </td>
-            <td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
-              РЕСПУБЛИКИ САХА 1435153396
-            </td>
-            <td class="td-sum" data-table="Сумма к погашению">
-              <p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
-            </td>
-            <td class="td-status" data-table="Статус">
-              Не оплачено
-            </td>
-          </tr>
-          <tr class="tr">
-            <td class="td-number" data-table="Номер производства">
-              <p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
-            </td>
-            <td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха (Якутия)
-              от 10.10.2022
-            </td>
-            <td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ УЧАСТОК № 43 ГОРОДА ЯКУТСКА
-              РЕСПУБЛИКИ САХА 1435153396
-            </td>
-            <td class="td-sum" data-table="Сумма к погашению">
-              <p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
-            </td>
-            <td class="td-status" data-table="Статус">
-              Не оплачено
-            </td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="working bg-light-blue">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-8 offset-lg-2 text-center mb-32">
-        <h2>Как мы работаем</h2>
-        <div class="text-title">Все что вы хотите знать о нашем сервисе по стравнительно честному отъему денег у
-          населения
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="working-box advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
-          <h3>Запрос к базам данных ФССП</h3>
-          <p>После вашего поиска мы делаем запрос к базе ФССП и получаем информацию по каждому начислению УИН</p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="working-box advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon5.svg" alt=""></div>
-          <h3>Запрос к базам данных ГИС ГМП</h3>
-          <p>Собрав все начисления мы проверяем каждое начисление на актуальность и возможность оплаты </p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="working-box advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
-          <h3>Формирование результата </h3>
-          <p>Перед показом результатов мы формируем категории начислений и формируем список для каждой категории
-          </p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="working-box advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
-          <h3>Гарантированный результат</h3>
-          <p>После всех этапов - вы сможете увидеть только актуальную и официальную информацию!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="question p-96">
   <div class="container">
@@ -762,6 +581,51 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="working bg-light-blue mb-20">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2 text-center mb-32">
+        <h2>Как мы работаем</h2>
+        <div class="text-title">Все что вы хотите знать о нашем сервисе по стравнительно честному отъему денег у
+          населения
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="working-box advantages-box">
+          <div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
+          <h3>Запрос к базам данных ФССП</h3>
+          <p>После вашего поиска мы делаем запрос к базе ФССП и получаем информацию по каждому начислению УИН</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="working-box advantages-box">
+          <div class="advantages-box__icon"><img src="img/adv-icon5.svg" alt=""></div>
+          <h3>Запрос к базам данных ГИС ГМП</h3>
+          <p>Собрав все начисления мы проверяем каждое начисление на актуальность и возможность оплаты </p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="working-box advantages-box">
+          <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+          <h3>Формирование результата </h3>
+          <p>Перед показом результатов мы формируем категории начислений и формируем список для каждой категории
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 mb-20">
+        <div class="working-box advantages-box">
+          <div class="advantages-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
+          <h3>Гарантированный результат</h3>
+          <p>После всех этапов - вы сможете увидеть только актуальную и официальную информацию!</p>
         </div>
       </div>
     </div>

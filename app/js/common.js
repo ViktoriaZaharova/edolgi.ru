@@ -38,7 +38,6 @@ $('.submenu-mobile .link-prev').on('click', function (e) {
 });
 
 $('.js-example-basic-single').select2({
-    // placeholder: "Поиск региона",
     width: "100%"
 });
 
@@ -64,3 +63,15 @@ $.datepicker.setDefaults(
     });
 
 $('.datepicker1').datepicker();
+
+$('.go_to').click(function (e) {
+    e.preventDefault();
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length !== 0) {
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 500);
+    }
+    return false;
+});
+

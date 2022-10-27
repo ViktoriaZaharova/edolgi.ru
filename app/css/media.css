@@ -1,5 +1,11 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px) {
+  .search-base-wrapper__top {
+    padding: 40px; }
+  .search-base-wrapper__bottom {
+    padding: 20px 40px; } }
+
 @media only screen and (max-width: 1200px) {
   .form-search-header {
     margin: 0 15px;
@@ -47,7 +53,11 @@
   .submenu-mobile-list {
     font-size: 16px; }
   .link-prev {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .search-base {
+    padding: 40px 0; }
+  .form-search-base .form-group {
+    max-width: 600px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px) {
@@ -61,7 +71,9 @@
     .form-examination button {
       max-width: calc(50% - 10px);
       width: 100%;
-      margin: 0 0 10px; } }
+      margin: 0 0 10px; }
+  .form-search-base .form-group {
+    margin: 0 20px 0 0; } }
 
 @media only screen and (max-width: 992px) {
   .form-search-header {
@@ -105,12 +117,43 @@
   .footer-top {
     padding: 30px 0; }
   .footer-box {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .form-search-base .form-group {
+    max-width: none;
+    margin: 0 0 10px; }
+  .application-v2 .application-image {
+    margin: 0 auto;
+    min-width: auto;
+    float: none; }
+  .application-v2 .application-content {
+    padding: 20px 30px; }
+  .result-search-text h3 {
+    font-size: 22px; }
+  .result-search-text p {
+    font-size: 16px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px) {
   header .menu {
-    display: none; } }
+    display: none; }
+  .mobile-menu .menu {
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .mobile-menu .menu li {
+      margin: 0 0 10px; }
+  .search-base-wrapper h1 {
+    font-size: 30px; }
+  .form-search-base {
+    margin: 30px 0 0; } }
 
 @media only screen and (max-width: 768px) {
   .text-title {
@@ -125,7 +168,14 @@
   .working-box .advantages-box__icon {
     width: 60px;
     height: 60px;
-    min-width: 60px; } }
+    min-width: 60px; }
+  .search-base-wrapper__bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .search-base-wrapper__bottom .btn {
+      margin: 20px 0 0; }
+    .search-base-wrapper__bottom h3 {
+      font-size: 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -164,11 +214,37 @@
   footer .application-links {
     margin: 30px 0 0; }
   .btn-scroll-top {
-    right: 20px; } }
+    right: 20px; }
+  .btn-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .btn-group .btn {
+      margin: 0 0 10px; }
+  .base-section__image {
+    margin: 30px auto; }
+  .result-search-modal {
+    padding: 20px; }
+  .search-hidden-wrapper h2 {
+    margin: 0 0 30px; }
+  .search-base-info {
+    margin: 40px 0 0; }
+  .search-base-wrapper__top {
+    padding: 30px; }
+  .search-base-wrapper__bottom {
+    padding: 20px 30px; }
+  .search-base-wrapper h1 {
+    font-size: 24px; } }
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: 32px; } }
+    font-size: 32px; }
+  .result-search-modal {
+    width: 100%; } }
 
 @media only screen and (max-width: 420px) {
   .application-links {
@@ -180,7 +256,9 @@
       width: 100%;
       margin: 0 0 10px; }
       .application-links__item:last-child {
-        margin: 0; } }
+        margin: 0; }
+  .btn {
+    padding: 12px 20px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
