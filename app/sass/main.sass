@@ -318,6 +318,9 @@
     font-weight: 600
     max-width: 768px
     width: 100%
+  h2
+    span
+      font-weight: normal
 
 .application-v2
   .application-wrapper
@@ -332,7 +335,7 @@
     margin: 0 0 -93px
     float: right
   .application-content
-    padding: 40px 64px
+    padding: 40px 43px 40px 64px
 
 .notification-wrapper
   width: 100%
@@ -431,6 +434,12 @@
       &__name
         max-width: 732px
         margin: 0 auto 0 0
+        .date
+          margin: 8px 0 0
+          display: block
+          color: #101828
+          font-size: 16px
+          font-weight: normal
       span
         margin: 0 40px 0 0
   .card-body
@@ -451,6 +460,52 @@
   .link
     font-size: 12px
 
+.accordion-table-v2
+  .card-body
+    padding: 40px
+
+.list-requisites
+  margin: 0 0 16px
+  li
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+    p
+      font-weight: 600
+      font-size: 20px
+      width: 400px
+      color: #1F2937
+    span
+      width: calc(100% - 400px)
+      padding: 0 0 0 24px
+      color: #374151
+      font-size: 16px
+
+.toggle-requisites
+  margin: 0 0 16px
+  color: #1E3A8A
+  font-weight: 500
+  font-size: 16px
+  padding: 4px 0
+  border-bottom: 1px solid #1F2937
+  &:hover
+    color: $hover
+
+.btn-group-payment
+  width: 100%
+  .btn
+    max-width: 300px
+    width: 100%
+
+.btn-add-payment
+  img
+    margin: 0 16px 0 0
+  &:hover
+    img
+      filter: invert(1)
 
 /*==========  section base-page end  ==========*/
 

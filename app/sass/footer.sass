@@ -135,6 +135,7 @@ footer
   flex-wrap: wrap
   justify-content: center
   padding: 0
+  margin: 0 0 24px
   .btn-close
     position: absolute
     top: 8px
@@ -146,10 +147,72 @@ footer
     background: transparent
     padding: 0
     stroke: #2563EB
+    z-index: 1
+
+.modal-body
+  padding: 0
+  width: 100%
+  .box-text
+    color: #374151
+    line-height: 150%
+    margin: 0 0 40px
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+  h3
+    text-align: center
+    width: 100%
+    margin: 40px auto
+    font-size: 22px
+    font-weight: 600
+  .btn-group
+    display: flex
+    justify-content: space-between
+    width: 100%
+    .btn
+      margin: 0
+      width: calc(50% - 12px)
+      flex: none
 
 .modal-title
   display: flex
   align-items: center
+  text-align: center
+  font-size: 22px
+  font-weight: 600
+  img
+    margin: 0 8px 0 0
 
+.error-box
+  color: #DC2626
+  font-size: 12px
+  max-width: 316px
+  margin: 0 0 20px
+  display: block
 
+.form-pay
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  .form-group
+    max-width: 316px
+  input
+    padding: 0 16px
+    color: #111827
+    &::placeholder
+      color: #111827
+  button
+    max-width: 180px
+    width: 100%
+    margin: 22px 0 0
+
+.error-label
+  input
+    border: 1px solid #DC2626
+
+.commission
+  margin: 8px 0 0
+  color: #4B5563
+  font-size: 14px
 /*==========  section modal end  ==========*/

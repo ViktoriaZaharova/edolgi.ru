@@ -89,6 +89,12 @@
     .form-group
       max-width: 600px
 
+  .notification-wrapper
+    font-size: 16px
+    padding: 24px
+    h3
+      font-size: 20px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
   .form-group
@@ -106,6 +112,15 @@
 
   .form-search-base .form-group
     margin: 0 20px 0 0
+
+  .form-pay .form-group
+    margin: 0 16px 0 0
+
+  .form-subscribe
+    width: 100%
+    margin: 20px 0 0
+    .form-group
+      margin: 0 16px 0 0
 
 @media only screen and (max-width: 992px)
   .form-search-header
@@ -184,6 +199,18 @@
     p
       font-size: 16px
 
+  .base-result-item
+    padding: 30px
+    .box-text
+      font-size: 16px
+    h3
+      font-size: 20px
+
+  .form-filter
+    margin: 30px 0
+    label
+      max-width: 250px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px)
   header
@@ -206,7 +233,10 @@
   .form-search-base
     margin: 30px 0 0
 
-
+  .form-filter
+    label
+      max-width: none
+      margin: 0 0 10px
 
 @media only screen and (max-width: 768px)
   .text-title
@@ -234,6 +264,27 @@
     h3
       font-size: 20px
 
+  .error-box
+    max-width: none
+    width: 100%
+    margin: 0 0 10px
+
+  .form-pay
+    .form-group
+      width: 100%
+      max-width: 100%
+      margin: 0
+    button
+      margin: 0 auto
+
+  .card-header__title
+    flex-wrap: wrap
+
+  .base-result-item
+    &__text
+      width: 100%
+    .btn-group
+      margin: 20px auto 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -312,17 +363,41 @@
   .search-base-wrapper h1
     font-size: 24px
 
+  .modal-content
+    padding: 24px 30px
+
+  .modal-body
+    .box-text
+      margin: 0 0 20px
+
+  .modal-header
+    margin: 0 0 20px
+
+  .table-result .td-department, .table-result .td-executive-doc, .table-result .td-office, .table-result .td-sum, .table-result .td-bailiff
+    width: 50%
+
+  .accordion-table .card .card-header__name
+    width: 100%
+    margin: 0 0 10px
+
+  .form-subscribe
+    flex-wrap: wrap
+    .form-group
+      width: 100%
+      max-width: none
+      margin: 0 0 10px
+    button
+      margin: 0 auto
+
+  .base-result-item .btn-group .btn
+    margin: 0 0 14px
+
+  .base-page-home
+    padding: 60px 0
+
 @media only screen and (max-width: 480px)
   h1
     font-size: 32px
-
-  //.form-search-modal
-  //  button
-  //    display: none
-  //
-  //  label
-  //    width: 100%
-  //    margin: 0
 
   .result-search-modal
     width: 100%
@@ -347,5 +422,8 @@
   .table
     td
       width: 100%
+
+  .table-result .td-department, .table-result .td-executive-doc, .table-result .td-office, .table-result .td-sum, .table-result .td-bailiff
+    width: 100%
 
 

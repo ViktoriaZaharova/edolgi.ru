@@ -396,6 +396,9 @@
   max-width: 768px;
   width: 100%; }
 
+.result-search-text h2 span {
+  font-weight: normal; }
+
 .application-v2 .application-wrapper {
   background: #DBEAFE;
   -webkit-box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.1), 0px 8px 8px -4px rgba(16, 24, 40, 0.04);
@@ -411,7 +414,7 @@
   float: right; }
 
 .application-v2 .application-content {
-  padding: 40px 64px; }
+  padding: 40px 43px 40px 64px; }
 
 .notification-wrapper {
   width: 100%;
@@ -540,6 +543,12 @@
       .accordion-table .card .card-header__name {
         max-width: 732px;
         margin: 0 auto 0 0; }
+        .accordion-table .card .card-header__name .date {
+          margin: 8px 0 0;
+          display: block;
+          color: #101828;
+          font-size: 16px;
+          font-weight: normal; }
       .accordion-table .card .card-header span {
         margin: 0 40px 0 0; }
   .accordion-table .card-body {
@@ -559,6 +568,57 @@
     font-size: 16px; }
   .table-result .link {
     font-size: 12px; }
+
+.accordion-table-v2 .card-body {
+  padding: 40px; }
+
+.list-requisites {
+  margin: 0 0 16px; }
+  .list-requisites li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 16px; }
+    .list-requisites li:last-child {
+      margin: 0; }
+    .list-requisites li p {
+      font-weight: 600;
+      font-size: 20px;
+      width: 400px;
+      color: #1F2937; }
+    .list-requisites li span {
+      width: calc(100% - 400px);
+      padding: 0 0 0 24px;
+      color: #374151;
+      font-size: 16px; }
+
+.toggle-requisites {
+  margin: 0 0 16px;
+  color: #1E3A8A;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 4px 0;
+  border-bottom: 1px solid #1F2937; }
+  .toggle-requisites:hover {
+    color: #1E3A8A; }
+
+.btn-group-payment {
+  width: 100%; }
+  .btn-group-payment .btn {
+    max-width: 300px;
+    width: 100%; }
+
+.btn-add-payment img {
+  margin: 0 16px 0 0; }
+
+.btn-add-payment:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1); }
 
 /*==========  section base-page end  ==========*/
 /*==========  section  ==========*/
