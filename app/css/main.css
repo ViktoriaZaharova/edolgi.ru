@@ -83,6 +83,11 @@
 .form-group-date {
   max-width: 220px; }
 
+.form-group-message .input-icon {
+  -webkit-transform: none;
+          transform: none;
+  top: 12px; }
+
 .input-title {
   width: 100%;
   display: block;
@@ -707,8 +712,7 @@
   width: 160px;
   height: 160px;
   margin: 0 auto;
-  border: x;
-    border-radius: 50%;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,6 +805,86 @@
     stroke-dashoffset: 0; } }
 
 /*==========  section section-loader end  ==========*/
+/*==========  section contacts ==========*/
+.contacts-page {
+  margin: 0 0 160px; }
+  .contacts-page .text-title {
+    margin: 0 auto 96px; }
+  .contacts-page h2 {
+    margin: 0 auto 8px; }
+
+.contacts-box {
+  margin: 0 auto 32px;
+  max-width: 300px;
+  text-align: center; }
+  .contacts-box__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+    border: 8px solid #EFF6FF;
+      border-radius: 50%;
+    background: #DBEAFE;
+    width: 48px;
+    height: 48px;
+    fill: none;
+    stroke: #2563EB;
+    padding: 8px; }
+  .contacts-box .box-text {
+    margin: 8px auto;
+    color: #667085;
+    line-height: 24px; }
+  .contacts-box h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #101828; }
+  .contacts-box a {
+    text-align: center;
+    margin: 0 auto;
+    color: #101828;
+    font-size: 22px;
+    font-weight: 600; }
+    .contacts-box a:hover {
+      color: #2563EB; }
+
+.form-contacts h3 {
+  margin: 0 0 24px;
+  font-size: 18px;
+  font-weight: 500; }
+
+.form-contacts .form-group {
+  max-width: none;
+  margin: 0 0 24px; }
+
+.form-contacts .checkbox {
+  margin: 24px 0 0; }
+  .form-contacts .checkbox a {
+    display: block !important; }
+
+.form-contacts .checkbox-custom {
+  margin-bottom: auto; }
+
+.form-contacts button {
+  padding: 12px 41.5px; }
+
+/*==========  section contacts end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/
 /*==========  section  ==========*/

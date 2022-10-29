@@ -117,6 +117,12 @@ homeSlider.on('afterChange', function (event, slick, currentSlide) {
 });
 
 
+$('.btn-step-next').on('click', function (e) {
+    e.preventDefault();
+    $('.section-loader').fadeIn();
+    $('.information-slider').slick('setPosition');
+});
+
 // timer
 
 var timer = setInterval(timerFunction, 1000),
@@ -136,7 +142,7 @@ function timerFunction() {
     minute = minute > 59 ? "00" : minute;
     //Seconds
     second = time % 60;
-    second = second < 10 ? + second : second;
+    second = second < 10 ? +second : second;
 
     timerBlock.innerHTML = second + ' ' + 'сек';
     time--;

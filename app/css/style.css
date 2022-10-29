@@ -98,6 +98,11 @@ input, textarea, select {
     -webkit-box-shadow: none;
             box-shadow: none; }
 
+textarea {
+  resize: none;
+  height: 96px;
+  padding: 12px 14px 12px 42px; }
+
 label {
   display: block;
   position: relative;
@@ -262,7 +267,8 @@ tbody tr:nth-child(even) {
           align-items: center;
   margin: 8px 0 0;
   color: #6B7280;
-  font-size: 14px; }
+  font-size: 14px;
+  cursor: pointer; }
   .checkbox input {
     display: none; }
     .checkbox input:checked + .checkbox-custom {
