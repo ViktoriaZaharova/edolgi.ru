@@ -375,6 +375,10 @@
   background: #ECFDF5
   border-radius: 8px
   padding: 40px 64px
+  transition: .3s ease
+  &:hover
+    box-shadow: 0 24px 48px -12px rgba(16, 24, 40, 0.25)
+    background: #F9FAFB
   .btn-group
     flex-direction: column
     align-items: flex-end
@@ -478,6 +482,7 @@
       font-size: 20px
       width: 400px
       color: #1F2937
+      margin: 0
     span
       width: calc(100% - 400px)
       padding: 0 0 0 24px
@@ -509,9 +514,151 @@
 
 /*==========  section base-page end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section section-loader ==========*/
+.section-loader
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 10
+  background: rgba(243, 243, 243, 0.5)
+  backdrop-filter: blur(17.5px)
+  border-radius: 5px
+  padding: 64px 0
+  display: none
+  .form-subscribe
+    flex-wrap: wrap
+    .checkbox
+      color: #111827
+    .form-group
+      width: 449px
 
-/*==========  section end  ==========*/
+.subscribe-wrapper
+  max-width: 760px
+  width: 100%
+  margin: 64px auto
+  h2
+    margin: 8px 0 15px
+  p
+    color: #4B5563
+    font-size: 20px
+    font-weight: 600
+
+
+
+.information-section
+  max-width: 760px
+  width: 100%
+  margin: 0 auto
+
+.counter-slide
+  display: flex
+  align-items: flex-end
+  color: #6B7280
+  font-size: 11px
+  margin: 0 0 14px
+  &__cp
+    color: #2563EB
+    font-size: 16px
+    margin: 0 5px 0 0
+  &__default
+    margin: 0 0 3px
+
+.information-slider
+  padding: 0 0 48px
+
+.information-slider-item
+  &__title
+    margin: 0 0 14px
+    font-size: 22px
+    font-weight: 600
+    display: flex
+    align-items: center
+    img
+      margin: 0 8px 0 0
+  &__text
+    font-size: 14px
+    line-height: 147.6%
+
+.timer
+  width: 160px
+  height: 160px
+  margin: 0 auto
+  border: x
+    radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  font-size: 28px
+  font-weight: 600
+  color: #101828
+  position: relative
+  z-index: 1
+
+
+.loader-wrapper
+  width: 100%
+  position: relative
+
+
+.progress-timer
+  width: 160px
+  height: 160px
+  margin: 0 auto
+  position: relative
+
+.circle
+  width: 100%
+  height: 100%
+  position: absolute
+  left: 0
+  top: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  transform: rotate(-90deg)
+
+
+.circle__item
+  width: 160px
+  height: 160px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 100%
+    height: 100%
+    transform: translate(-50%,-50%)
+    border: 20px solid #fff
+      radius: 50%
+    z-index: -1
+
+.circle__spinner
+  width: 174px
+  height: 174px
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  .path
+    stroke: #2563EB
+    stroke-linecap: round
+    animation: dash 65s linear forwards
+
+@keyframes dash
+  0%
+    stroke-dasharray: 1, 150
+    stroke-dashoffset: 0
+
+  100%
+    stroke-dasharray: 130, 150
+    stroke-dashoffset: 0
+
+/*==========  section section-loader end  ==========*/
 
 /*==========  section  ==========*/
 

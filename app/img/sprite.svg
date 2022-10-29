@@ -24,6 +24,14 @@
         <path d="M20 8L12 16L20 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="prev" viewBox="0 0 24 24">
+        <path d="M15 18L9 12L15 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+
+    <symbol id="next" viewBox="0 0 24 24">
+        <path d="M9 18L15 12L9 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 
     <symbol id="ok" viewBox="0 0 32 32">
         <path d="M16 16.6399C13.184 16.6399 10.88 14.3359 10.88 11.5199C10.88 8.7039 13.184 6.3999 16 6.3999C18.816 6.3999 21.12 8.7039 21.12 11.5199C21.12 14.3359 18.816 16.6399 16 16.6399ZM16 8.8319C14.528 8.8319 13.312 10.0479 13.312 11.5199C13.312 12.9919 14.528 14.2079 16 14.2079C17.472 14.2079 18.688 12.9919 18.688 11.5199C18.688 10.0479 17.472 8.8319 16 8.8319Z"/>
