@@ -27,6 +27,11 @@ $('.form-search input').on('keyup change', function () {
     }
 });
 
+$('.search-hidden-close').on('click', function (e) {
+    e.preventDefault();
+    $('.search-hidden').fadeOut();
+});
+
 $('.menu-mobile > li > a').on('click', function (e) {
     e.preventDefault();
     $(this).parents('li').find('.submenu-mobile').fadeIn();
@@ -62,7 +67,9 @@ $.datepicker.setDefaults(
         yearSuffix: ''
     });
 
-$('.datepicker1').datepicker();
+$('.datepicker1').datepicker({
+    changeYear: true
+});
 
 $('.go_to').click(function (e) {
     e.preventDefault();
@@ -82,7 +89,7 @@ $('.toggle-requisites').on('click', function (e) {
 
     var
         $this = $(this),
-        content = $(this).parent().find('.list-requisites');
+        content = $(this).parent().find('.list-requisites .list-requisites-item');
 
 
     if (!$this.hasClass('trigger')) {
@@ -123,33 +130,4 @@ $('.btn-step-next').on('click', function (e) {
     $('.information-slider').slick('setPosition');
 });
 
-// timer
-
-var timer = setInterval(timerFunction, 1000),
-    time = 59,
-    procent = 100 / time,
-    per = 0;
-const timerBlock = document.querySelector(".timer");
-
-function timerFunction() {
-    per += procent;
-    //Hour
-    hour = Math.floor(time / 3600);
-    hour = hour < 10 ? "0" + hour : hour;
-    //Minutes
-    minute = Math.floor((time - hour * 3600) / 60);
-    minute = minute < 10 ? "0" + minute : minute;
-    minute = minute > 59 ? "00" : minute;
-    //Seconds
-    second = time % 60;
-    second = second < 10 ? +second : second;
-
-    timerBlock.innerHTML = second + ' ' + 'сек';
-    time--;
-    // timerBlock.style.cssText =
-    //     "background: conic-gradient(hsla(180, 100%, 50%, 1) " + per +
-    //     "%, transparent 0 " + (100 - per) + "%)";
-
-    if (time === -1) clearInterval(timer);
-}
 

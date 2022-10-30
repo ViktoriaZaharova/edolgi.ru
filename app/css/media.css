@@ -38,10 +38,8 @@
     .mobile-menu .logo {
       max-width: 200px;
       margin: 0 0 30px; }
-    .mobile-menu .footer-box {
-      margin: 50px 0 0; }
-      .mobile-menu .footer-box__title {
-        font-size: 18px; }
+    .mobile-menu .footer-box__title {
+      font-size: 18px; }
   .menu-mobile > li {
     margin: 0 0 20px; }
     .menu-mobile > li > a {
@@ -62,7 +60,14 @@
     font-size: 16px;
     padding: 24px; }
     .notification-wrapper h3 {
-      font-size: 20px; } }
+      font-size: 20px; }
+  .tooltip-box {
+    min-width: 300px;
+    max-width: 300px; }
+  .form-search-inn .form-group {
+    max-width: 220px; }
+  .form-search-inn .form-group-name {
+    max-width: 280px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px) {
@@ -76,7 +81,7 @@
     .form-examination button {
       max-width: calc(50% - 10px);
       width: 100%;
-      margin: 0 0 10px; }
+      margin: 22px 0 0; }
   .form-search-base .form-group {
     margin: 0 20px 0 0; }
   .form-pay .form-group {
@@ -85,7 +90,16 @@
     width: 100%;
     margin: 20px 0 0; }
     .form-subscribe .form-group {
-      margin: 0 16px 0 0; } }
+      margin: 0 16px 0 0; }
+  .form-search-inn {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .form-search-inn .form-group {
+      max-width: calc(50% - 10px); }
+    .form-search-inn button {
+      max-width: calc(50% - 10px);
+      margin: 0 0 10px; } }
 
 @media only screen and (max-width: 992px) {
   .form-search-header {
@@ -248,19 +262,33 @@
   .contacts-page {
     margin: 0 0 50px; }
     .contacts-page .text-title {
-      margin: 0 auto 30px; } }
+      margin: 0 auto 30px; }
+  .form-search-inn .form-group, .form-search-inn button {
+    max-width: none; }
+  .form-search-inn .checkbox {
+    margin: 20px 0 0; }
+  .base-page-home {
+    padding: 40px 0 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
+  .p-96 {
+    padding: 30px 0; }
   header .header-contacts {
     display: none; }
   .form-search-header {
     margin: 0 0 0 auto; }
   .form-group, .form-examination button {
     max-width: 100%; }
+  .form-examination button, .error-box {
+    margin: 0; }
+  .modal-body .error-box {
+    margin: 0 0 10px; }
   thead {
     display: none; }
-  tr {
+  .footer-text {
+    margin: 20px 0 0; }
+  .table tr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -299,11 +327,23 @@
     .btn-group .btn {
       margin: 0 0 10px; }
   .base-section__image {
-    margin: 30px auto; }
+    margin: 20px auto;
+    max-width: 250px; }
   .result-search-modal {
     padding: 20px; }
-  .search-hidden-wrapper h2 {
+  .search-hidden-wrapper__title {
     margin: 0 0 30px; }
+  .form-search-modal {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .form-search-modal label {
+      margin: 0 0 10px;
+      width: 100%; }
+  .result-search-modal {
+    width: 100%;
+    margin: 10px 0 0; }
+  .result-search-text h3 {
+    font-size: 20px; }
   .search-base-info {
     margin: 40px 0 0; }
   .search-base-wrapper__top {
@@ -334,8 +374,10 @@
       margin: 0 auto; }
   .base-result-item .btn-group .btn {
     margin: 0 0 14px; }
+  .base-page h2 {
+    margin: 0; }
   .base-page-home {
-    padding: 60px 0; }
+    padding: 30px 0 0; }
   .section-loader {
     padding: 30px 0; }
   .information-slider-item__title {
@@ -343,7 +385,11 @@
   .subscribe-wrapper {
     margin: 30px auto; }
   .subscribe-wrapper p {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .base-result-item {
+    margin: 20px 0 0; }
+  .table-result .btn-pay {
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 480px) {
   h1 {

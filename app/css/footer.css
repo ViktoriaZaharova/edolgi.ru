@@ -209,6 +209,8 @@ footer {
       -webkit-box-flex: 0;
           -ms-flex: none;
               flex: none; }
+  .modal-body .error-box {
+    font-size: 12px; }
 
 .modal-title {
   display: -webkit-box;
@@ -222,13 +224,6 @@ footer {
   font-weight: 600; }
   .modal-title img {
     margin: 0 8px 0 0; }
-
-.error-box {
-  color: #DC2626;
-  font-size: 12px;
-  max-width: 316px;
-  margin: 0 0 20px;
-  display: block; }
 
 .form-pay {
   display: -webkit-box;
@@ -257,8 +252,15 @@ footer {
     width: 100%;
     margin: 22px 0 0; }
 
-.error-label input {
-  border: 1px solid #DC2626; }
+.error-label .svg-icon {
+  stroke: #DC2626; }
+
+.error-box {
+  color: #DC2626;
+  font-size: 14px;
+  max-width: 316px;
+  margin: 0 0 20px;
+  display: block; }
 
 .commission {
   margin: 8px 0 0;

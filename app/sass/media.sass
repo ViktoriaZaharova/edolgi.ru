@@ -58,8 +58,6 @@
       margin: 0 0 30px
 
     .footer-box
-      margin: 50px 0 0
-
       &__title
         font-size: 18px
 
@@ -95,6 +93,16 @@
     h3
       font-size: 20px
 
+  .tooltip-box
+    min-width: 300px
+    max-width: 300px
+
+  .form-search-inn
+    .form-group
+      max-width: 220px
+    .form-group-name
+      max-width: 280px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
   .form-group
@@ -107,7 +115,7 @@
     button
       max-width: calc(50% - 10px)
       width: 100%
-      margin: 0 0 10px
+      margin: 22px 0 0
 
 
   .form-search-base .form-group
@@ -121,6 +129,14 @@
     margin: 20px 0 0
     .form-group
       margin: 0 16px 0 0
+
+  .form-search-inn
+    justify-content: space-between
+    .form-group
+      max-width: calc(50% - 10px)
+    button
+      max-width: calc(50% - 10px)
+      margin: 0 0 10px
 
 @media only screen and (max-width: 992px)
   .form-search-header
@@ -317,8 +333,20 @@
     .text-title
       margin: 0 auto 30px
 
+  .form-search-inn
+    .form-group, button
+      max-width: none
+    .checkbox
+      margin: 20px 0 0
+
+  .base-page-home
+    padding: 40px 0 0
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
+  .p-96
+    padding: 30px 0
+
   header
     .header-contacts
       display: none
@@ -329,15 +357,24 @@
   .form-group, .form-examination button
     max-width: 100%
 
+  .form-examination button, .error-box
+    margin: 0
+
+  .modal-body
+    .error-box
+      margin: 0 0 10px
+
   thead
     display: none
 
-  tr
-    display: flex
-    align-items: flex-start
-    flex-wrap: wrap
+  .footer-text
+    margin: 20px 0 0
 
   .table
+    tr
+      display: flex
+      align-items: flex-start
+      flex-wrap: wrap
     td
       padding: 8px
       width: 50%
@@ -372,15 +409,28 @@
       margin: 0 0 10px
 
   .base-section__image
-    margin: 30px auto
+    margin: 20px auto
+    max-width: 250px
 
   .result-search-modal
     padding: 20px
 
   .search-hidden-wrapper
-    h2
+    &__title
       margin: 0 0 30px
 
+  .form-search-modal
+    flex-wrap: wrap
+    label
+      margin: 0 0 10px
+      width: 100%
+
+  .result-search-modal
+    width: 100%
+    margin: 10px 0 0
+
+  .result-search-text h3
+    font-size: 20px
 
   .search-base-info
     margin: 40px 0 0
@@ -423,8 +473,12 @@
   .base-result-item .btn-group .btn
     margin: 0 0 14px
 
+  .base-page
+    h2
+      margin: 0
+
   .base-page-home
-    padding: 60px 0
+    padding: 30px 0 0
 
   .section-loader
     padding: 30px 0
@@ -437,6 +491,13 @@
 
   .subscribe-wrapper p
     font-size: 18px
+
+  .base-result-item
+    margin: 20px 0 0
+
+  .table-result
+    .btn-pay
+      margin: 0 auto
 
 @media only screen and (max-width: 480px)
   h1

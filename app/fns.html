@@ -337,8 +337,7 @@
             <li class="breadcrumb-item"><a href="index.html"><img src="img/home.svg" alt=""></a></li>
             <li class="breadcrumb-item"><a href="#">Наши услуги</a></li>
             <li class="breadcrumb-item"><a href="#">...</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Задолженности по фамилии Колесник Александр
-              Анатольевич 08.10.1970
+            <li class="breadcrumb-item active" aria-current="page">Узнать ИНН по паспорту онлайн:
             </li>
           </ol>
         </nav>
@@ -353,24 +352,51 @@
       <div class="col-12">
         <div class="search-base-wrapper">
           <div class="search-base-wrapper__top">
-            <h1>Поиск задолженности по номеру ИП в ФССП России</h1>
+            <h1>Узнать ИНН по паспорту онлайн:</h1>
             <div class="text-title">
-              <p>Узнать информацию по исполнительному производству в банке данных исполнительных производств онлайн</p>
+              <p>Физические лица могут узнать ИНН по паспорту бесплатно - для этого введите ниже Фамилию Имя и Отчество,
+                дату рождения и серию и номер паспорта. Далее вы узнаете свой ИНН и сможете проверить задолженность по
+                налогам ФНС или судебным приставам ФССП.</p>
             </div>
 
-            <form method="post" class="form-search-base">
-              <div class="form-group">
-                <div class="input-title">Номер исполнительного производства:</div>
+            <form method="post" class="form-search-inn form-my">
+              <div class="form-group form-group-name">
+                <div class="input-title">ФИО</div>
                 <label>
-                  <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#case"></use></svg></span>
-                  <input type="text" placeholder="123456/2022/77001-ИП" name="number_document">
+                  <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#user-icon"></use></svg></span>
+                  <input type="text" placeholder="Кузякин Сидор Петрович" name="name">
+                </label>
+                <div class="tooltip-wrapper">
+                  <div class="btn-tooltip">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#question-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="tooltip-box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi earum eum fugit
+                      laudantium magni rem sequi voluptas? Assumenda libero modi sunt? Atque error ipsam nihil,
+                      reprehenderit sed sunt vel?</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-title">Дата рождения</div>
+                <label>
+                  <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#book"></use></svg></span>
+                  <input type="text" placeholder="ДД ММ ГГГГ" class="datepicker1 datepicker">
                 </label>
               </div>
 
-              <button type="submit" class="btn btn-accent">Проверить задолженность</button>
+              <div class="form-group">
+                <div class="input-title">Номер паспорта</div>
+                <label>
+                  <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#calendar"></use></svg></span>
+                  <input type="text" placeholder="2453 765783">
+                </label>
+              </div>
 
-              <div class="example-item">Пример: <span>125-56-89</span></div>
-
+              <button type="submit" class="btn btn-accent">Узнать ИНН</button>
 
               <label class="checkbox">
                 <input type="checkbox" checked>
@@ -383,16 +409,15 @@
             <div class="search-base-info">
               <div class="search-base-info__icon"><img src="img/question-icon.svg" alt=""></div>
               <div class="search-base-info__text">
-                <p>Как расшифровать номер исполнительного производства:</p>
-                <ul>
-                  <li><strong>123456</strong>/2022/77001-ИП - номер ИП</li>
-                  <li>123456/<strong>2022</strong>/77001-ИП - год возбуждения ИП</li>
-                  <li>123456/2022/<strong>77</strong>001-ИП - номер региона в котором возбуждено ИП</li>
-                  <li>123456/2022/77<strong>001</strong>-ИП - номер структурного подразделения которое ведет ИП</li>
-                </ul>
+                <p>ИНН - это уникальный номер налогоплательщика, который присваивается каждому физическому лицу в РФ. Он
+                  необходим, чтобы узнать свою задолженность по налогам и оплатить свои долги. Его просят предоставить
+                  при трудоустройстве, декларированию доходов, вычетов, регистрации юридического лица.</p>
               </div>
             </div>
 
+
+          </div>
+          <div class="search-base-wrapper__bottom attention-info">
             <div class="search-base-info">
               <div class="search-base-info__icon"><img src="img/attention-icon.svg" alt=""></div>
               <div class="search-base-info__text">
@@ -400,246 +425,12 @@
               </div>
             </div>
           </div>
-          <div class="search-base-wrapper__bottom">
-            <div class="text">
-              <h3>Не знаете номер исполнительного производства? </h3>
-              <p>Произведите проверку задолженности по ФИО</p>
-            </div>
-
-            <a href="#" class="btn btn-accent">Проверить по ФИО</a>
-          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-<section class="question p-96">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-8 offset-lg-2 text-center mb-32">
-        <h2>Ответы на часто задаваемые вопросы</h2>
-        <div class="text-title">Все что вы хотите знать о нашем сервисе по стравнительно честному отъему денег у
-          населения
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h3 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
-              </h3>
-            </div>
-
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body">
-
-                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
-                </p>
-
-                <ol>
-                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
-                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
-                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
-                  </li>
-                  <li>Наличие претензий неимущественного характера.
-                  </li>
-                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
-                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
-                    обязательств.
-
-                  </li>
-                </ol>
-
-                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
-                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h3 class="collapsed" data-toggle="collapse"
-                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
-              </h3>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body">
-                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
-                </p>
-
-                <ol>
-                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
-                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
-                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
-                  </li>
-                  <li>Наличие претензий неимущественного характера.
-                  </li>
-                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
-                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
-                    обязательств.
-
-                  </li>
-                </ol>
-
-                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
-                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h3 class="collapsed" data-toggle="collapse"
-                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Кем выполняется оценка имущества после ареста?
-              </h3>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
-                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
-                </p>
-
-                <ol>
-                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
-                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
-                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
-                  </li>
-                  <li>Наличие претензий неимущественного характера.
-                  </li>
-                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
-                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
-                    обязательств.
-
-                  </li>
-                </ol>
-
-                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
-                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingFour">
-              <h3 class="collapsed" data-toggle="collapse"
-                  data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
-              </h3>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-              <div class="card-body">
-                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
-                </p>
-
-                <ol>
-                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
-                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
-                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
-                  </li>
-                  <li>Наличие претензий неимущественного характера.
-                  </li>
-                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
-                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
-                    обязательств.
-
-                  </li>
-                </ol>
-
-                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
-                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingFive">
-              <h3 class="collapsed" data-toggle="collapse"
-                  data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
-              </h3>
-            </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-              <div class="card-body">
-                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
-                </p>
-
-                <ol>
-                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
-                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
-                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
-                  </li>
-                  <li>Наличие претензий неимущественного характера.
-                  </li>
-                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
-                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
-                    обязательств.
-
-                  </li>
-                </ol>
-
-                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
-                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="working bg-light-blue mb-20">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-8 offset-lg-2 text-center mb-32">
-        <h2>Как мы работаем</h2>
-        <div class="text-title">Все что вы хотите знать о нашем сервисе по стравнительно честному отъему денег у
-          населения
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="working-box advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
-          <h3>Запрос к базам данных ФССП</h3>
-          <p>После вашего поиска мы делаем запрос к базе ФССП и получаем информацию по каждому начислению УИН</p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="working-box advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon5.svg" alt=""></div>
-          <h3>Запрос к базам данных ГИС ГМП</h3>
-          <p>Собрав все начисления мы проверяем каждое начисление на актуальность и возможность оплаты </p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="working-box advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
-          <h3>Формирование результата </h3>
-          <p>Перед показом результатов мы формируем категории начислений и формируем список для каждой категории
-          </p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="working-box advantages-box">
-          <div class="advantages-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
-          <h3>Гарантированный результат</h3>
-          <p>После всех этапов - вы сможете увидеть только актуальную и официальную информацию!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="application">
   <div class="container">

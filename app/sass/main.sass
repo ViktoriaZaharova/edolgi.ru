@@ -30,11 +30,13 @@
   width: 100%
   height: 100%
   background: #F3F4F6
-  box-shadow: 0 32px 64px -12px rgba(16, 24, 40, 0.2)
+  transition: .3s ease
   border-radius: 4px
   padding: 24px
   color: #374151
   font-size: 14px
+  &:hover
+    box-shadow: 0 32px 64px -12px rgba(16, 24, 40, 0.2)
   h3
     color: #1E3A8A
     font-size: 22px
@@ -55,8 +57,10 @@
 
 .form-examination
   display: flex
-  align-items: flex-end
+  align-items: flex-start
   flex-wrap: wrap
+  button
+    margin: 22px 0 0
 
 .form-group
   max-width: 280px
@@ -87,10 +91,13 @@
 .input-icon
   z-index: 1
   position: absolute
-  top: 50%
-  transform: translate(0,-50%)
+  top: 14px
   left: 14px
   @include d-flex
+  fill: none
+  width: 20px
+  height: 20px
+  stroke: $accent
 
 /*==========  section home end  ==========*/
 
@@ -193,7 +200,7 @@
 
 .application-wrapper
   width: 100%
-  max-width: 1152px
+  //max-width: 1152px
   margin: 0 auto
   color: #fff
   background: #2563EB
@@ -259,6 +266,8 @@
     box-shadow: 0 20px 24px -4px rgba(16, 24, 40, 0.1), 0px 8px 8px -4px rgba(16, 24, 40, 0.04)
     color: #111827
     font-size: 18px
+    .search-base-info
+      margin: 0
     h3
       font-size: 22px
       font-weight: 600
@@ -724,9 +733,29 @@
     padding: 12px 41.5px
 /*==========  section contacts end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section fns ==========*/
+.form-my
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+  button
+    max-width: 200px
+    width: 100%
+  .form-group
+    position: relative
 
-/*==========  section end  ==========*/
+.form-search-inn
+  margin: 46px 0 0
+  .form-group
+    max-width: 280px
+  .checkbox
+    margin: 40px 0 0
+
+.attention-info
+  padding: 24px
+  .search-base-info
+    font-size: 14px
+/*==========  section fns end  ==========*/
 
 /*==========  section  ==========*/
 

@@ -39,7 +39,18 @@
     <div class="row">
       <div class="col-12">
         <div class="search-hidden-wrapper">
-          <h2>Поиск услуг</h2>
+
+          <div class="search-hidden-wrapper__title">
+            <h2>Поиск услуг</h2>
+
+            <a href="#" class="search-hidden-close">
+              <svg class="svg-icon search-hidden-close__icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+              <span class="search-hidden-close__text">Закрыть</span>
+            </a>
+          </div>
+
 
           <form method="post" class="form-search form-search-modal">
             <label>
@@ -51,26 +62,25 @@
               <input type="text" placeholder="Поиск услуги">
             </label>
             <button type="submit" class="btn btn-accent">Поиск</button>
-          </form>
+            <div class="result-search-modal">
+              <h3>Мы нашли для вас следующие услуги:</h3>
 
-          <div class="result-search-modal">
-            <h3>Мы нашли для вас следующие услуги:</h3>
-
-            <div class="list-result-search">
-              <a href="#" class="list-result-search__item">
-                <strong>ФССП</strong>
-                <span>Проверка задолженности у физических лиц</span>
-              </a>
-              <a href="#" class="list-result-search__item">
-                <strong>ФНС</strong>
-                <span>Провека задоженности у физ лица по ИНН</span>
-              </a>
-              <a href="#" class="list-result-search__item">
-                <strong>ФССП</strong>
-                <span>Проверка задолженности у физических лиц</span>
-              </a>
+              <div class="list-result-search">
+                <a href="#" class="list-result-search__item">
+                  <strong>ФССП</strong>
+                  <span>Проверка задолженности у физических лиц</span>
+                </a>
+                <a href="#" class="list-result-search__item">
+                  <strong>ФНС</strong>
+                  <span>Провека задоженности у физ лица по ИНН</span>
+                </a>
+                <a href="#" class="list-result-search__item">
+                  <strong>ФССП</strong>
+                  <span>Проверка задолженности у физических лиц</span>
+                </a>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -268,7 +278,6 @@
   </div>
 </div>
 
-
 <div class="section-loader">
   <div class="container">
     <div class="row">
@@ -296,14 +305,14 @@
             <div class="form-group">
               <div class="input-title">Ваш Email</div>
               <label class="input-checked">
-                <span class="input-icon"><img src="img/mail.svg" alt=""></span>
+                <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
                 <input type="text" value="Kuziakin@mail.ru" name="mail">
               </label>
             </div>
             <button type="submit" class="btn btn-accent">Уведомлять о задолженностях</button>
 
             <label class="checkbox">
-              <input type="checkbox" class="checkbox">
+              <input type="checkbox" checked>
               <span class="checkbox-custom"></span>
               <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
                                                                       class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
@@ -453,7 +462,7 @@
           <div class="form-group">
             <div class="input-title">ФИО</div>
             <label>
-              <span class="input-icon"><img src="img/user-icon.svg" alt=""></span>
+              <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#user-icon"></use></svg></span>
               <input type="text" placeholder="Кузякин Сидор Петрович" name="name">
             </label>
           </div>
@@ -461,18 +470,59 @@
           <div class="form-group form-group-select">
             <div class="input-title">Выберите регион проверки:</div>
             <label>
-              <span class="input-icon"><img src="img/location.svg" alt=""></span>
+              <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#location"></use></svg></span>
               <select name="select" class="js-example-basic-single select-my">
                 <option value="Выберите регион">Выберите регион</option>
-                <option value="Московская область">Московская область</option>
-                <option value="Алтайский край">Алтайский край</option>
-                <option value="Амурский край">Амурский край</option>
-                <option value="Архангельская область">Архангельская область</option>
-                <option value="Белгородская область">Белгородская область</option>
-                <option value="Алтайский край">Алтайский край</option>
-                <option value="Амурский край">Амурский край</option>
-                <option value="Архангельская область">Архангельская область</option>
-                <option value="Белгородская область">Белгородская область</option>
+                <option value="Республика Адыгея
+">Республика Адыгея
+                </option>
+                <option value="Республика Башкортостан
+">Республика Башкортостан
+                </option>
+                <option value="Республика Бурятия
+">Республика Бурятия
+                </option>
+                <option value="Республика Алтай
+">Республика Алтай
+                </option>
+                <option value="Республика Дагестан
+">Республика Дагестан
+                </option>
+                <option value="Республика Ингушетия
+">Республика Ингушетия
+                </option>
+                <option value="Республика Кабардино-Балкария
+">Республика Кабардино-Балкария
+                </option>
+                <option value="Республика Калмыкия
+">Республика Калмыкия
+                </option>
+                <option value="Республика Карачаево-Черкесия">Республика Карачаево-Черкесия</option>
+                <option value="Республика Адыгея
+">Республика Адыгея
+                </option>
+                <option value="Республика Башкортостан
+">Республика Башкортостан
+                </option>
+                <option value="Республика Бурятия
+">Республика Бурятия
+                </option>
+                <option value="Республика Алтай
+">Республика Алтай
+                </option>
+                <option value="Республика Дагестан
+">Республика Дагестан
+                </option>
+                <option value="Республика Ингушетия
+">Республика Ингушетия
+                </option>
+                <option value="Республика Кабардино-Балкария
+">Республика Кабардино-Балкария
+                </option>
+                <option value="Республика Калмыкия
+">Республика Калмыкия
+                </option>
+                <option value="Республика Карачаево-Черкесия">Республика Карачаево-Черкесия</option>
               </select>
             </label>
           </div>
@@ -480,7 +530,7 @@
           <div class="form-group form-group-date">
             <div class="input-title">Дата рождения</div>
             <label>
-              <span class="input-icon"><img src="img/calendar.svg" alt=""></span>
+              <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#calendar"></use></svg></span>
               <input type="text" placeholder="ДД ММ ГГГГ" class="datepicker1 datepicker">
             </label>
           </div>
@@ -489,7 +539,7 @@
 
 
           <label class="checkbox">
-            <input type="checkbox" class="checkbox" checked>
+            <input type="checkbox" checked>
             <span class="checkbox-custom"></span>
             <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
                                                                     class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
@@ -949,7 +999,7 @@
           <div class="description-company">
             СЕРВИС УДОБНЫХ И БЫСТРЫХ ПЛАТЕЖЕЙ В ЖКХ, ФССП, ФНС, ГИБДД С ГАРАНТИЕЙ БЕЗОПАСНОСТИ.
           </div>
-          <div class="application-links">
+          <div class="application-links d-none d-sm-flex">
             <a href="#" target="_blank" class="application-links__item"><img src="img/app-ios-black.svg" alt=""></a>
             <a href="#" target="_blank" class="application-links__item"><img src="img/app-google-black.svg" alt=""></a>
           </div>
@@ -979,7 +1029,7 @@
             <ul class="footer-menu my-ul">
               <li><a href="#">Задолженности по ФИО</a></li>
               <li><a href="#">Штрафы ГИБДД </a></li>
-              <li><a href="#">Поиск налогов ФНС по ИНН  </a></li>
+              <li><a href="#">Поиск налогов ФНС по ИНН</a></li>
             </ul>
           </div>
         </div>
@@ -1037,6 +1087,13 @@
           </div>
         </div>
 
+        <div class="col-12 d-block d-sm-none">
+          <div class="application-links">
+            <a href="#" target="_blank" class="application-links__item"><img src="img/app-ios-black.svg" alt=""></a>
+            <a href="#" target="_blank" class="application-links__item"><img src="img/app-google-black.svg" alt=""></a>
+          </div>
+        </div>
+
         <div class="col-12">
           <div class="footer-text">
             <p>Информационный портал EDolgi.ru создан для проверки/поиска/оплаты задолженностей и авансовых платежей.
@@ -1081,6 +1138,7 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/timer.js"></script>
 <script src="js/common.js"></script>
 
 </body>

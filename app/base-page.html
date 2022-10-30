@@ -33,13 +33,23 @@
 
 <body>
 
-
 <div class="search-hidden">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="search-hidden-wrapper">
-          <h2>Поиск услуг</h2>
+
+          <div class="search-hidden-wrapper__title">
+            <h2>Поиск услуг</h2>
+
+            <a href="#" class="search-hidden-close">
+              <svg class="svg-icon search-hidden-close__icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+              <span class="search-hidden-close__text">Закрыть</span>
+            </a>
+          </div>
+
 
           <form method="post" class="form-search form-search-modal">
             <label>
@@ -51,26 +61,25 @@
               <input type="text" placeholder="Поиск услуги">
             </label>
             <button type="submit" class="btn btn-accent">Поиск</button>
-          </form>
+            <div class="result-search-modal">
+              <h3>Мы нашли для вас следующие услуги:</h3>
 
-          <div class="result-search-modal">
-            <h3>Мы нашли для вас следующие услуги:</h3>
-
-            <div class="list-result-search">
-              <a href="#" class="list-result-search__item">
-                <strong>ФССП</strong>
-                <span>Проверка задолженности у физических лиц</span>
-              </a>
-              <a href="#" class="list-result-search__item">
-                <strong>ФНС</strong>
-                <span>Провека задоженности у физ лица по ИНН</span>
-              </a>
-              <a href="#" class="list-result-search__item">
-                <strong>ФССП</strong>
-                <span>Проверка задолженности у физических лиц</span>
-              </a>
+              <div class="list-result-search">
+                <a href="#" class="list-result-search__item">
+                  <strong>ФССП</strong>
+                  <span>Проверка задолженности у физических лиц</span>
+                </a>
+                <a href="#" class="list-result-search__item">
+                  <strong>ФНС</strong>
+                  <span>Провека задоженности у физ лица по ИНН</span>
+                </a>
+                <a href="#" class="list-result-search__item">
+                  <strong>ФССП</strong>
+                  <span>Проверка задолженности у физических лиц</span>
+                </a>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -465,8 +474,11 @@
                       </td>
                       <td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
                       <td class="td-pay" data-table="Оплатить">
-                        <a href="#" class="link-pay color-accent" data-toggle="modal" data-target="#modal2">Оплатить</a>
+                        <a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal" data-target="#modal2">Оплатить</a>
                         <span>20 635,25 руб</span>
+                      </td>
+                      <td class="d-block d-sm-none w-100">
+                        <a href="#" class="btn btn-accent btn-pay" data-toggle="modal" data-target="#modal2">Оплатить</a>
                       </td>
                     </tr>
                     <tr class="tr">
@@ -521,8 +533,11 @@
                       </td>
                       <td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
                       <td class="td-pay" data-table="Оплатить">
-                        <a href="#" class="link-pay color-accent" data-toggle="modal" data-target="#modal2">Оплатить</a>
+                        <a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal" data-target="#modal2">Оплатить</a>
                         <span>20 635,25 руб</span>
+                      </td>
+                      <td class="d-block d-sm-none w-100">
+                        <a href="#" class="btn btn-accent btn-pay" data-toggle="modal" data-target="#modal2">Оплатить</a>
                       </td>
                     </tr>
                     <tr class="tr">
@@ -549,8 +564,11 @@
                       </td>
                       <td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
                       <td class="td-pay" data-table="Оплатить">
-                        <a href="#" class="link-pay color-accent" data-toggle="modal" data-target="#modal2">Оплатить</a>
+                        <a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal" data-target="#modal2">Оплатить</a>
                         <span>20 635,25 руб</span>
+                      </td>
+                      <td class="d-block d-sm-none w-100">
+                        <a href="#" class="btn btn-accent btn-pay" data-toggle="modal" data-target="#modal2">Оплатить</a>
                       </td>
                     </tr>
                     </tbody>
@@ -594,7 +612,8 @@
                       </td>
                       <td class="td-document" data-table="Документ">
                         <p>СНИЛС: <br>787***6865</p>
-                        <a href="#" class="text-decoration color-accent link">не мой документ</a>
+                        <a href="#" data-toggle="modal" data-target="#modal1" class="text-decoration color-accent link">не
+                          мой документ</a>
                       </td>
                       <td class="td-office" data-table="Ведомство">ФССП (Федеральная служба судебных приставов)</td>
                       <td class="td-executive-doc" data-table="Исполнительный документ">
@@ -612,8 +631,11 @@
                       </td>
                       <td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
                       <td class="td-pay" data-table="Оплатить">
-                        <a href="#" class="link-pay color-accent">Оплатить</a>
+                        <a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal" data-target="#modal2">Оплатить</a>
                         <span>20 635,25 руб</span>
+                      </td>
+                      <td class="d-block d-sm-none w-100">
+                        <a href="#" class="btn btn-accent btn-pay" data-toggle="modal" data-target="#modal2">Оплатить</a>
                       </td>
                     </tr>
                     <tr class="tr">
@@ -668,8 +690,11 @@
                       </td>
                       <td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
                       <td class="td-pay" data-table="Оплатить">
-                        <a href="#" class="link-pay color-accent">Оплатить</a>
+                        <a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal" data-target="#modal2">Оплатить</a>
                         <span>20 635,25 руб</span>
+                      </td>
+                      <td class="d-block d-sm-none w-100">
+                        <a href="#" class="btn btn-accent btn-pay" data-toggle="modal" data-target="#modal2">Оплатить</a>
                       </td>
                     </tr>
                     <tr class="tr">
@@ -696,8 +721,11 @@
                       </td>
                       <td class="td-sum" data-table="Сумма к погашению">20 434.71 руб.</td>
                       <td class="td-pay" data-table="Оплатить">
-                        <a href="#" class="link-pay color-accent">Оплатить</a>
+                        <a href="#" class="link-pay color-accent d-none d-sm-block" data-toggle="modal" data-target="#modal2">Оплатить</a>
                         <span>20 635,25 руб</span>
+                      </td>
+                      <td class="d-block d-sm-none w-100">
+                        <a href="#" class="btn btn-accent btn-pay" data-toggle="modal" data-target="#modal2">Оплатить</a>
                       </td>
                     </tr>
                     </tbody>
@@ -722,7 +750,7 @@
             <div class="form-group">
               <div class="input-title">Ваш Email</div>
               <label>
-                <span class="input-icon"><img src="img/mail.svg" alt=""></span>
+                <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
                 <input type="text" placeholder="Kuziakin@mail.ru" name="mail">
               </label>
             </div>
@@ -826,7 +854,7 @@
           <div class="description-company">
             СЕРВИС УДОБНЫХ И БЫСТРЫХ ПЛАТЕЖЕЙ В ЖКХ, ФССП, ФНС, ГИБДД С ГАРАНТИЕЙ БЕЗОПАСНОСТИ.
           </div>
-          <div class="application-links">
+          <div class="application-links d-none d-sm-flex">
             <a href="#" target="_blank" class="application-links__item"><img src="img/app-ios-black.svg" alt=""></a>
             <a href="#" target="_blank" class="application-links__item"><img src="img/app-google-black.svg" alt=""></a>
           </div>
@@ -856,7 +884,7 @@
             <ul class="footer-menu my-ul">
               <li><a href="#">Задолженности по ФИО</a></li>
               <li><a href="#">Штрафы ГИБДД </a></li>
-              <li><a href="#">Поиск налогов ФНС по ИНН  </a></li>
+              <li><a href="#">Поиск налогов ФНС по ИНН</a></li>
             </ul>
           </div>
         </div>
@@ -914,6 +942,13 @@
           </div>
         </div>
 
+        <div class="col-12 d-block d-sm-none">
+          <div class="application-links">
+            <a href="#" target="_blank" class="application-links__item"><img src="img/app-ios-black.svg" alt=""></a>
+            <a href="#" target="_blank" class="application-links__item"><img src="img/app-google-black.svg" alt=""></a>
+          </div>
+        </div>
+
         <div class="col-12">
           <div class="footer-text">
             <p>Информационный портал EDolgi.ru создан для проверки/поиска/оплаты задолженностей и авансовых платежей.
@@ -956,7 +991,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <div class="modal-title color-red"><img src="img/attention-icon.svg" alt="">Не ваш документ?</div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
           <svg class="svg-icon">
             <use xlink:href="img/sprite.svg#close"></use>
           </svg>
@@ -974,7 +1009,7 @@
         <h3 class="color-green">Убрать задолженности?</h3>
         <div class="btn-group">
           <a href="#" class="btn btn-border">Оставить</a>
-          <a href="#" class="btn btn-accent" data-bs-dismiss="modal">Да, это не мой документ</a>
+          <a href="#" class="btn btn-accent" data-dismiss="modal">Да, это не мой документ</a>
         </div>
       </div>
     </div>
@@ -986,7 +1021,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <div class="modal-title">Оплатить задолженность</div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
           <svg class="svg-icon">
             <use xlink:href="img/sprite.svg#close"></use>
           </svg>
@@ -1012,7 +1047,7 @@
 
 
           <label class="checkbox">
-            <input type="checkbox" class="checkbox" checked>
+            <input type="checkbox" checked>
             <span class="checkbox-custom"></span>
             <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
                                                                     class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
