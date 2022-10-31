@@ -17,13 +17,24 @@ $('.mobile-menu__close').on('click', function (e) {
 
 $('.form-search-header').on('click', function () {
     $('.search-hidden').fadeIn();
+    $('.search-hidden input').focus();
 });
+
+
 
 $('.form-search input').on('keyup change', function () {
     if (this.value.length > 0) {
         $('.result-search-modal').fadeIn();
     } else {
         $('.result-search-modal').fadeOut();
+    }
+});
+
+$('.label-region input').on('keyup change', function () {
+    if (this.value.length > 0) {
+        $('.dropdown-menu').fadeIn();
+    } else {
+        $('.dropdown-menu').fadeOut();
     }
 });
 
@@ -42,9 +53,9 @@ $('.submenu-mobile .link-prev').on('click', function (e) {
     $('.submenu-mobile').fadeOut();
 });
 
-$('.js-example-basic-single').select2({
-    width: "100%"
-});
+// $('.js-example-basic-single').select2({
+//     width: "100%"
+// });
 
 
 $.datepicker.setDefaults(
