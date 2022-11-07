@@ -933,6 +933,93 @@
   .attention-info .search-base-info {
     font-size: 14px; }
 
+.list-details-search {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 24px 0; }
+  .list-details-search li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 16px; }
+    .list-details-search li:last-child {
+      margin: 0; }
+    .list-details-search li p {
+      min-width: 168px;
+      margin: 0 24px 0 0;
+      font-weight: 600;
+      font-size: 20px; }
+    .list-details-search li span {
+      text-align: right;
+      min-width: 219px; }
+
+.gallery-document {
+  max-width: 270px;
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+  .gallery-document-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 6, 6, 0.62)), to(rgba(44, 6, 6, 0.62)));
+    background: linear-gradient(0deg, rgba(44, 6, 6, 0.62), rgba(44, 6, 6, 0.62));
+    color: #fff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500; }
+    .gallery-document-overlay span {
+      color: #D1D5DB; }
+    .gallery-document-overlay p {
+      margin: 16px auto; }
+
+.close-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 60px;
+  stroke: #fff; }
+
+.btn-search-inn {
+  min-width: 240px; }
+
 /*==========  section fns end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/

@@ -776,6 +776,62 @@
   padding: 24px
   .search-base-info
     font-size: 14px
+
+.list-details-search
+  font-size: 18px
+  font-weight: 500
+  margin: 24px 0
+  li
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+    p
+      min-width: 168px
+      margin: 0 24px 0 0
+      font-weight: 600
+      font-size: 20px
+    span
+      text-align: right
+      min-width: 219px
+
+.gallery-document
+  max-width: 270px
+  margin: 0 auto
+  width: 100%
+  @include d-flex
+  position: relative
+  &-overlay
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(44, 6, 6, 0.62), rgba(44, 6, 6, 0.62))
+    color: #fff
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 5px
+    font-size: 18px
+    font-weight: 500
+    span
+      color: #D1D5DB
+    p
+      margin: 16px auto
+
+.close-image
+  @include d-flex
+  width: 60px
+  height: 60px
+  stroke: #fff
+
+.btn-search-inn
+  min-width: 240px
 /*==========  section fns end  ==========*/
 
 /*==========  section  ==========*/

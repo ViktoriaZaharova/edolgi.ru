@@ -30,13 +30,6 @@ $('.form-search input').on('keyup change', function () {
     }
 });
 
-$('.label-region input').on('keyup change', function () {
-    if (this.value.length > 0) {
-        $('.dropdown-menu').fadeIn();
-    } else {
-        $('.dropdown-menu').fadeOut();
-    }
-});
 
 $('.search-hidden-close').on('click', function (e) {
     e.preventDefault();

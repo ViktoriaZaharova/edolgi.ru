@@ -353,13 +353,11 @@
           <div class="search-base-wrapper__top">
             <div class="row">
               <div class="col-12 col-lg-9">
-                <h1>Ваш ИНН: 1234569687787 <a href="#" class="copy-link"><img src="img/copy.svg" alt=""></a></h1>
+                <h1>ИНН не присвоен или не найден в базе ФНС</h1>
                 <div class="text-title">
                   <p>Физические лица могут узнать ИНН по паспорту бесплатно - для этого введите ниже Фамилию Имя и
-                    Отчество,
-                    дату рождения и серию и номер паспорта. Далее вы узнаете свой ИНН и сможете проверить задолженность
-                    по
-                    налогам ФНС или судебным приставам ФССП.</p>
+                    Отчество, дату рождения и серию и номер паспорта. Далее вы узнаете свой ИНН и сможете проверить
+                    задолженность по налогам ФНС или судебным приставам ФССП.</p>
                 </div>
 
                 <ul class="list-details-search my-ul">
@@ -374,12 +372,22 @@
                   </li>
                 </ul>
 
-                <a href="#" class="btn btn-accent btn-search-inn">Искать задолженности по ИНН</a>
+                <a href="#" class="btn btn-accent btn-search-inn">Искать еще раз...</a>
               </div>
 
               <div class="col-12 col-lg-3">
-                <a href="img/certificate.jpg" class="gallery-document" data-fancybox="certificate-image"><img
-                    src="img/certificate.jpg" alt=""></a>
+                <div class="gallery-document"><img
+                    src="img/certificate.jpg" alt="">
+                  <div class="gallery-document-overlay">
+                    <a href="#" class="close-image">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                      </svg>
+                    </a>
+                    <p>Документ не найден</p>
+                    <span>Попробуйте поискать еще</span>
+                  </div>
+                </div>
               </div>
             </div>
 
