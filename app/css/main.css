@@ -153,6 +153,9 @@
 .td-sum {
   width: 19%; }
 
+.td-number p {
+  font-size: 18px; }
+
 /*==========  section statistics end  ==========*/
 /*==========  section working ==========*/
 .working {
@@ -409,7 +412,7 @@
   width: 100%;
   color: #4B5563;
   font-size: 14px; }
-  .example-item span {
+  .example-item span, .example-item a {
     text-decoration: underline;
     color: #1E3A8A; }
 
@@ -1021,16 +1024,198 @@
   min-width: 240px; }
 
 /*==========  section fns end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  section seo-section ==========*/
+.seo-section {
+  padding: 96px 0 64px; }
+
+.seo-box {
+  max-width: 592px;
+  width: 100%; }
+  .seo-box .box-text {
+    color: #4B5563;
+    line-height: 150%;
+    font-size: 16px; }
+  .seo-box h3 {
+    margin: 0 0 8px;
+    color: #1F2937;
+    font-size: 22px;
+    font-weight: 600; }
+
+.checkout-fns .text-title {
+  max-width: 633px; }
+
+.checkout-fns-form {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .checkout-fns-form .form-group {
+    max-width: 378px; }
+  .checkout-fns-form button {
+    margin: 22px 0 0;
+    width: calc(100% - 378px - 378px - 32px);
+    max-width: none; }
+
+.tab-content {
+  width: 100%; }
+
+.nav-tabs {
+  border: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .nav-tabs .nav-item {
+    margin: 0 1px 0 0; }
+    .nav-tabs .nav-item:last-child {
+      margin: 0; }
+  .nav-tabs .nav-link {
+    margin: 0;
+    border: none;
+      border-radius: 0;
+    background: #F3F4F6;
+    padding: 40px;
+    color: #1F2937;
+    font-size: 20px;
+    font-weight: 600; }
+    .nav-tabs .nav-link.active {
+      background: #DBEAFE;
+      color: #1F2937;
+      border: none; }
+
+/*==========  section seo-section end  ==========*/
+/*==========  section why-me ==========*/
+.why-me-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.why-me-box {
+  padding: 24px;
+  max-width: 224px;
+  width: 100%;
+  color: #1E3A8A;
+  font-size: 20px;
+  font-weight: 600; }
+  .why-me-box__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 24px;
+    background: #3B82F6;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    padding: 12px; }
+
+/*==========  section why-me end  ==========*/
+/*==========  section statistics-days ==========*/
+.statistics-days .text-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 auto 8px; }
+
+/*==========  section statistics-days end  ==========*/
+/*==========  section warranty-payment ==========*/
+.warranty-payment .box-text {
+  color: #F9FAFB;
+  font-size: 14px;
+  margin: 24px 0 16px; }
+  .warranty-payment .box-text p {
+    margin: 0 0 20px; }
+    .warranty-payment .box-text p:last-child {
+      margin: 0; }
+
+.warranty-payment .text-title {
+  text-align: left;
+  color: #fff;
+  margin: 0 0 8px; }
+  .warranty-payment .text-title strong {
+    font-weight: 500; }
+
+.warranty-payment h2 {
+  margin: 0 0 8px; }
+
+/*==========  section warranty-payment end  ==========*/
+/*==========  section services ==========*/
+.list-filter {
+  width: 100%;
+  margin: 40px auto 56px;
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px; }
+  .list-filter li {
+    margin: 0 8px 16px 0; }
+    .list-filter li:last-child {
+      margin-right: 0; }
+  .list-filter a {
+    border: 1px solid #6B7280;
+      border-radius: 4px;
+    padding: 4px 8px;
+    color: #6B7280; }
+    .list-filter a:hover, .list-filter a.active {
+      background: #2563EB;
+      color: #fff;
+      border-color: #2563EB; }
+
+.services-box {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 20px 24px -4px rgba(16, 24, 40, 0.1), 0px 8px 8px -4px rgba(16, 24, 40, 0.04);
+          box-shadow: 0 20px 24px -4px rgba(16, 24, 40, 0.1), 0px 8px 8px -4px rgba(16, 24, 40, 0.04);
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 24px 24px 16px;
+  color: #1E3A8A;
+  font-weight: 500; }
+  .services-box__icon {
+    margin: 0 auto 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 80px;
+    width: 80px; }
+    .services-box__icon img {
+      max-height: 100%; }
+
+.services-box-no {
+  color: #6B7280; }
+
+/*==========  section services end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/
 /*==========  section  ==========*/
