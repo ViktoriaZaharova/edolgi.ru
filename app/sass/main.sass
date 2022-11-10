@@ -119,6 +119,10 @@
   width: 20px
   height: 20px
   stroke: $accent
+  &.stroke-none
+    stroke: none
+    fill: $accent
+
 
 /*==========  section home end  ==========*/
 
@@ -766,8 +770,16 @@
   button
     max-width: 200px
     width: 100%
+    padding: 12px 10px
   .form-group
     position: relative
+
+.form-my-start
+  align-items: flex-start
+  button
+    margin: 24px 0 0
+  input::placeholder
+    font-style: italic
 
 .form-search-inn
   margin: 46px 0 0
@@ -993,11 +1005,104 @@
 
 .services-box-no
   color: #6B7280
+
 /*==========  section services end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section official-sources ==========*/
+.official-sources
+  h2
+    margin: 0 auto 32px
 
-/*==========  section end  ==========*/
+.official-sources-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.official-sources-box
+  max-width: 219px
+  width: 100%
+  border-radius: 4px
+  height: 100%
+  padding: 24px 24px 16px
+  color: #1E3A8A
+  font-size: 16px
+  font-weight: 500
+  &__icon
+    @include d-flex
+    margin: 0 0 16px
+    width: 80px
+    height: 80px
+    img
+      max-height: 100%
+
+.subscribe-fines
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  &__text
+    max-width: 380px
+    width: 100%
+  .box-text
+    color: #4B5563
+    font-size: 18px
+  h3
+    color: #111827
+    line-height: 120%
+  form
+    width: calc(100% - 380px)
+    padding: 0 0 0 24px
+    max-width: none
+    margin: 0
+    .btn
+      padding: 12px 24px
+      max-width: none
+      width: fit-content
+      margin: 26px 0 0
+    .tooltip-wrapper
+      top: 43px
+  .form-group
+    max-width: 240px
+    &:first-child
+      max-width: 313px
+
+.search-base-info-attention
+  font-size: 14px
+
+.form-group-number-car
+  .tooltip-wrapper
+    right: 87px
+
+
+.input-group-region
+  position: absolute
+  top: 12px
+  right: 0
+  width: 79px
+  .dropdown-menu
+    margin: 12px 0 0
+    max-width: 79px
+    min-width: 79px
+    overflow-y: auto
+    max-height: 285px
+    a
+      font-size: 14px
+      color: #1F2937
+  input
+    background: transparent url("../img/arrow-select.svg") no-repeat calc(100% - 16px) center
+      size: 20px
+    box-shadow: none
+    padding: 0 40px 0 16px
+    border: none
+      radius: 0
+      left: 1px solid #D0D5DD
+    height: 24px
+
+
+
+/*==========  section official-sources end  ==========*/
 
 /*==========  section  ==========*/
 

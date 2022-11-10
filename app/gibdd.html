@@ -17,9 +17,10 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
-  <link rel="stylesheet" href="css/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
@@ -367,24 +368,50 @@
             </a>
           </li>
         </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tab1" role="tabpanel"
+               aria-labelledby="nav-tab1">
+            <div class="search-base-wrapper">
+              <div class="search-base-wrapper__top">
 
-        <div class="search-base-wrapper">
-          <div class="search-base-wrapper__top">
-            <div class="tab-content">
-              <div class="tab-pane fade show active" id="tab1" role="tabpanel"
-                   aria-labelledby="nav-tab1">
                 <h1>Проверка и оплата штрафов ГИБДД</h1>
                 <div class="text-title">
                   <p>Найденные штрафы можно моментально оплатить, большинство в первые 20 дней — со скидкой 50%. </p>
                 </div>
 
-                <form method="post" class="form-search-inn form-my checkout-fns-form">
-                  <div class="form-group form-group-name">
-                    <div class="input-title">Ваш ИНН</div>
-                    <label>
-                      <span class="input-icon"><svg class="svg-icon"><use
-                          xlink:href="img/sprite.svg#user-icon"></use></svg></span>
-                      <input type="text" placeholder="ИНН - 12 цифр" name="inn">
+                <form method="post" class="form-search-inn form-my form-my-start">
+                  <div class="form-group form-group-number-car">
+                    <div class="input-title">Номер автомобиля и регион</div>
+                    <label class="label-number-car">
+                      <span class="input-group">
+                        <span class="input-icon stroke-none"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#car"></use></svg></span>
+                      <input type="text" placeholder="А123АА">
+
+                      </span>
+
+
+                      <span class="input-group input-group-region">
+                        <input type="text" value="111" name="region_number" data-toggle="dropdown">
+                        <span class="dropdown-menu">
+                         <a href="#" class="dropdown-item">0</a>
+                         <a href="#" class="dropdown-item">1</a>
+                         <a href="#" class="dropdown-item">2</a>
+                         <a href="#" class="dropdown-item">3</a>
+                         <a href="#" class="dropdown-item">4</a>
+                         <a href="#" class="dropdown-item">5</a>
+                         <a href="#" class="dropdown-item">6</a>
+                         <a href="#" class="dropdown-item">7</a>
+                         <a href="#" class="dropdown-item">8</a>
+                         <a href="#" class="dropdown-item">9</a>
+                         <a href="#" class="dropdown-item">10</a>
+                         <a href="#" class="dropdown-item">11</a>
+                         <a href="#" class="dropdown-item">12</a>
+                         <a href="#" class="dropdown-item">13</a>
+                         <a href="#" class="dropdown-item">14</a>
+                         <a href="#" class="dropdown-item">15</a>
+                        </span>
+                      </span>
                     </label>
                     <div class="tooltip-wrapper">
                       <div class="btn-tooltip">
@@ -398,8 +425,29 @@
                           reprehenderit sed sunt vel?</p>
                       </div>
                     </div>
-                    <div class="example-item">Помощь: <a href="#" class="d-inline text-decoration">Как узнать свой
-                      ИНН</a>
+
+                    <div class="example-item">Пример: <span>А123АА</span></div>
+                  </div>
+
+                  <div class="form-group form-group-name">
+                    <div class="input-title">Свидетельство о регистрации ТС</div>
+                    <label>
+                      <span class="input-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#file"></use></svg></span>
+                      <input type="text" placeholder="00 АА 123456" name="document_number">
+                    </label>
+                    <div class="tooltip-wrapper">
+                      <div class="btn-tooltip">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#question-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="tooltip-box">
+                        <img src="img/document.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="example-item">Пример: <span>00 АА 123456</span>
+                      <p class="color-red">*Для проверки штрафов с камер фото- и видеофиксации нарушений.</p>
                     </div>
                   </div>
 
@@ -411,10 +459,10 @@
                       xlink:href="img/sprite.svg#mail"></use></svg></span>
                       <input type="text" placeholder="ivanov@mail.ru" name="mail">
                     </label>
-                    <div class="example-item">Для бесплатного уведомления о новых долгах</div>
+                    <div class="example-item">Для бесплатного уведомления о новых штрафах ГИБДД</div>
                   </div>
 
-                  <button type="submit" class="btn btn-accent">Узнать ИНН</button>
+                  <button type="submit" class="btn btn-accent">Проверить штрафы</button>
 
                   <label class="checkbox">
                     <input type="checkbox" checked="">
@@ -424,28 +472,94 @@
                   </label>
                 </form>
 
+              </div>
+              <div class="search-base-wrapper__bottom attention-info">
                 <div class="search-base-info">
-                  <div class="search-base-info__icon"><img src="img/question-icon.svg" alt=""></div>
+                  <div class="search-base-info__icon"><img src="img/attention-icon.svg" alt=""></div>
                   <div class="search-base-info__text">
-                    <p>По ИНН осуществляется поиск налогов с истёкшим сроком оплаты, по УИН доступна оплата любых
-                      начислений.</p>
-                    <p>Для оплаты налогов по квитанции воспользуйтесь <a href="#"
-                                                                         class="d-inline text-decoration color-accent">оплатой
-                      по УИН</a>.</p>
+                    <span>Поиск и проверка долгов граждан РФ осуществляется в открытом и свободном доступе через официальную базу Федеральной Службы Судебных Приставов России ФССП в режиме онлайн. Сервис предоставляет сведения для ознакомления и носит исключительно информационный характер. Официальный сайт ФССП - fssp.gov.ru</span>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="tab2" role="tabpanel"
+               aria-labelledby="nav-tab2">
+
+            <div class="search-base-wrapper">
+              <div class="search-base-wrapper__top">
+                <h1>Проверка и оплата штрафов ГИБДД</h1>
+                <div class="text-title">
+                  <p>Найденные штрафы можно моментально оплатить, большинство в первые 20 дней — со скидкой 50%. </p>
+                </div>
+
+                <form method="post" class="form-search-inn form-my form-my-start">
+                  <div class="form-group form-group-name">
+                    <div class="input-title">Водительское удостоверение</div>
+                    <label>
+                      <span class="input-icon stroke-none"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#car"></use></svg></span>
+                      <input type="text" placeholder="12 АА 123456" name="document_number">
+                    </label>
+                    <div class="tooltip-wrapper">
+                      <div class="btn-tooltip">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#question-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="tooltip-box">
+                        <img src="img/document.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="example-item">Пример: <span>А123АА</span>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-title">Ваша почта</div>
+                    <label>
+                  <span class="input-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#mail"></use></svg></span>
+                      <input type="text" placeholder="ivanov@mail.ru" name="mail">
+                    </label>
+                    <div class="example-item">Для бесплатного уведомления о новых штрафах ГИБДД</div>
+                  </div>
+
+                  <button type="submit" class="btn btn-accent">Проверить штрафы</button>
+
+                  <label class="checkbox">
+                    <input type="checkbox" checked="">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
+                                                                            class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
+                  </label>
+                </form>
 
               </div>
 
-              <div class="tab-pane fade" id="tab2" role="tabpanel"
-                   aria-labelledby="nav-tab2">
-                <h1>Проверка долгов в ФНС по УИН</h1>
+              <div class="search-base-wrapper__bottom attention-info">
+                <div class="search-base-info">
+                  <div class="search-base-info__icon"><img src="img/attention-icon.svg" alt=""></div>
+                  <div class="search-base-info__text">
+                    <span>Поиск и проверка долгов граждан РФ осуществляется в открытом и свободном доступе через официальную базу Федеральной Службы Судебных Приставов России ФССП в режиме онлайн. Сервис предоставляет сведения для ознакомления и носит исключительно информационный характер. Официальный сайт ФССП - fssp.gov.ru</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="tab3" role="tabpanel"
+               aria-labelledby="nav-tab2">
+
+            <div class="search-base-wrapper">
+              <div class="search-base-wrapper__top">
+                <h1>Проверка и оплата штрафов ГИБДД</h1>
                 <div class="text-title">
-                  <p>Сведения о задолженностях на сайте ФНС обновляются в течение 14 дней с момента проведения платежа,
-                    поэтому оплаченные задолженности какое-то время могут выводиться в общем списке на сайте ФНС.</p>
+                  <p>Найденные штрафы можно моментально оплатить, большинство в первые 20 дней — со скидкой 50%.</p>
                 </div>
 
-                <form method="post" class="form-search-inn form-my checkout-fns-form">
+                <form method="post" class="form-search-inn form-my form-my-start checkout-fns-form">
                   <div class="form-group form-group-name">
                     <div class="input-title">УИН</div>
                     <label>
@@ -464,23 +578,11 @@
                           reprehenderit sed sunt vel?</p>
                       </div>
                     </div>
-                    <div class="example-item">Помощь: <a href="#" class="d-inline text-decoration">Как узнать свой
-                      ИНН</a>
-                    </div>
+                    <div class="example-item">Пример: <span>А123АА</span></div>
                   </div>
 
 
-                  <div class="form-group">
-                    <div class="input-title">Ваша почта</div>
-                    <label>
-                  <span class="input-icon"><svg class="svg-icon"><use
-                      xlink:href="img/sprite.svg#mail"></use></svg></span>
-                      <input type="text" placeholder="ivanov@mail.ru" name="mail">
-                    </label>
-                    <div class="example-item">Для бесплатного уведомления о новых долгах</div>
-                  </div>
-
-                  <button type="submit" class="btn btn-accent">Узнать ИНН</button>
+                  <button type="submit" class="btn btn-accent">Проверить штрафы</button>
 
                   <label class="checkbox">
                     <input type="checkbox" checked="">
@@ -490,24 +592,60 @@
                   </label>
                 </form>
 
-                <div class="search-base-info">
-                  <div class="search-base-info__icon"><img src="img/question-icon.svg" alt=""></div>
+                <div class="search-base-info search-base-info-attention">
+                  <div class="search-base-info__icon"><img src="img/attention-icon.svg" alt=""></div>
                   <div class="search-base-info__text">
-                    <p>Для оплаты укажите УИН, все необходимые реквизиты будут подставлены автоматически. Для поиска
-                      налогов с истёкшим сроком оплаты воспользуйтесь поиском по ИНН.</p>
+                    <p>Поиск и проверка долгов граждан РФ осуществляется в открытом и свободном доступе через
+                      официальную базу Федеральной Службы Судебных Приставов России ФССП в режиме онлайн. Сервис
+                      предоставляет сведения для ознакомления и носит исключительно информационный характер.</p>
+                    <p>Официальный сайт ФССП - fssp.gov.ru</p>
                   </div>
                 </div>
-
               </div>
-            </div>
 
-          </div>
+              <div class="search-base-wrapper__bottom attention-info">
+                <div class="search-base-info subscribe-fines">
+                  <div class="subscribe-fines__text">
+                    <h3>Бесплатное уведомление о новых штрафах на E-mail</h3>
+                    <div class="box-text">
+                      <p>Найденные штрафы можно моментально оплатить — со скидкой 50%.</p>
+                    </div>
+                  </div>
 
-          <div class="search-base-wrapper__bottom attention-info">
-            <div class="search-base-info">
-              <div class="search-base-info__icon"><img src="img/attention-icon.svg" alt=""></div>
-              <div class="search-base-info__text">
-                <span>Поиск и проверка долгов граждан РФ осуществляется в открытом и свободном доступе через официальную базу Федеральной Службы Судебных Приставов России ФССП в режиме онлайн. Сервис предоставляет сведения для ознакомления и носит исключительно информационный характер. Официальный сайт ФССП - fssp.gov.ru</span>
+                  <form method="post" class="form-search-inn form-my form-my-start">
+                    <div class="form-group form-group-name">
+                      <div class="input-title">Свидетельство о регистрации ТС</div>
+                      <label>
+                      <span class="input-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#file"></use></svg></span>
+                        <input type="text" placeholder="00 АА 123456" name="document_number">
+                      </label>
+                      <div class="tooltip-wrapper">
+                        <div class="btn-tooltip">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#question-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="tooltip-box">
+                          <img src="img/document.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="example-item">Пример: <span>А123АА</span>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="input-title">Ваша почта</div>
+                      <label>
+                  <span class="input-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#mail"></use></svg></span>
+                        <input type="text" placeholder="ivanov@mail.ru" name="mail">
+                      </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-accent">Подписаться</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -555,7 +693,6 @@
     </div>
   </div>
 </section>
-
 
 <section class="statistics statistics-days">
   <div class="container">
@@ -660,7 +797,6 @@
   </div>
 </section>
 
-
 <section class="warranty-payment">
   <div class="container">
     <div class="row">
@@ -683,7 +819,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-lg-5">
-                      <ul class="my-ul">
+                      <ul class="my-ul list-requisites-my">
                         <li>Реквизиты НКО «Перспектива»</li>
                         <li>ОГРН 1155500000017
                         <li>ИНН 5503135638</li>
@@ -709,7 +845,7 @@
   </div>
 </section>
 
-<section class="official- bg-light-blue p-96">
+<section class="official-sources bg-light-blue p-96">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -719,7 +855,213 @@
 
     <div class="row">
       <div class="col-12">
+        <div class="official-sources-wrapper">
+          <div class="official-sources-box">
+            <div class="official-sources-box__icon"><img src="img/sources1.png" alt=""></div>
+            <p>МУГАДН</p>
+          </div>
+          <div class="official-sources-box">
+            <div class="official-sources-box__icon"><img src="img/sources2.png" alt=""></div>
+            <p>МАДИ, АМПП</p>
+          </div>
+          <div class="official-sources-box">
+            <div class="official-sources-box__icon"><img src="img/sources3.png" alt=""></div>
+            <p>Банк данных <br>
+              ФССП</p>
+          </div>
+          <div class="official-sources-box">
+            <div class="official-sources-box__icon"><img src="img/sources4.png" alt=""></div>
+            <p>Федеральное
+              Казначейство
+              России</p>
+          </div>
+          <div class="official-sources-box">
+            <div class="official-sources-box__icon"><img src="img/sources5.png" alt=""></div>
+            <p>База данных <br>
+              ГИБДД </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="question p-96">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2 text-center mb-32">
+        <h2>Ответы на часто задаваемые вопросы</h2>
+        <div class="text-title">Все что вы хотите знать о нашем сервисе по стравнительно честному отъему денег у
+          населения
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h3 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
+              </h3>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+
+                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
+                </p>
+
+                <ol>
+                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
+                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
+                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
+                  </li>
+                  <li>Наличие претензий неимущественного характера.
+                  </li>
+                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
+                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
+                    обязательств.
+
+                  </li>
+                </ol>
+
+                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
+                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h3 class="collapsed" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
+              </h3>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
+                </p>
+
+                <ol>
+                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
+                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
+                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
+                  </li>
+                  <li>Наличие претензий неимущественного характера.
+                  </li>
+                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
+                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
+                    обязательств.
+
+                  </li>
+                </ol>
+
+                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
+                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h3 class="collapsed" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Кем выполняется оценка имущества после ареста?
+              </h3>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
+                </p>
+
+                <ol>
+                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
+                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
+                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
+                  </li>
+                  <li>Наличие претензий неимущественного характера.
+                  </li>
+                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
+                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
+                    обязательств.
+
+                  </li>
+                </ol>
+
+                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
+                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h3 class="collapsed" data-toggle="collapse"
+                  data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
+              </h3>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
+                </p>
+
+                <ol>
+                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
+                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
+                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
+                  </li>
+                  <li>Наличие претензий неимущественного характера.
+                  </li>
+                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
+                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
+                    обязательств.
+
+                  </li>
+                </ol>
+
+                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
+                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h3 class="collapsed" data-toggle="collapse"
+                  data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Ограничение гражданам РФ пересечения границы на выезд со стороны судебных приставов-исполнителей
+              </h3>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Ограничение может быть наложено на граждан и индивидуальных предпринимателей в следующих случаях :
+                </p>
+
+                <ol>
+                  <li>Выплата алиментов, возмещение разнообразных форм вреда: потеря кормильца, имущественный или
+                    моральный ущерб, потеря здоровья и так далее. При сумме, превышающей 10 тысяч рублей, по решению
+                    приставов-исполнителей выезд за пределы Российской Федерации временно ограничивается.
+                  </li>
+                  <li>Наличие претензий неимущественного характера.
+                  </li>
+                  <li>Если должник не оплатил более 30 тысяч рублей, то перспектива стать невыездным велика, как и после
+                    истечения двух месяцев после окончания отведенного ранее срока для исполнения наложенных судом
+                    обязательств.
+
+                  </li>
+                </ol>
+
+                <p>Когда исполнительные документы не являются следствием судебных решений, актов, этом случае
+                  ограничение на выезд из Российской Федерации может быть инициировано приставом-исполнителем.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -876,7 +1218,16 @@
 
     <div class="row">
       <div class="col-12">
-
+        <nav class="nav-pagination">
+          <ul class="pagination">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
@@ -1031,9 +1382,11 @@
 
 
 <script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script src="js/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/common.js"></script>
