@@ -125,7 +125,9 @@
     .subscribe-fines .form-group:first-child {
       max-width: none; }
   .subscribe-fines form .btn {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .modal-payment .form-group {
+    margin: 0 0 16px; } }
 
 @media only screen and (max-width: 992px) {
   .form-search-header {
@@ -207,7 +209,14 @@
             justify-content: center; }
   .nav-tabs .nav-link {
     font-size: 16px;
-    padding: 20px 18px; } }
+    padding: 20px 18px; }
+  .list-requisites li > p {
+    width: 300px; }
+  .list-requisites li .text {
+    width: calc(100% - 300px);
+    padding: 0 0 0 10px; }
+  .gallery-item {
+    height: 170px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px) {
@@ -273,12 +282,13 @@
     width: 100%; }
   .base-result-item .btn-group {
     margin: 20px auto 0; }
-  .list-requisites li p {
+  .list-requisites li > p {
     width: 100%;
     margin: 0 0 5px; }
-  .list-requisites li span {
+  .list-requisites li .text {
     padding: 0;
-    width: 100%; }
+    width: 100%;
+    max-width: none; }
   .accordion-table-v2 .card-body {
     padding: 24px 16px; }
   .btn-group-payment {
@@ -343,7 +353,16 @@
   .form-my-start button {
     margin: 0; }
   .subscribe-fines .form-group {
-    width: 100%; } }
+    width: 100%; }
+  .accordion-table-v3 .card .card-header__name {
+    max-width: none;
+    margin: 0 0 10px; }
+  .accordion-table-v3 .sale-value {
+    text-align: left; }
+  .modal-payment form {
+    padding: 0; }
+  .modal-payment .form-group {
+    margin: 0 0 16px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -488,7 +507,17 @@
   .official-sources-box, .why-me-box {
     max-width: 200px; }
   .list-requisites-my {
-    margin: 20px 0 0; } }
+    margin: 20px 0 0; }
+  .list-total-sum {
+    font-size: 16px; }
+  .modal-payment form button {
+    margin: 20px 0 0; }
+  .btn-home {
+    margin: 30px auto 0; }
+  .status-section-wrapper {
+    padding: 30px 20px; }
+    .status-section-wrapper .box-text {
+      font-size: 16px; } }
 
 @media only screen and (max-width: 480px) {
   h1 {
@@ -520,11 +549,17 @@
   .why-me-box {
     max-width: 140px;
     font-size: 16px;
-    padding: 18px 10px 16px; } }
+    padding: 18px 10px 16px; }
+  .map-address {
+    height: 250px; }
+  .accordion-table .card .card-header span {
+    margin: 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
   .table td {
     width: 100%; }
   .table-result .td-department, .table-result .td-executive-doc, .table-result .td-office, .table-result .td-sum, .table-result .td-bailiff {
-    width: 100%; } }
+    width: 100%; }
+  .gallery-item {
+    height: 150px; } }

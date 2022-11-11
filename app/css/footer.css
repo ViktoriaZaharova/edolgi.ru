@@ -267,4 +267,57 @@ footer {
   color: #4B5563;
   font-size: 14px; }
 
+.modal-payment .modal-header {
+  margin: 0 0 16px; }
+
+.modal-payment .modal-title {
+  text-align: left;
+  margin: 0;
+  width: 100%; }
+
+.modal-payment form {
+  padding: 0 24px;
+  max-width: none; }
+  .modal-payment form input {
+    padding: 0 10px 0 42px; }
+    .modal-payment form input::-webkit-input-placeholder {
+      color: #9CA3AF; }
+    .modal-payment form input::-moz-placeholder {
+      color: #9CA3AF; }
+    .modal-payment form input::-ms-input-placeholder {
+      color: #9CA3AF; }
+    .modal-payment form input::placeholder {
+      color: #9CA3AF; }
+  .modal-payment form button {
+    width: 100%;
+    max-width: none;
+    margin: 40px 0 0; }
+
+.modal-payment .form-group {
+  margin: 0 0 24px;
+  max-width: none; }
+
+.modal-payment ul {
+  width: 100%; }
+
+.list-total-sum {
+  font-size: 20px;
+  font-weight: 600; }
+  .list-total-sum li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 16px; }
+    .list-total-sum li span {
+      text-align: right;
+      margin: 0 0 0 auto; }
+
+.sale-sum {
+  color: #374151; }
+
 /*==========  section modal end  ==========*/

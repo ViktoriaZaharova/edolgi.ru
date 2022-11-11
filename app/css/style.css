@@ -239,11 +239,29 @@ h2 {
 .color-red {
   color: #DC2626; }
 
+.color-orange {
+  color: #EA580C; }
+
+.color-light-green {
+  color: #30B700; }
+
+.color-red-black {
+  color: #B71600; }
+
+.bg-light-green {
+  background: #ECFDF5; }
+
+.bg-light-red {
+  background: #FDEDEC; }
+
 .text-decoration {
   text-decoration: underline; }
 
 .bg-light-blue {
   background: #F7FBFF; }
+
+.font-600 {
+  font-weight: 600; }
 
 .table {
   width: 100%;

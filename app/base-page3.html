@@ -21,7 +21,6 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -347,20 +346,34 @@
   </div>
 </div>
 
-<section class="base-section base-page base-page-home">
+<section class="base-section base-page base-page-home base-page-home-result">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
         <div class="result-search-text">
-          <p>Результаты поиска задолженностей по физическому лицу</p>
-          <h2>ИНН: <span>18210601030102100110</span></h2>
+          <p>Результаты поиска штрафов ГИБДД по физическому лицу:</p>
+          <h2>СТС: 9909 764854 <br>
+            Гос. номер: А532АВ 136</h2>
         </div>
       </div>
 
       <div class="col-12">
         <div class="base-result-item">
           <div class="base-result-item__text">
-            <h3>Неоплаченных задолженностей: 10, на сумму: 41 382.08 руб.</h3>
+            <h3>Вы выбрали к оплате:</h3>
+            <h3><strong>штрафов ГИБДД:</strong> 10, на сумму: 41 382.08 руб. </h3>
+            <span>* - при оплате задолженности на сайте взымается комиссия 5%</span>
+          </div>
+
+          <div class="btn-group">
+            <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modal3">Оплатить<strong>42 382.08
+              руб.</strong> </a>
+          </div>
+        </div>
+
+        <div class="base-result-item">
+          <div class="base-result-item__text">
+            <h3><strong>Неоплаченных штрафов ГИБДД:</strong> 10, на сумму: 41 382.08 руб. </h3>
             <div class="box-text">
               <p>Оплатите все долги разом одним платежом, чек поступит на ваш E-mail</p>
             </div>
@@ -368,15 +381,14 @@
           </div>
 
           <div class="btn-group">
-            <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modal1">Оплатить<strong>42 382.08
+            <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modal3">Оплатить<strong>42 382.08
               руб.</strong> </a>
-            <a href="#" class="btn btn-border" data-toggle="modal" data-target="#modal2">Списать долги</a>
           </div>
         </div>
 
         <div class="base-result-item">
           <div class="base-result-item__text">
-            <h3>Неоплаченных задолженностей: 10, на сумму: 410 382.08 руб. </h3>
+            <h3><strong>Неоплаченных штрафов ГИБДД:</strong> 10, на сумму: 410 382.08 руб.</h3>
             <div class="box-text color-red">
               <p>Максимальная сумма за 1 транзакцию не может превышать 300 000 руб</p>
               <p>Вы можете оплатить задолженности по отдельности или частично</p>
@@ -386,7 +398,21 @@
 
           <div class="btn-group">
             <a href="#accordionExample" class="btn btn-accent go_to">Перейти к таблице</a>
-            <a href="#" class="btn btn-border" data-toggle="modal" data-target="#modal2">Списать долги</a>
+          </div>
+        </div>
+
+        <div class="base-result-item">
+          <div class="base-result-item__text">
+            <h3><strong>Неоплаченных штрафов ГИБДД:</strong> 10, на сумму: 410 382.08 руб.</h3>
+            <h3><strong>Можно оплатить со скидкой: 5, на сумму: 410 382.08 руб. (экономия 2000 руб)</strong></h3>
+            <div class="box-text color-red">
+              <p>До 25.05.2022 вы можете погасить штрафы на сумму 2000 рублей со скидкой 50%</p>
+            </div>
+            <span>* - при оплате задолженности на сайте взымается комиссия 5%</span>
+          </div>
+
+          <div class="btn-group">
+            <a href="#accordionExample" class="btn btn-accent go_to">Перейти к таблице</a>
           </div>
         </div>
       </div>
@@ -416,16 +442,46 @@
           </label>
         </form>
 
-        <div class="accordion accordion-table accordion-table-v2" id="accordionExample">
+        <div class="accordion accordion-table accordion-table-v3 accordion-table-v2" id="accordionExample">
           <div class="card">
             <div class="card-header" id="headingOne">
               <div data-toggle="collapse" class="card-header__title" data-target="#collapseOne" aria-expanded="true"
                    aria-controls="collapseOne">
 
-                <div class="card-header__name">Индекс 18200101200013659812, Налог на имущество (пени)
-                  <span class="date">25.05.2020</span>
+                <div class="card-header__name">
+                  <div class="accordion-table-info">
+                    <div class="accordion-table-info__box">
+                      <div class="accordion-table-info__box-icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#calendar"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion-table-info__box-text">03.10.2022</div>
+                    </div>
+                    <div class="accordion-table-info__box">
+                      <div class="accordion-table-info__box-icon stroke-none">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#car"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion-table-info__box-text">К844ХМ 174
+                      </div>
+                    </div>
+                    <div class="accordion-table-info__box">
+                      <div class="accordion-table-info__box-icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#file"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion-table-info__box-text color-grey">18210601030102100110</div>
+                    </div>
+                  </div>
+                  <h4>Задолженность по делу 46082/22/74063-ИП
+                    в отношении ЩЕРБИНА С.Б.
+                  </h4>
                 </div>
 
+                <span class="color-red">Взыскание!</span>
                 <span>Сумма: 100 000 руб.</span>
               </div>
             </div>
@@ -434,65 +490,154 @@
               <div class="card-body">
                 <ul class="list-requisites my-ul">
                   <li>
-                    <p>Назначение платежа:</p>
+                    <p>Кому:</p>
                     <div class="text">
-                      <p>Налог на имущество физических лиц, взимаемый по ставкам, применяемым к объектам
-                        налогообложения, расположенным в границах сельских поселений (пени по соответствующему
-                        платежу)</p>
+                      <p>Кузякин Сидор Пафнутьевич</p>
                     </div>
                   </li>
                   <li>
-                    <p>Документ</p>
-                    <div class="text"><p>ИНН 0*******4345</p>
+                    <p>Место нарушения:</p>
+                    <div class="text"><p>А/Д Г. НИЖНЕВАРТОВСК - Г. РАДУЖНЫЙ, 8+713 КМ, ХАНТЫ-МАНСИЙСКИЙ АВТОНОМНЫЙ ОКРУГ
+                      - ЮГРА АО</p>
+
+                      <div class="map-address"></div>
+
+                      <a href="#" class="toggle-maps">Скрыть карту</a>
                     </div>
                   </li>
                   <li>
-                    <p>КБК</p>
+                    <p>Фото нарушения:</p>
+                    <div class="text">
+                      <div class="photo-errors">
+                        <p>Найдено 3 фото</p>
+                        <a href="#" class="toggle-gallery trigger">Скрыть фото</a>
+                        <div class="gallery-collapse">
+                          <div class="row">
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery1.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery1.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery2.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery2.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="#" class="gallery-item load-gallery" data-fancybox="gallery"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Фото нарушения:
+                    </p>
+                    <div class="text">
+                      <div class="photo-errors">
+                        <p>Найдено 3 фото</p>
+                        <a href="#" class="toggle-gallery">Показать фото</a>
+                        <div class="gallery-collapse no-photo">
+                          <div class="row">
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery1.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery1.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery2.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery2.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="#" class="gallery-item load-gallery" data-fancybox="gallery"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Номер постановления УИН:</p>
                     <div class="text"><p>18210601030102100110</p></div>
                   </li>
                   <li>
-                    <p>Основание платежа
-                    </p>
-                    <div class="text"><p>ИНН 0*******4345</p></div>
+                    <p>Сумма:</p>
+                    <div class="text"><p>2000 рублей</p></div>
                   </li>
                   <li>
-                    <p>Налоговый период</p>
-                    <div class="text"><p>ИНН 0*******4345</p></div>
+                    <p>Дата нарушения:</p>
+                    <div class="text"><p>03.10.2022</p>
+                    </div>
                   </li>
                   <li>
-                    <p>Получатель платежа</p>
-                    <div class="text"><p>УФК по Республике Адыгея (Адыгея) (УФНС России по Республике Адыгея)</p></div>
-                  </li>
-                  <li class="list-requisites-item">
-                    <p>ИНН
+                    <p>Срок оплаты:</p>
+                    <div class="text"><p>до 03.11.2022 <strong class="color-red font-600">СРОК ОПЛАТЫ ИСТЕКАЕТ</strong>
                     </p>
-                    <div class="text"><p>0105043805</p>
+                      <p>Через 4 дня неоплаченный штраф могут передать судебным приставам для взыскания! </p>
                     </div>
                   </li>
-                  <li class="list-requisites-item">
-                    <p>КПП</p>
-                    <div class="text"><p>0105043805</p>
+                  <li>
+                    <p>Срок оплаты:</p>
+                    <div class="text"><p>до 03.11.2022 <strong class="color-green">ДЕЙСТВУЕТ СКИДКА 50%</strong></p>
+                      <p>Еще 5 дней вы можете оплатить со скидкой, правда за нашу долю малую )</p>
                     </div>
                   </li>
-                  <li class="list-requisites-item">
-                    <p>ОКТМО</p>
-                    <div class="text"><p>79618435</p></div>
-                  </li>
-                  <li class="list-requisites-item">
-                    <p>Банк</p>
-                    <div class="text"><p>ОТДЕЛЕНИЕ-НБ РЕСПУБЛИКА АДЫГЕЯ БАНКА РОССИИ//УФК по Республике Адыгея г.
-                      Майкоп</p>
+                  <li>
+                    <p>Срок оплаты:</p>
+                    <div class="text"><p class="color-red">Ваш штраф ГИБДД передан судебному приставу исполнителю.
+                      Рекомендуем произвести оплату сейчас до начала принудительного взыскания.</p>
                     </div>
+                  </li>
+
+                  <li>
+                    <p>Постановление вынесено:</p>
+                    <div class="text"><p>СНЕЖИНСКИЙ ГОСП УФССП ЧЕЛЯБИНСКОЙ ОБЛАСТИ</p></div>
                   </li>
                 </ul>
+
+                <div class="requisites-wrapper">
+                  <ul class="list-requisites my-ul">
+                    <li>
+                      <p>Постановление вынесено:</p>
+                      <div class="text">
+                        <p>СНЕЖИНСКИЙ ГОСП УФССП ЧЕЛЯБИНСКОЙ ОБЛАСТИ</p>
+                      </div>
+                    </li>
+                    <li>
+                      <p>Исполнительное производство:</p>
+                      <div class="text">
+                        <p>Федеральной Службы Судебных Приставов
+                          46082/22/74063-ИП от 03.10.2022 </p>
+                      </div>
+                    </li>
+                    <li>
+                      <p>УИН </p>
+                      <div class="text">
+                        <p>Кузякин Сидор Пафнутьевич</p>
+                      </div>
+                    </li>
+                    <li>
+                      <p>Отдел судебных приставов:</p>
+                      <div class="text">
+                        <p>РУДОЙ Е. В., тел: +7(35146)3-07-80//Снежинское ГОСП ГУФССП России по Челябинской области (код
+                          отдела: 74063)
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
 
                 <a href="#" class="toggle-requisites">Скрыть реквизиты</a>
 
                 <div class="btn-group btn-group-payment">
-                  <a href="#" class="btn btn-accent">К оплате</a>
+                  <a href="#" class="btn btn-accent btn-pay">
+                    <img src="img/coins.svg" alt="">
+                    Оплатить 2000 руб</a>
                   <a href="#" class="btn btn-border btn-add-payment">
-                    <img src="img/plus2.svg" alt="">
-                    Добавить к оплате</a>
+                    <img src="img/minus2.svg" alt="">
+                    Убрать из оплаты</a>
                 </div>
               </div>
             </div>
@@ -501,78 +646,396 @@
             <div class="card-header" id="headingTwo">
               <div class="collapsed card-header__title" data-toggle="collapse"
                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <div class="card-header__name">Иные взыскания имущественного характера в пользу физических и
-                  юридических лиц
-
-                  <span class="date">25.05.2020</span>
+                <div class="card-header__name">
+                  <div class="accordion-table-info">
+                    <div class="accordion-table-info__box">
+                      <div class="accordion-table-info__box-icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#calendar"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion-table-info__box-text">03.10.2022</div>
+                    </div>
+                    <div class="accordion-table-info__box">
+                      <div class="accordion-table-info__box-icon stroke-none">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#car"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion-table-info__box-text">К844ХМ 174
+                      </div>
+                    </div>
+                    <div class="accordion-table-info__box">
+                      <div class="accordion-table-info__box-icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#file"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion-table-info__box-text color-grey">18210601030102100110</div>
+                    </div>
+                  </div>
+                  <h4>Задолженность по делу 46082/22/74063-ИП
+                    в отношении ЩЕРБИНА С.Б.
+                  </h4>
                 </div>
 
-                <span>Найдено: 10</span>
+                <span class="color-green sale-value">Скидка до 25.02.2022</span>
+                <span>Сумма: 100 000 руб.
+                  <small>Без скидки 250 600 руб.</small>
+                </span>
               </div>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
               <div class="card-body">
                 <ul class="list-requisites my-ul">
                   <li>
-                    <p>Назначение платежа:</p>
+                    <p>Кому:</p>
                     <div class="text">
-                      <p>Налог на имущество физических лиц, взимаемый по ставкам, применяемым к объектам
-                        налогообложения, расположенным в границах сельских поселений (пени по соответствующему
-                        платежу)</p>
+                      <p>Кузякин Сидор Пафнутьевич</p>
                     </div>
                   </li>
                   <li>
-                    <p>Документ</p>
-                    <div class="text"><p>ИНН 0*******4345</p>
+                    <p>Место нарушения:</p>
+                    <div class="text"><p>А/Д Г. НИЖНЕВАРТОВСК - Г. РАДУЖНЫЙ, 8+713 КМ, ХАНТЫ-МАНСИЙСКИЙ АВТОНОМНЫЙ ОКРУГ
+                      - ЮГРА АО</p>
+
+                      <div class="map-address"></div>
+
+                      <a href="#" class="toggle-maps">Скрыть карту</a>
                     </div>
                   </li>
                   <li>
-                    <p>КБК</p>
+                    <p>Фото нарушения:</p>
+                    <div class="text">
+                      <div class="photo-errors">
+                        <p>Найдено 3 фото</p>
+                        <a href="#" class="toggle-gallery trigger">Скрыть фото</a>
+                        <div class="gallery-collapse">
+                          <div class="row">
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery1.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery1.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery2.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery2.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="#" class="gallery-item load-gallery" data-fancybox="gallery"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Фото нарушения:
+                    </p>
+                    <div class="text">
+                      <div class="photo-errors">
+                        <p>Найдено 3 фото</p>
+                        <a href="#" class="toggle-gallery">Показать фото</a>
+                        <div class="gallery-collapse no-photo">
+                          <div class="row">
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery1.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery1.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery2.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery2.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="#" class="gallery-item load-gallery" data-fancybox="gallery"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Номер постановления УИН:</p>
                     <div class="text"><p>18210601030102100110</p></div>
                   </li>
                   <li>
-                    <p>Основание платежа
-                    </p>
-                    <div class="text"><p>ИНН 0*******4345</p></div>
+                    <p>Сумма:</p>
+                    <div class="text"><p>2000 рублей</p></div>
                   </li>
                   <li>
-                    <p>Налоговый период</p>
-                    <div class="text"><p>ИНН 0*******4345</p></div>
+                    <p>Дата нарушения:</p>
+                    <div class="text"><p>03.10.2022</p>
+                    </div>
                   </li>
                   <li>
-                    <p>Получатель платежа</p>
-                    <div class="text"><p>УФК по Республике Адыгея (Адыгея) (УФНС России по Республике Адыгея)</p></div>
-                  </li>
-                  <li class="list-requisites-item">
-                    <p>ИНН
+                    <p>Срок оплаты:</p>
+                    <div class="text"><p>до 03.11.2022 <strong class="color-red font-600">СРОК ОПЛАТЫ ИСТЕКАЕТ</strong>
                     </p>
-                    <div class="text"><p>0105043805</p>
+                      <p>Через 4 дня неоплаченный штраф могут передать судебным приставам для взыскания! </p>
                     </div>
                   </li>
-                  <li class="list-requisites-item">
-                    <p>КПП</p>
-                    <div class="text"><p>0105043805</p>
+                  <li>
+                    <p>Срок оплаты:</p>
+                    <div class="text"><p>до 03.11.2022 <strong class="color-green">ДЕЙСТВУЕТ СКИДКА 50%</strong></p>
+                      <p>Еще 5 дней вы можете оплатить со скидкой, правда за нашу долю малую )</p>
                     </div>
                   </li>
-                  <li class="list-requisites-item">
-                    <p>ОКТМО</p>
-                    <div class="text"><p>79618435</p></div>
-                  </li>
-                  <li class="list-requisites-item">
-                    <p>Банк</p>
-                    <div class="text"><p>ОТДЕЛЕНИЕ-НБ РЕСПУБЛИКА АДЫГЕЯ БАНКА РОССИИ//УФК по Республике Адыгея г.
-                      Майкоп</p>
+                  <li>
+                    <p>Срок оплаты:</p>
+                    <div class="text"><p class="color-red">Ваш штраф ГИБДД передан судебному приставу исполнителю.
+                      Рекомендуем произвести оплату сейчас до начала принудительного взыскания.</p>
                     </div>
+                  </li>
+
+                  <li>
+                    <p>Постановление вынесено:</p>
+                    <div class="text"><p>СНЕЖИНСКИЙ ГОСП УФССП ЧЕЛЯБИНСКОЙ ОБЛАСТИ</p></div>
                   </li>
                 </ul>
+
+                <div class="requisites-wrapper">
+                  <ul class="list-requisites my-ul">
+                    <li>
+                      <p>Постановление вынесено:</p>
+                      <div class="text">
+                        <p>СНЕЖИНСКИЙ ГОСП УФССП ЧЕЛЯБИНСКОЙ ОБЛАСТИ</p>
+                      </div>
+                    </li>
+                    <li>
+                      <p>Исполнительное производство:</p>
+                      <div class="text">
+                        <p>Федеральной Службы Судебных Приставов
+                          46082/22/74063-ИП от 03.10.2022 </p>
+                      </div>
+                    </li>
+                    <li>
+                      <p>УИН </p>
+                      <div class="text">
+                        <p>Кузякин Сидор Пафнутьевич</p>
+                      </div>
+                    </li>
+                    <li>
+                      <p>Отдел судебных приставов:</p>
+                      <div class="text">
+                        <p>РУДОЙ Е. В., тел: +7(35146)3-07-80//Снежинское ГОСП ГУФССП России по Челябинской области (код
+                          отдела: 74063)
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
 
                 <a href="#" class="toggle-requisites">Скрыть реквизиты</a>
 
                 <div class="btn-group btn-group-payment">
-                  <a href="#" class="btn btn-accent">К оплате</a>
+                  <a href="#" class="btn btn-accent btn-pay">
+                    <img src="img/coins.svg" alt="">
+                    Оплатить 2000 руб</a>
                   <a href="#" class="btn btn-border btn-add-payment">
-                    <img src="img/plus2.svg" alt="">
-                    Добавить к оплате</a>
+                    <img src="img/minus2.svg" alt="">
+                    Убрать из оплаты</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <div class="collapsed card-header__title" data-toggle="collapse"
+                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="card-header__name">
+                  <div class="accordion-table-info">
+                    <div class="accordion-table-info__box">
+                      <div class="accordion-table-info__box-icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#calendar"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion-table-info__box-text">03.10.2022</div>
+                    </div>
+                    <div class="accordion-table-info__box">
+                      <div class="accordion-table-info__box-icon stroke-none">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#car"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion-table-info__box-text">К844ХМ 174
+                      </div>
+                    </div>
+                    <div class="accordion-table-info__box">
+                      <div class="accordion-table-info__box-icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#file"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion-table-info__box-text color-grey">18210601030102100110</div>
+                    </div>
+                  </div>
+                  <h4>Задолженность по делу 46082/22/74063-ИП
+                    в отношении ЩЕРБИНА С.Б.
+                  </h4>
+                </div>
+
+                <span class="color-orange sale-value">Скидка до 25.02.2022
+                <small>Будет передан приставам через 3 дня</small>
+                </span>
+                <span>Сумма: 100 000 руб.</span>
+              </div>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul class="list-requisites my-ul">
+                  <li>
+                    <p>Кому:</p>
+                    <div class="text">
+                      <p>Кузякин Сидор Пафнутьевич</p>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Место нарушения:</p>
+                    <div class="text"><p>А/Д Г. НИЖНЕВАРТОВСК - Г. РАДУЖНЫЙ, 8+713 КМ, ХАНТЫ-МАНСИЙСКИЙ АВТОНОМНЫЙ ОКРУГ
+                      - ЮГРА АО</p>
+
+                      <div class="map-address"></div>
+
+                      <a href="#" class="toggle-maps">Скрыть карту</a>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Фото нарушения:</p>
+                    <div class="text">
+                      <div class="photo-errors">
+                        <p>Найдено 3 фото</p>
+                        <a href="#" class="toggle-gallery trigger">Скрыть фото</a>
+                        <div class="gallery-collapse">
+                          <div class="row">
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery1.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery1.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery2.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery2.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="#" class="gallery-item load-gallery" data-fancybox="gallery"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Фото нарушения:
+                    </p>
+                    <div class="text">
+                      <div class="photo-errors">
+                        <p>Найдено 3 фото</p>
+                        <a href="#" class="toggle-gallery">Показать фото</a>
+                        <div class="gallery-collapse no-photo">
+                          <div class="row">
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery1.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery1.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="img/gallery2.jpg" class="gallery-item" data-fancybox="gallery"><img
+                                  src="img/gallery2.jpg"
+                                  alt=""></a>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                              <a href="#" class="gallery-item load-gallery" data-fancybox="gallery"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Номер постановления УИН:</p>
+                    <div class="text"><p>18210601030102100110</p></div>
+                  </li>
+                  <li>
+                    <p>Сумма:</p>
+                    <div class="text"><p>2000 рублей</p></div>
+                  </li>
+                  <li>
+                    <p>Дата нарушения:</p>
+                    <div class="text"><p>03.10.2022</p>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Срок оплаты:</p>
+                    <div class="text"><p>до 03.11.2022 <strong class="color-red font-600">СРОК ОПЛАТЫ ИСТЕКАЕТ</strong>
+                    </p>
+                      <p>Через 4 дня неоплаченный штраф могут передать судебным приставам для взыскания! </p>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Срок оплаты:</p>
+                    <div class="text"><p>до 03.11.2022 <strong class="color-green">ДЕЙСТВУЕТ СКИДКА 50%</strong></p>
+                      <p>Еще 5 дней вы можете оплатить со скидкой, правда за нашу долю малую )</p>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Срок оплаты:</p>
+                    <div class="text"><p class="color-red">Ваш штраф ГИБДД передан судебному приставу исполнителю.
+                      Рекомендуем произвести оплату сейчас до начала принудительного взыскания.</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <p>Постановление вынесено:</p>
+                    <div class="text"><p>СНЕЖИНСКИЙ ГОСП УФССП ЧЕЛЯБИНСКОЙ ОБЛАСТИ</p></div>
+                  </li>
+                </ul>
+
+                <div class="requisites-wrapper">
+                  <ul class="list-requisites my-ul">
+                    <li>
+                      <p>Постановление вынесено:</p>
+                      <div class="text">
+                        <p>СНЕЖИНСКИЙ ГОСП УФССП ЧЕЛЯБИНСКОЙ ОБЛАСТИ</p>
+                      </div>
+                    </li>
+                    <li>
+                      <p>Исполнительное производство:</p>
+                      <div class="text">
+                        <p>Федеральной Службы Судебных Приставов
+                          46082/22/74063-ИП от 03.10.2022 </p>
+                      </div>
+                    </li>
+                    <li>
+                      <p>УИН </p>
+                      <div class="text">
+                        <p>Кузякин Сидор Пафнутьевич</p>
+                      </div>
+                    </li>
+                    <li>
+                      <p>Отдел судебных приставов:</p>
+                      <div class="text">
+                        <p>РУДОЙ Е. В., тел: +7(35146)3-07-80//Снежинское ГОСП ГУФССП России по Челябинской области (код
+                          отдела: 74063)
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <a href="#" class="toggle-requisites">Скрыть реквизиты</a>
+
+                <div class="btn-group btn-group-payment">
+                  <a href="#" class="btn btn-accent btn-pay">
+                    <img src="img/coins.svg" alt="">
+                    Оплатить 2000 руб</a>
+                  <a href="#" class="btn btn-border btn-add-payment">
+                    <img src="img/minus2.svg" alt="">
+                    Убрать из оплаты</a>
                 </div>
               </div>
             </div>
@@ -608,9 +1071,9 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8 offset-lg-2 text-center mb-32">
-        <h2>Как мы работаем</h2>
-        <div class="text-title">Все что вы хотите знать о нашем сервисе по стравнительно честному отъему денег у
-          населения
+        <h2>Как мы получаем информацию и проводим платежи</h2>
+        <div class="text-title">Мы получаем официальные данные от базы судебных приставов и дополнительно проверяем
+          актуальность информации в базе ГИС ГМП РФ
         </div>
       </div>
     </div>
@@ -641,8 +1104,9 @@
       <div class="col-12 col-sm-6 col-lg-3 mb-20">
         <div class="working-box advantages-box">
           <div class="advantages-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
-          <h3>Гарантированный результат</h3>
-          <p>После всех этапов - вы сможете увидеть только актуальную и официальную информацию!</p>
+          <h3>Безопасная оплата </h3>
+          <p>Расчеты по переводу денежных средств осуществляет ООО НКО «МОБИ.Деньги» (лицензия ЦБ РФ № 3523-К от
+            06.12.2013 г.). После оплаты официальные чеки!</p>
         </div>
       </div>
     </div>
@@ -901,13 +1365,89 @@
   </div>
 </div>
 
+<div class="modal modal-payment fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title color-green">Укажите ФИО и номер телефона</div>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Физические лица могут узнать ИНН по паспорту бесплатно - для этого введите ниже Фамилию Имя и Отчество,
+            дату рождения и серию и номер паспорта. Далее вы узнаете свой ИНН и сможете проверить задолженность по
+            налогам ФНС или судебным приставам ФССП.</p>
+        </div>
+
+        <form method="post" class="form-pay">
+          <div class="form-group">
+            <div class="input-title">ФИО</div>
+            <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#user-icon"></use></svg></span>
+              <input type="text" placeholder="Кузякин Иван Иванович" name="name">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <div class="input-title">Ваша почта</div>
+            <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#mail"></use></svg></span>
+              <input type="text" placeholder="kuzaykin@mail.ru" name="mail">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <div class="input-title">Ваш телефон</div>
+            <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#phone"></use></svg></span>
+              <input type="text" placeholder="+7 (495) 123-45-67" name="phone">
+            </label>
+          </div>
+
+          <ul class="list-total-sum my-ul">
+            <li>
+              <p>Задолженностей</p>
+              <span>3 шт.</span>
+            </li>
+            <li>
+              <p>Сумма к оплате</p>
+              <span>12 546 руб</span>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <div class="sale-sum">С учетом комиссии 5%</div>
+            </li>
+          </ul>
+
+          <button type="submit" class="btn btn-accent">Перейти к оплате</button>
+          <label class="checkbox">
+            <input type="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Я соглашаюсь с условиями <a href="#"
+                                                                    class="d-inline color-accent text-decoration">обработки персональных данных</a></span>
+          </label>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/common.js"></script>
 

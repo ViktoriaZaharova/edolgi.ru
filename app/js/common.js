@@ -93,7 +93,8 @@ $('.toggle-requisites').on('click', function (e) {
 
     var
         $this = $(this),
-        content = $(this).parent().find('.list-requisites .list-requisites-item');
+        content = $(this).parent().find('.list-requisites .list-requisites-item'),
+        content2 = $(this).parent().find('.requisites-wrapper');
 
 
     if (!$this.hasClass('trigger')) {
@@ -101,14 +102,62 @@ $('.toggle-requisites').on('click', function (e) {
         $this.html('Скрыть реквизиты');
 
         content.slideDown();
+        content2.slideDown();
     } else {
         $this.removeClass('trigger');
         $this.html('Показать реквизиты');
 
         content.slideUp();
+        content2.slideUp();
     }
 });
 // show list
+
+// show map
+$('.toggle-maps').on('click', function (e) {
+    e.preventDefault();
+
+    var
+        $this = $(this),
+        content = $(this).parent().find('.map-address');
+
+
+    if (!$this.hasClass('trigger')) {
+        $this.addClass('trigger');
+        $this.html('Скрыть карту');
+
+        content.slideDown();
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Показать карту');
+
+        content.slideUp();
+    }
+});
+// show map
+
+// show gallery
+$('.toggle-gallery').on('click', function (e) {
+    e.preventDefault();
+
+    var
+        $this = $(this),
+        content = $(this).parent().find('.gallery-collapse');
+
+
+    if (!$this.hasClass('trigger')) {
+        $this.addClass('trigger');
+        $this.html('Скрыть фото');
+
+        content.slideDown();
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Показать фото');
+
+        content.slideUp();
+    }
+});
+// show gallery
 
 
 $('.information-slider').slick({

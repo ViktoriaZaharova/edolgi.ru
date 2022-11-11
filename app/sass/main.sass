@@ -354,6 +354,7 @@
     font-size: 20px
     font-weight: 600
     color: #4B5563
+    margin: 0 0 8px
   h3
     margin: 32px auto 0
     color: #059669
@@ -408,6 +409,9 @@
 
 .base-page-home
   padding: 96px 0 0
+  h2
+    margin: 0 auto
+
 
 .base-result-item
   width: 100%
@@ -520,19 +524,20 @@
     margin: 0 0 16px
     &:last-child
       margin: 0
-    p
+    >p
       font-weight: 600
       font-size: 20px
       width: 400px
       color: #1F2937
       margin: 0
-    span
+    .text
       width: calc(100% - 400px)
       padding: 0 0 0 24px
       color: #374151
       font-size: 16px
+      max-width: 677px
 
-.toggle-requisites
+.toggle-requisites, .toggle-maps, .toggle-gallery
   margin: 0 0 16px
   color: #1E3A8A
   font-weight: 500
@@ -1099,11 +1104,155 @@
       radius: 0
       left: 1px solid #D0D5DD
     height: 24px
-
-
-
 /*==========  section official-sources end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section base-page-home-result ==========*/
+.base-page-home-result
+  .base-result-item
+    h3
+      font-size: 20px
+      margin: 0 0 16px
 
-/*==========  section end  ==========*/
+.accordion-table-info
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  &__box
+    color: #101828
+    font-size: 16px
+    margin: 0 24px 8px 0
+    display: flex
+    align-items: center
+    &:last-child
+      margin: 0 0 8px
+    &-icon
+      @include d-flex
+      fill: none
+      width: 24px
+      height: 24px
+      min-width: 24px
+      margin: 0 4px 0 0
+      stroke: #2563EB
+      &.stroke-none
+        stroke: none
+        fill: #2563EB
+    .color-grey
+      color: #374151
+
+.accordion-table-v3
+  .card
+    .card-header
+      &__name
+        max-width: 580px
+        h4
+          font-size: 20px
+          font-weight: 600
+      span
+        small
+          font-size: 14px
+          display: block
+          font-weight: normal
+  .card-body
+    .text
+      p
+        margin: 0 0 8px
+        &:last-child
+          margin: 0
+  .sale-value
+    text-align: right
+
+
+.map-address
+  margin: 24px 0 0
+  width: 100%
+  max-width: 400px
+  height: 300px
+  iframe
+    width: 100%
+    height: 100%
+
+.toggle-maps
+  margin: 28px 0 0
+
+.photo-errors
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.toggle-gallery
+  margin: 0 0 0 auto
+  &.trigger
+    margin: 0 0 0
+    order: 1
+
+.gallery-collapse
+  width: 100%
+  margin: 4px 0 0
+  &.no-photo
+    display: none
+
+.gallery-item
+  position: relative
+  @include d-flex
+  height: 200px
+  width: 100%
+  background: #9CA3AF
+  margin: 0 0 24px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.load-gallery
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    background: url("../img/loader.svg") no-repeat center
+      size: 100%
+    width: 40px
+    height: 40px
+
+.requisites-wrapper
+  width: 100%
+  border: 4px solid #DC2626
+    radius: 16px
+  padding: 24px
+  margin: 0 0 16px
+
+.btn-pay
+  img
+    margin: 0 16px 0 0
+/*==========  section base-page-home-result end  ==========*/
+
+
+
+/*==========  section status-section  ==========*/
+.status-section
+  h2
+    margin: 0 auto
+  .text-title
+    margin: 0 auto 8px
+    font-size: 20px
+    font-weight: 600
+
+.status-section-wrapper
+  padding: 40px 64px
+  border-radius: 8px
+  h3
+    margin: 0 0 16px
+    width: 100%
+    font-size: 20px
+    font-weight: 600
+  .box-text
+    font-size: 18px
+    line-height: 150%
+
+
+.btn-home
+  margin: 64px auto 0
+/*==========  section status-section end  ==========*/
