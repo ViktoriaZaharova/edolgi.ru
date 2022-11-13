@@ -1256,4 +1256,30 @@
 
 .btn-home
   margin: 64px auto 0
+
+.nav-tabs-pagination
+  justify-content: center
+  align-items: center
+  margin: 32px auto 0
+  .nav-item
+    margin: 0 8px 0 0
+    &:last-child
+      margin: 0
+  .nav-link
+    width: 40px
+    height: 40px
+    min-width: 40px
+    border: 1px solid #6B7280
+      radius: 4px
+    color: #6B7280
+    font-size: 14px
+    @include d-flex
+    &:hover
+      background: $hover
+      color: #ffffff
+      border-color: $hover
+    &.active
+      background: #2563EB
+      color: #fff
+      border-color: #2563EB
 /*==========  section status-section end  ==========*/
