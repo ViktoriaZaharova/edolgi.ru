@@ -252,8 +252,6 @@
     margin: 50px 0; }
   .working {
     padding: 60px 0 40px; }
-  .p-96 {
-    padding: 60px 0; }
   .working-box .advantages-box__icon {
     width: 60px;
     height: 60px;
@@ -309,7 +307,7 @@
     margin: 0 0 10px;
     width: 100%; }
   .contacts-page {
-    margin: 0 0 50px; }
+    margin: 10px 0 50px; }
     .contacts-page .text-title {
       margin: 0 auto 30px; }
   .form-search-inn .form-group, .form-search-inn button {
@@ -318,8 +316,6 @@
     margin: 20px 0 0; }
   .form-search-inn button {
     margin: 10px 0 0; }
-  .base-page-home {
-    padding: 40px 0 0; }
   .nav-tabs .nav-link {
     padding: 20px;
     font-size: 18px; }
@@ -365,13 +361,13 @@
     padding: 0; }
   .modal-payment .form-group {
     margin: 0 0 16px; }
-  .accordion-table .card:not(:last-of-type) {
-    border-bottom: 1px solid #2563EB; } }
+  .select2-container {
+    margin: 0 0 10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
   .p-96 {
-    padding: 30px 0; }
+    padding: 10px 0; }
   header .header-contacts {
     display: none; }
   .form-search-header {
@@ -446,6 +442,8 @@
     margin: 10px 0 0; }
   .result-search-text h3 {
     font-size: 20px; }
+  .search-base {
+    padding: 10px 0; }
   .search-base-info {
     margin: 40px 0 0; }
   .search-base-wrapper__top {
@@ -479,7 +477,7 @@
   .base-page h2 {
     margin: 0; }
   .base-page-home {
-    padding: 30px 0 0; }
+    padding: 10px 0 0; }
   .section-loader {
     padding: 30px 0; }
   .information-slider-item__title {

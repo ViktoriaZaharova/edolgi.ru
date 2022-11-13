@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -1129,20 +1129,33 @@
 
     <div class="row">
       <div class="col-12">
-        <ul class="list-filter my-ul">
-          <li><a href="#" class="active">Популярные</a></li>
-          <li><a href="#">Интернет</a></li>
-          <li><a href="#">Платное телевидение</a></li>
-          <li><a href="#">Охрана и домофоны</a></li>
-          <li><a href="#">Комунальные службы</a></li>
-          <li><a href="#">Комунальные службы</a></li>
-          <li><a href="#">Комунальные службы</a></li>
-          <li><a href="#">Интернет</a></li>
-          <li><a href="#">Платное телевидение</a></li>
-          <li><a href="#">Охрана и домофоны</a></li>
-          <li><a href="#">Комунальные службы</a></li>
-          <li><a href="#">Комунальные службы</a></li>
-          <li><a href="#">Комунальные службы</a></li>
+        <ul class="list-filter nav-pills nav list-filter-pagination my-ul" role="tablist">
+          <li class="nav-item" role="presentation"><a href="#tab-pagination1" data-toggle="pill" role="tab"
+                                                      class="active nav-link" aria-selected="true">Популярные</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination2" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Интернет</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination3" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Платное телевидение</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination4" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Охрана и домофоны</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination3" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination4" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination2" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination1" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Интернет</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination4" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Платное телевидение</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination3" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Охрана и домофоны</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination1" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination2" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#tab-pagination4" data-toggle="pill" role="tab"
+                                                      aria-selected="false">Комунальные службы</a></li>
         </ul>
       </div>
     </div>
@@ -1476,7 +1489,7 @@
           <li class="nav-item" role="presentation">
             <a class="nav-link active" id="nav-tab-pagination1" data-toggle="pill" href="#tab-pagination1" role="tab"
                aria-controls="tab-pagination1" aria-selected="true">
-             1
+              1
             </a>
           </li>
           <li class="nav-item" role="presentation">
@@ -1498,16 +1511,16 @@
             </a>
           </li>
         </ul>
-<!--        <nav class="nav-pagination">-->
-<!--          <ul class="pagination">-->
-<!--            <li class="page-item active" aria-current="page">-->
-<!--              <span class="page-link">1</span>-->
-<!--            </li>-->
-<!--            <li class="page-item"><a class="page-link" href="#">2</a></li>-->
-<!--            <li class="page-item"><a class="page-link" href="#">3</a></li>-->
-<!--            <li class="page-item"><a class="page-link" href="#">4</a></li>-->
-<!--          </ul>-->
-<!--        </nav>-->
+        <!--        <nav class="nav-pagination">-->
+        <!--          <ul class="pagination">-->
+        <!--            <li class="page-item active" aria-current="page">-->
+        <!--              <span class="page-link">1</span>-->
+        <!--            </li>-->
+        <!--            <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+        <!--            <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+        <!--            <li class="page-item"><a class="page-link" href="#">4</a></li>-->
+        <!--          </ul>-->
+        <!--        </nav>-->
       </div>
     </div>
   </div>
