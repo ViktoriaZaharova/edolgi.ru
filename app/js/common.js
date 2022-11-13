@@ -46,9 +46,9 @@ $('.submenu-mobile .link-prev').on('click', function (e) {
     $('.submenu-mobile').fadeOut();
 });
 
-// $('.js-example-basic-single').select2({
-//     width: "100%"
-// });
+$('.js-example-basic-single').select2({
+    width: "100%"
+});
 
 
 $.datepicker.setDefaults(
@@ -184,3 +184,18 @@ $('.btn-step-next').on('click', function (e) {
 });
 
 
+
+$('.copy-link').click(function(e) {
+    e.preventDefault();
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(this).parent('h1').find('span').text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    // $(this).text('Тест скопирован!');
+});
+
+$('.tab_selector').on('change', function (e) {
+    $('.nav-tabs li a').eq($(this).val()).tab('show');
+});

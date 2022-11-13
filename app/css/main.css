@@ -331,7 +331,7 @@
 /*==========  section base-section end  ==========*/
 /*==========  section search-base ==========*/
 .search-base {
-  padding: 64px 0; }
+  padding: 30px 0 60px; }
 
 .search-base-wrapper {
   width: 100%;
@@ -414,7 +414,8 @@
 .example-item {
   width: 100%;
   color: #4B5563;
-  font-size: 14px; }
+  font-size: 14px;
+  margin: 8px 0 0; }
   .example-item span, .example-item a {
     text-decoration: underline;
     color: #1E3A8A; }

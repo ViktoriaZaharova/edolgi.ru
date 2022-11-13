@@ -1,3 +1,35 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20.0007 3.33337V10M20.0007 30V36.6667M8.21732 8.21671L12.934 12.9334M27.0673 27.0667L31.784 31.7834M3.33398 20H10.0007M30.0007 20H36.6673M8.21732 31.7834L12.934 27.0667M27.0673 12.9334L31.784 8.21671" stroke="#EFF6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="200px" height="200px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="background: none;">
+    <circle cx="75" cy="50" fill="#fff" r="6.39718">
+        <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+                 begin="-0.875s"></animate>
+    </circle>
+    <circle cx="67.678" cy="67.678" fill="#fff" r="4.8">
+        <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+                 begin="-0.75s"></animate>
+    </circle>
+    <circle cx="50" cy="75" fill="#fff" r="4.8">
+        <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+                 begin="-0.625s"></animate>
+    </circle>
+    <circle cx="32.322" cy="67.678" fill="#fff" r="4.8">
+        <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+                 begin="-0.5s"></animate>
+    </circle>
+    <circle cx="25" cy="50" fill="#fff" r="4.8">
+        <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+                 begin="-0.375s"></animate>
+    </circle>
+    <circle cx="32.322" cy="32.322" fill="#fff" r="4.80282">
+        <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+                 begin="-0.25s"></animate>
+    </circle>
+    <circle cx="50" cy="25" fill="#fff" r="6.40282">
+        <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+                 begin="-0.125s"></animate>
+    </circle>
+    <circle cx="67.678" cy="32.322" fill="#fff" r="7.99718">
+        <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+                 begin="0s"></animate>
+    </circle>
 </svg>

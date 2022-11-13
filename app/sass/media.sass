@@ -408,6 +408,8 @@
       max-width: none
     .checkbox
       margin: 20px 0 0
+    button
+      margin: 10px 0 0
 
   .base-page-home
     padding: 40px 0 0
@@ -468,7 +470,8 @@
     .form-group
       margin: 0 0 16px
 
-
+  .accordion-table .card:not(:last-of-type)
+    border-bottom: 1px solid $accent
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -485,7 +488,10 @@
   .form-group, .form-examination button
     max-width: 100%
 
-  .form-examination button, .error-box
+  .form-examination button
+    margin: 10px auto 0
+
+  .error-box
     margin: 0
 
   .modal-body
@@ -648,7 +654,6 @@
     margin: 20px 0 0
 
   .list-filter
-    font-size: 12px
     li
       margin: 0 4px 8px 0
 
@@ -671,6 +676,13 @@
     padding: 30px 20px
     .box-text
       font-size: 16px
+
+  .form-contacts
+    button
+      width: 100%
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered
+    padding: 0 30px
 
 @media only screen and (max-width: 480px)
   h1

@@ -316,6 +316,8 @@
     max-width: none; }
   .form-search-inn .checkbox {
     margin: 20px 0 0; }
+  .form-search-inn button {
+    margin: 10px 0 0; }
   .base-page-home {
     padding: 40px 0 0; }
   .nav-tabs .nav-link {
@@ -362,7 +364,9 @@
   .modal-payment form {
     padding: 0; }
   .modal-payment .form-group {
-    margin: 0 0 16px; } }
+    margin: 0 0 16px; }
+  .accordion-table .card:not(:last-of-type) {
+    border-bottom: 1px solid #2563EB; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -374,7 +378,9 @@
     margin: 0 0 0 auto; }
   .form-group, .form-examination button {
     max-width: 100%; }
-  .form-examination button, .error-box {
+  .form-examination button {
+    margin: 10px auto 0; }
+  .error-box {
     margin: 0; }
   .modal-body .error-box {
     margin: 0 0 10px; }
@@ -500,10 +506,8 @@
     font-size: 16px; }
   .nav-pagination {
     margin: 20px 0 0; }
-  .list-filter {
-    font-size: 12px; }
-    .list-filter li {
-      margin: 0 4px 8px 0; }
+  .list-filter li {
+    margin: 0 4px 8px 0; }
   .official-sources-box, .why-me-box {
     max-width: 200px; }
   .list-requisites-my {
@@ -517,7 +521,11 @@
   .status-section-wrapper {
     padding: 30px 20px; }
     .status-section-wrapper .box-text {
-      font-size: 16px; } }
+      font-size: 16px; }
+  .form-contacts button {
+    width: 100%; }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding: 0 30px; } }
 
 @media only screen and (max-width: 480px) {
   h1 {

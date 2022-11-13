@@ -335,8 +335,8 @@ tbody tr {
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   line-height: 48px;
-  padding: 0 30px 0 42px;
-  color: #9CA3AF;
+  padding: 0 30px 0 40px;
+  color: #1F2937;
   font-size: 16px;
   font-family: "Inter", sans-serif; }
 
@@ -562,7 +562,13 @@ tbody tr {
       color: #6B7280; }
       .pagination .page-item a:hover, .pagination .page-item span:hover {
         background: #2563EB;
-        color: #fff; }
+        color: #fff;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        outline: none; }
+      .pagination .page-item a:focus, .pagination .page-item span:focus {
+        -webkit-box-shadow: none;
+                box-shadow: none; }
     .pagination .page-item:last-child {
       margin: 0; }
     .pagination .page-item.active {
