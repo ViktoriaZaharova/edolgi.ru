@@ -523,7 +523,9 @@
   .form-contacts button {
     width: 100%; }
   .select2-container--default .select2-selection--single .select2-selection__rendered {
-    padding: 0 30px; } }
+    padding: 0 30px; }
+  .payments-box h3 {
+    font-size: 20px; } }
 
 @media only screen and (max-width: 480px) {
   h1 {

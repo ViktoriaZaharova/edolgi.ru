@@ -576,3 +576,6 @@ tbody tr {
       border-color: #2563EB;
       background: #2563EB;
       color: #fff; }
+
+.ul-list {
+  list-style-type: '- '; }

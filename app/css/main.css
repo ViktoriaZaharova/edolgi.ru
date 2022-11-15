@@ -1562,3 +1562,58 @@
       border-color: #2563EB; }
 
 /*==========  section status-section end  ==========*/
+/*==========  section payments  ==========*/
+.payments-section h2 {
+  margin: 0 auto 8px; }
+
+.payments-box {
+  margin: 0 0 32px; }
+  .payments-box p {
+    margin: 0 0 20px; }
+    .payments-box p:last-child {
+      margin: 0; }
+  .payments-box:last-child {
+    margin: 0; }
+  .payments-box h3 {
+    margin: 0 0 8px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600; }
+  .payments-box .box-text {
+    color: #4B5563;
+    line-height: 150%; }
+
+.politics-box a {
+  text-decoration: underline; }
+
+.politics-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  margin: 0 0 8px; }
+
+.politics-box .box-text {
+  line-height: 150%; }
+  .politics-box .box-text p {
+    margin: 0 0 20px; }
+    .politics-box .box-text p:last-child {
+      margin: 0; }
+
+.politics-box ul, .politics-box ol {
+  line-height: 150%; }
+  .politics-box ul li, .politics-box ol li {
+    margin: 0 0 5px; }
+
+.politics-box ol ul {
+  margin: 5px 0 0; }
+
+.politics-box ul ol {
+  margin: 5px 0 0; }
+
+.politics-box h4 {
+  margin: 20px 0 8px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+/*==========  section payments end  ==========*/
