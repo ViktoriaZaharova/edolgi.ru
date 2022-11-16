@@ -188,7 +188,7 @@ header {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .search-hidden-wrapper__title h2 {
+    .search-hidden-wrapper__title h2, .search-hidden-wrapper__title .h2 {
       margin: 0;
       width: -webkit-fit-content;
       width: -moz-fit-content;
