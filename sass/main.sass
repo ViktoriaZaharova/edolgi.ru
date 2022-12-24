@@ -271,7 +271,7 @@
 .search-base-wrapper
 	width: 100%
 	background: #DBEAFE
-	h1
+	h1, .h1
 		font-size: 40px
 		margin: 0 0 16px
 	.text-title
@@ -332,6 +332,8 @@
 	span, a
 		text-decoration: underline
 		color: #1E3A8A
+	.color-grey
+		color: #4B5563
 /*==========	section search-base end	==========*/
 
 /*==========	section base-page ==========*/
@@ -1477,9 +1479,14 @@
 		min-width: 17px
 		margin: 0 8px 0 0
 
+.alert-text-v2
+	max-width: 800px
+	margin: 24px 0 0		
+
 .form-payment
 	.form-group
 		width: 100%
+		position: relative
 		max-width: none
 	.form-group-sum
 		max-width: 400px
@@ -1537,6 +1544,7 @@
 		max-width: none
 		width: 100%
 		margin: 40px 0 0
+		
 
 .details-payments-list
 	width: 100%
@@ -1674,12 +1682,19 @@
 	strong
 		font-size: 22px
 
-// .js-tab-content-pu
-// 	display: none
-// 	width: 100%		
-
 .checkbox-add.active
 	.checkbox-custom
 		background: #EFF6FF url("../img/checkbox.svg") no-repeat center
 		background-size: 14px
+
+.not-pay-box
+	width: 100%
+	max-width: 592px
+	h3
+		margin: 0 0 8px
+		font-weight: 600
+		font-size: 22px
+	.box-text
+		color: #4B5563
+		line-height: 150%
 /*==========	section payments end	==========*/

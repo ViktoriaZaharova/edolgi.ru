@@ -392,7 +392,7 @@
   width: 100%;
   background: #DBEAFE;
 }
-.search-base-wrapper h1 {
+.search-base-wrapper h1, .search-base-wrapper .h1 {
   font-size: 40px;
   margin: 0 0 16px;
 }
@@ -486,6 +486,9 @@
 .example-item span, .example-item a {
   text-decoration: underline;
   color: #1E3A8A;
+}
+.example-item .color-grey {
+  color: #4B5563;
 }
 
 /*==========	section search-base end	==========*/
@@ -2121,8 +2124,14 @@
   margin: 0 8px 0 0;
 }
 
+.alert-text-v2 {
+  max-width: 800px;
+  margin: 24px 0 0;
+}
+
 .form-payment .form-group {
   width: 100%;
+  position: relative;
   max-width: none;
 }
 .form-payment .form-group-sum {
@@ -2428,6 +2437,20 @@
 .checkbox-add.active .checkbox-custom {
   background: #EFF6FF url("../img/checkbox.svg") no-repeat center;
   background-size: 14px;
+}
+
+.not-pay-box {
+  width: 100%;
+  max-width: 592px;
+}
+.not-pay-box h3 {
+  margin: 0 0 8px;
+  font-weight: 600;
+  font-size: 22px;
+}
+.not-pay-box .box-text {
+  color: #4B5563;
+  line-height: 150%;
 }
 
 /*==========	section payments end	==========*/

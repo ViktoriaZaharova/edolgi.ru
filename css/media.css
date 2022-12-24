@@ -25,7 +25,7 @@
   .form-examination {
     margin: 40px 0;
   }
-  h1 {
+  h1, .h1 {
     font-size: 40px;
   }
   .home-box-text {
@@ -231,7 +231,7 @@
   .home {
     padding: 60px 0 0;
   }
-  h1 {
+  h1, .h1 {
     font-size: 36px;
   }
   .application-image {
@@ -364,6 +364,9 @@
   .payment-home-title {
     max-width: none;
   }
+  .form-payment .btn {
+    margin: 0;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px) {
@@ -386,7 +389,7 @@
   .mobile-menu .menu li {
     margin: 0 0 10px;
   }
-  .search-base-wrapper h1 {
+  .search-base-wrapper h1, .search-base-wrapper .h1 {
     font-size: 30px;
   }
   .form-search-base {
@@ -566,6 +569,12 @@
   .details-payments .alert-text {
     margin: 20px 0 0;
   }
+  .form-payment .btn {
+    margin: 0;
+  }
+  .mb-32 {
+    margin-bottom: 20px;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -684,7 +693,7 @@
   .search-base-wrapper__bottom {
     padding: 20px 30px;
   }
-  .search-base-wrapper h1 {
+  .search-base-wrapper h1, .search-base-wrapper .h1 {
     font-size: 24px;
   }
   .modal-content {
@@ -859,14 +868,20 @@
     margin: 0 0 10px;
   }
   .mb-32 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .form-payment .h3 {
     margin: 0 0 20px;
   }
+  .form-payment .form-group-sum {
+    max-width: none;
+  }
+  .not-pay-box h3 {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 480px) {
-  h1 {
+  h1, .h1 {
     font-size: 32px;
   }
   .result-search-modal {
@@ -874,6 +889,7 @@
   }
   .nav-tabs .nav-item {
     width: 100%;
+    margin: 0;
   }
   .nav-tabs .nav-link {
     width: 100%;
