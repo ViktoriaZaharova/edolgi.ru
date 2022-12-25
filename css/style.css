@@ -550,7 +550,7 @@ tbody tr:nth-child(even) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
   z-index: 1;
   border: none;
@@ -639,8 +639,7 @@ tbody tr:nth-child(even) {
 
 .nav-pagination {
   width: 100%;
-  margin: 32px 0 0;
-}
+  margin: 32px 0 0;}
 
 .pagination {
   width: 100%;
@@ -652,8 +651,7 @@ tbody tr:nth-child(even) {
           align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-}
+          justify-content: center;}
 .pagination .page-item {
   width: 40px;
   min-width: 40px;
@@ -698,6 +696,57 @@ tbody tr:nth-child(even) {
 
 .ul-list {
   list-style-type: "- ";
+}
+.checkbox-main.error{
+  border: 1px solid #DC2626;
+  border-radius: 6px; }
+
+.js-input.error {
+  border: 1px solid #DC2626;
+  border-radius: 4px;
+}
+
+.select2-container--default.error .select2-selection--single.error {
+  height: 48px;
+  border: 1px solid #DC2626;
+  border-radius: 4px; }
+
+.select2-container--default.success .select2-selection--single.success {
+  height: 48px;
+  border: 1px solid #059669;
+  border-radius: 4px; }
+
+.js-input.success {
+  /*background: #FFFFFF url("../img/check-green.svg") no-repeat calc(100% - 14px) center;*/
+  background-size: 16px;
+  border: 1px solid #059669;
+  border-radius: 4px;
+}
+
+.checkbox-main.success{
+  border: 1px solid #059669;
+  border-radius: 6px;
+}
+
+
+.checkbox-email.error {
+  border: 1px solid #DC2626;
+  border-radius: 6px;
+}
+
+.checkbox-email.success {
+  border: 1px solid #059669;
+  border-radius: 6px;
+}
+
+.js-email-input.error {
+  border: 1px solid #DC2626;
+  border-radius: 4px;
+}
+
+.js-email-input.success {
+  border: 1px solid #059669;
+  border-radius: 4px;
 }
 
 .radio-group {
@@ -795,3 +844,4 @@ tbody tr:nth-child(even) {
 .select-my:focus {
   color: #374151;
 }
+

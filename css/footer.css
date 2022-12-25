@@ -329,11 +329,13 @@ footer .header-contacts__icon {
 .modal-payment .modal-header {
   margin: 0 0 16px;
 }
+
 .modal-payment .modal-title {
   text-align: left;
   margin: 0;
   width: 100%;
 }
+
 .modal-payment form {
   padding: 0 24px;
   max-width: none;
@@ -361,10 +363,12 @@ footer .header-contacts__icon {
   max-width: none;
   margin: 40px 0 0;
 }
+
 .modal-payment .form-group {
   margin: 0 0 24px;
   max-width: none;
 }
+
 .modal-payment ul {
   width: 100%;
 }

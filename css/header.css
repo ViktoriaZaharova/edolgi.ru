@@ -321,7 +321,7 @@ header .menu {
 .list-result-search__item strong:after {
   content: "";
   background: url("../img/arrow-right-grey.svg") no-repeat center;
-  size: 100%;
+  background-size: 100%;
   width: 24px;
   height: 24px;
   display: -webkit-box;

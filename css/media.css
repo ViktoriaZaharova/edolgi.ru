@@ -11,6 +11,7 @@
     max-width: 260px;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .form-search-header {
     margin: 0 15px;
@@ -25,7 +26,8 @@
   .form-examination {
     margin: 40px 0;
   }
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: 40px;
   }
   .home-box-text {
@@ -141,6 +143,7 @@
     max-width: 550px;
   }
 }
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px) {
   .form-group {
@@ -205,6 +208,7 @@
     margin: 20px 0 0 20px;
   }
 }
+
 @media only screen and (max-width: 992px) {
   .form-search-header {
     max-width: none;
@@ -400,6 +404,7 @@
     margin: 0 0 10px;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .text-title {
     font-size: 16px;
@@ -576,6 +581,7 @@
     margin-bottom: 20px;
   }
 }
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
   .p-96 {
@@ -879,6 +885,18 @@
   .not-pay-box h3 {
     font-size: 18px;
   }
+
+	.list-information-company {
+		text-align: center;
+	}
+
+	.list-information-company__name {
+		margin: 0 auto 5px;
+	}
+
+	.list-information-company a {
+		margin: 0 auto;
+	}
 }
 @media only screen and (max-width: 480px) {
   h1, .h1 {
@@ -932,6 +950,7 @@
     font-size: 15px;
   }
 }
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
   .table td {

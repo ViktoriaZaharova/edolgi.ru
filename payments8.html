@@ -340,7 +340,8 @@
 					<nav class="nav-breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a href="index.html"><img src="img/home.svg" alt=""></a></li>
-							<li class="breadcrumb-item"><a href="payments.html">Оплата</a></li>
+							<li class="breadcrumb-item"><a href="#">Наши услуги</a></li>
+							<li class="breadcrumb-item"><a href="#">...</a></li>
 							<li class="breadcrumb-item active" aria-current="page">Оплатить Ростелеком
 							</li>
 						</ol>
@@ -601,9 +602,9 @@
 									</div>
 
 									<div class="col-12">
-										<div class="js-tab-content js-tab-content-pu row-delete">
+										<div class="js-tab-content js-tab-content-pu">
 											<div class="row">
-												<div class="col-12">
+												<div class="col-12 row-delete">
 													<div class="row">
 														<div class="col-12 col-lg-9 mb-32">
 															<div class="form-group-row">
@@ -638,21 +639,21 @@
 																		</svg></span>
 																	<input type="text" name="region" data-toggle="dropdown" class="input-region" placeholder="Выберите ПУ">
 																	<span class="dropdown-menu">
-																		<a href="#" class="dropdown-item">7704307993
-																		</a>
-																		<a href="#" class="dropdown-item">7704307993
-																		</a>
-																		<a href="#" class="dropdown-item">7704307993
-																		</a>
-																		<a href="#" class="dropdown-item">7704307993
-																		</a>
+																		<a href="#" class="dropdown-item">Газ ПУ</a>
+																		<a href="#" class="dropdown-item">ГВС ПУ ОДН</a>
+																		<a href="#" class="dropdown-item">ГВС ПУ1</a>
+																		<a href="#" class="dropdown-item">ГВС ПУ2</a>
+																		<a href="#" class="dropdown-item">ГВС ПУ3</a>
+																		<a href="#" class="dropdown-item">Доп. услуга</a>
+																		<a href="#" class="dropdown-item">Информирование</a>
+																		<a href="#" class="dropdown-item">Обслуживание ОДПУ т/эн</a>
 																	</span>
 																</label>
 															</div>
 														</div>
 												
 														<div class="col-12 col-lg-3 mb-32">
-															<a href="#" class="btn btn-accent btn-add">Добавить</a>
+															<a href="#" class="btn btn-accent btn-add btn-add-row-delete">Добавить</a>
 														</div>
 													</div>
 												</div>
@@ -696,8 +697,8 @@
 									<div class="example-item">На почту мы отправим квитанцию</div>
 									<div class="autopayment">
 										<div class="autopayment-consent">
-											<label class="checkbox">
-												<input type="checkbox" checked>
+											<label class="checkbox checkbox-autopay">
+												<input type="checkbox" name="checkbox">
 												<span class="checkbox-custom"></span>
 												<span class="checkbox-text">Автоплатеж каждое 2 число</span>
 											</label>
@@ -741,15 +742,19 @@
 										</div>
 									</div>
 
-									<div class="alert-text">
-										<svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#alert"></use>
-										</svg>
-										<div class="box-text">
-											<p>Вы можете подключить автоплатеж и мы будем производить оплату в выбранный период. Отключить автоплатеж можно обратившись
-											по номеру +7(499)404-28-52</p>
+									<div class="js-tab-content-check">
+										<div class="alert-text">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#alert"></use>
+											</svg>
+											<div class="box-text">
+												<p>Вы можете подключить автоплатеж и мы будем производить оплату в выбранный период. Отключить автоплатеж можно
+													обратившись
+													по номеру +7(499)404-28-52</p>
+											</div>
 										</div>
 									</div>
+									
 								</form>
 							</div>
 
