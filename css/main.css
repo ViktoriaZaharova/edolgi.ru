@@ -607,7 +607,7 @@
   max-width: none;
 }
 .form-subscribe button {
-  margin: 12px 0 0;
+  margin: 22px 0 0;
 }
 
 .base-page-home {
@@ -862,7 +862,8 @@
 .section-loader .form-subscribe .form-group {
   width: 449px;
 }
-.section-loader .form-subscribe button {
+.section-loader .form-subscribe button,
+.section-loader .form-subscribe .btn {
   height: 48px;
   margin: 22px 0 0;
 }
@@ -1999,12 +2000,6 @@
   margin: 22px 0 0;
 }
 
-.form-subscribe {
-  align-items: flex-start;
-}
-.form-subscribe button {
-  margin: 22px 0 0;
-}
 /*==========	section payments end	==========*/
 /*==========	section search-services	==========*/
 .search-services {
@@ -2549,20 +2544,20 @@
 }
 
 .checkbox-autopay .checkbox-custom {
-	background: #eff6ff url("../img/checkbox.svg") no-repeat center;
+  background: #eff6ff url("../img/checkbox.svg") no-repeat center;
   background-size: 14px;
 }
 
 .checkbox-autopay.click {
-	color: #9CA3AF;
+  color: #9ca3af;
 }
 
 .checkbox-autopay.click .checkbox-custom {
-	background: #eff6ff
+  background: #eff6ff;
 }
 
 .js-tab-content-check {
-	display: none;
+  display: none;
 }
 
 .not-pay-box {
@@ -2580,6 +2575,172 @@
 }
 
 .js-tab-content-pu .row-delete {
-	display: none;
+  display: none;
 }
 /*==========	section payments end	==========*/
+
+/*==========	section admin page	==========*/
+.page-admin {
+  margin: 20px 0;
+}
+
+.page-admin h1 {
+  margin: 0 0 27px;
+  font-size: 40px;
+}
+
+.page-admin-wrapper {
+  width: 100%;
+  margin: 0 0 40px;
+}
+
+.page-admin-wrapper__top {
+  width: 100%;
+  background: #dbeafe;
+  padding: 19px 50px 35px;
+}
+
+.form-admin {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-admin .form-group {
+  max-width: 235px;
+  margin: 0 48px 10px 0;
+}
+
+.form-admin .btn {
+  max-width: 260px;
+  width: 100%;
+  margin: 22px 0 0 auto;
+}
+
+.form-admin input {
+  padding: 0 16px;
+}
+
+.page-admin-wrapper__bottom {
+  background: #fef2f2;
+  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.1),
+    0px 8px 8px -4px rgba(16, 24, 40, 0.04);
+  width: 100%;
+  padding: 14px 60px 24px;
+}
+
+.btn-next-page {
+  margin: 30px 0 0 auto;
+  max-width: 260px;
+  width: 100%;
+}
+
+.table-admin thead {
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.table-admin thead tr {
+  border: none;
+}
+
+.table-admin thead td {
+  padding: 0 0 11px;
+}
+
+.table-admin thead td:last-child {
+  font-weight: normal;
+}
+
+.table-admin thead td.font-bold:last-child {
+  font-weight: bold;
+}
+
+.table-admin tr {
+  border-bottom: 1px dashed #9ca3af;
+}
+
+.table-admin td {
+  padding: 11px 0;
+}
+.table-admin td:last-child {
+  width: 8%;
+  text-align: right;
+}
+
+.table-admin td:last-child a {
+  margin-left: auto;
+}
+
+.table-admin tbody tr:hover {
+  box-shadow: none;
+}
+
+.table-admin tbody tr:nth-child(even) {
+  background: transparent;
+}
+
+.table-admin a.color-accent {
+  color: #1e40af;
+}
+
+.table-admin tfoot tr {
+  border: none;
+}
+
+.td-mail {
+  width: 45%;
+}
+
+.td-phone {
+  width: 20%;
+}
+
+.td-number {
+  width: 70%;
+}
+
+.table-admin thead td:last-child.w-40 {
+  width: 40%;
+}
+
+.table-admin .td-number p {
+  font-size: 14px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.color-red {
+  color: #ff0000;
+}
+
+.link-unsubscribe {
+  margin: 35px 0 0 auto;
+  color: #1e40af;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.attentiion-modal {
+  margin: 38px 37px 0 auto;
+}
+
+.add-black-link {
+  margin: 38px 0 0;
+}
+
+.form-admin-v3 .form-group {
+  max-width: 159px;
+  margin: 0 20px 10px 0;
+}
+
+.form-admin-v3 .btn {
+  max-width: 186px;
+  margin: 24px 0 0;
+}
+
+/*==========	section admin page end	==========*/

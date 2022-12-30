@@ -545,5 +545,22 @@ header .menu {
 }
 
 /*==========	section mobile-menu end	==========*/
-/*==========	section	==========*/
-/*==========	section end	==========*/
+
+
+/*==========	section header admin	==========*/
+.header-admin .btn-burger {
+	display: none;
+}
+
+.header-admin .menu li a.active {
+	color: #1F2937;
+	border-bottom-color: #1F2937;
+}
+.link-entrance {
+	color: #374151
+}
+
+.link-entrance:hover {
+	color: #2563EB
+}
+/*==========	section header admin end	==========*/
