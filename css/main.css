@@ -187,6 +187,10 @@
   margin: 76px 0 96px;
 }
 
+.statistics .td-number {
+	width: fit-content;
+}
+
 .td-base,
 .td-department {
   width: 26%;
@@ -716,7 +720,7 @@
 }
 .accordion-table .card:not(:last-of-type) {
   border: none;
-  bottom: 1px solid #2563eb;
+  border-bottom: 1px solid #2563eb;
 }
 .accordion-table .card .card-header {
   background: #f3f4f6;

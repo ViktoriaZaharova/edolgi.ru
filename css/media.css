@@ -760,6 +760,9 @@
     color: #6b7280;
     font-size: 14px;
   }
+	.table .td-pay {
+		width: 100%;
+	}
   .card-header {
     font-size: 16px;
   }
@@ -1092,6 +1095,9 @@
   .nav-tabs .nav-link {
     width: 100%;
   }
+	 .accordion-table .card .card-header span {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 420px) {
   .application-links {
@@ -1123,12 +1129,14 @@
   .map-address {
     height: 250px;
   }
-  .accordion-table .card .card-header span {
-    margin: 0;
-  }
+ 
   .details-payments-list {
     font-size: 15px;
   }
+
+	.form-subscribe button, .form-subscribe .btn, .section-loader .form-subscribe .btn, .section-loader .form-subscribe button {
+		width: 100%;
+	}
 }
 
 /* Custom, iPhone Retina */
@@ -1150,6 +1158,18 @@
   .table-admin td:last-child {
     width: 100%;
   }
+
+	.card-header h3:after, .card-header__title:after {
+		width: 32px;
+		height: 32px;
+		min-width: 32px;
+	}
+
+	.accordion-table .card .card-header span {
+		max-width: 120px;
+		font-size: 14px;
+	}
+
 }
 @media (min-width: 1200px) {
   .col-xl-my {

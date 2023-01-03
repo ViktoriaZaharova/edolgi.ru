@@ -292,19 +292,19 @@ footer .header-contacts__icon {
   color: #111827;
 }
 .form-pay input::-webkit-input-placeholder {
-  color: #111827;
+  color: #919191;
 }
 .form-pay input::-moz-placeholder {
-  color: #111827;
+  color: #919191;
 }
 .form-pay input:-ms-input-placeholder {
-  color: #111827;
+  color: #919191;
 }
 .form-pay input::-ms-input-placeholder {
-  color: #111827;
+  color: #919191;
 }
 .form-pay input::placeholder {
-  color: #111827;
+  color: #919191;
 }
 .form-pay button {
   max-width: none;
