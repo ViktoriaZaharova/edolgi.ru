@@ -336,7 +336,6 @@
         <nav class="nav-breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html"><img src="img/home.svg" alt=""></a></li>
-            <li class="breadcrumb-item"><a href="#">Наши услуги</a></li>
             <li class="breadcrumb-item active" aria-current="page">Успешная оплата</li>
           </ol>
         </nav>
@@ -350,15 +349,14 @@
     <div class="row">
       <div class="col-12 text-center mb-32">
         <div class="text-title">Статус проведения платежа:</div>
-        <h2 class="color-light-green">Платеж №68463 успешно выполнен</h2>
+        <h2 class="color-light-green">Платеж №{{ orderID }} успешно выполнен</h2>
       </div>
 
       <div class="col-12">
         <div class="status-section-wrapper bg-light-green">
           <h3>Спасибо за доверие!</h3>
           <div class="box-text">
-            <p>Ваш платеж успешно выполнен, обращаем ваше внимание что судебный пристав исполнитель обновляет информацию
-              до двух недель, именно столько может потребоваться для обновления информации на сайте. Квитанция была
+            <p>Ваш платеж успешно выполнен, квитанция была
               направлена на указанную почту. Если вы не получили квитанцию или вам требуется платежное поручение
               пожалуйста направьте обращение на почту support@edolgi.ru</p>
           </div>
@@ -366,8 +364,25 @@
       </div>
 
       <div class="col-12">
-        <a href="index.html" class="btn btn-accent btn-home">Вернуться на главную</a>
+        <form class="form-status">
+          <div class="form-group">
+            <div class="input-title">Укажите e-mail:</div>
+            <label>
+              <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
+              <input type="text" placeholder="ivanov@mail.ru" name="mail" required>
+            </label>
+          </div>
+
+
+          <button type="submit" class="btn btn-accent">Отправить на почту</button>
+
+          <a href="#" class="btn-download btn btn-grey">Скачать квитанцию</a>
+        </form>
       </div>
+
+<!--      <div class="col-12">-->
+<!--        <a href="{% url 'main' %}" class="btn btn-accent btn-home">Вернуться на главную</a>-->
+<!--      </div>-->
     </div>
   </div>
 </section>

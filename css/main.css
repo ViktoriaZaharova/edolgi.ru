@@ -98,7 +98,7 @@
   flex-wrap: wrap;
 }
 .form-examination button {
-  margin: 22px 0 0;
+  margin: 23px 0 0;
 }
 
 .form-group {
@@ -611,7 +611,7 @@
   max-width: none;
 }
 .form-subscribe button {
-  margin: 22px 0 0;
+    margin: 23px 0 0;
 }
 
 .base-page-home {
@@ -869,7 +869,7 @@
 .section-loader .form-subscribe button,
 .section-loader .form-subscribe .btn {
   height: 48px;
-  margin: 22px 0 0;
+  margin: 23px 0 0;
 }
 
 .subscribe-wrapper {
@@ -1153,7 +1153,7 @@
   max-width: 200px;
   width: 100%;
   padding: 12px 10px;
-  margin: 22px 0 0;
+  margin: 23px 0 0;
 }
 .form-my .form-group {
   position: relative;
@@ -1916,6 +1916,31 @@
   border-color: #2563eb;
 }
 
+.form-status {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  padding-left: 64px;
+}
+
+.form-status .btn {
+  margin: 23px 0 0 16px;
+}
+
+
+
+.btn-grey {
+  background: #C2C2C2;
+  color: #fff;
+}
+
+.btn-grey:hover {
+  background: #2563eb;
+  color: #fff
+}
+
 /*==========	section status-section end	==========*/
 /*==========	section payments	==========*/
 .payments-section h2 {
@@ -2001,7 +2026,7 @@
   align-items: flex-start;
 }
 .form-my button {
-  margin: 22px 0 0;
+  margin: 23px 0 0;
 }
 
 /*==========	section payments end	==========*/
@@ -2746,5 +2771,7 @@
   max-width: 186px;
   margin: 24px 0 0;
 }
+
+input#autopayment-day {padding: 0 15px}
 
 /*==========	section admin page end	==========*/
