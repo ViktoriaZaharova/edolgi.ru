@@ -2295,7 +2295,7 @@
 }
 
 .details-payments {
-  margin: 40px 0 0;
+  margin: 20px 0 0;
   width: 100%;
 }
 .details-payments__form {
@@ -2478,7 +2478,7 @@
 }
 .autopayment-settings__date {
   max-width: 186px;
-  margin: 0 0 0 auto;
+  margin: 0 0 0 20px;
   color: #6b7280;
   font-size: 14px;
 }
@@ -2496,7 +2496,7 @@
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 40px 0 0;
+  /*margin: 40px 0 0;*/
 }
 .autopayment .checkbox {
   margin: 0;

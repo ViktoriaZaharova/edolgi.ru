@@ -419,9 +419,9 @@
     .details-payments__order {
         margin: 20px 0 0;
     }
-    .autopayment {
-        margin: 20px 0 0;
-    }
+    /*.autopayment {*/
+    /*    margin: 20px 0 0;*/
+    /*}*/
     .list-information-company {
         margin: 30px 0 0;
     }
