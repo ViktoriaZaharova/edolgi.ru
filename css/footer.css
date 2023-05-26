@@ -245,8 +245,8 @@ footer .header-contacts__icon {
   width: 100%;
 }
 .modal-body .btn-group .btn {
-  margin: 0;
-  width: calc(50% - 12px);
+  margin: 5px;
+  width: 100%;
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;

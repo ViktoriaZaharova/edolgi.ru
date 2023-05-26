@@ -1,4 +1,14 @@
 /*==========	section home ==========*/
+.attention-box-fixed {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #1e3a8a;
+  line-height: 150%;
+  font-size: 18px;
+  padding: 3px 0;
+}
+
 .home {
   color: #fff;
   padding: 128px 0 0;
@@ -188,7 +198,7 @@
 }
 
 .statistics .td-number {
-	width: fit-content;
+  width: fit-content;
 }
 
 .td-base,
@@ -567,6 +577,14 @@
   padding: 40px 43px 40px 64px;
 }
 
+.application-v3 .application-image {
+  min-width: 260px;
+  max-width: 260px;
+  margin: 0 auto 0 0;
+  float: none;
+  box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.25);
+}
+
 .notification-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -611,7 +629,7 @@
   max-width: none;
 }
 .form-subscribe button {
-    margin: 23px 0 0;
+  margin: 23px 0 0;
 }
 
 .base-page-home {
@@ -769,6 +787,11 @@
 }
 .table-result .link {
   font-size: 12px;
+}
+
+.table-result .btn-border-dashed {
+  margin: 24px 0 0;
+  width: 100%;
 }
 
 .accordion-table-v2 .card-body {
@@ -1929,16 +1952,14 @@
   margin: 23px 0 0 16px;
 }
 
-
-
 .btn-grey {
-  background: #C2C2C2;
+  background: #c2c2c2;
   color: #fff;
 }
 
 .btn-grey:hover {
   background: #2563eb;
-  color: #fff
+  color: #fff;
 }
 
 /*==========	section status-section end	==========*/
@@ -2072,19 +2093,69 @@
 }
 
 .service-item {
-  background: #fff;
+  background: #ffffff;
+  box-shadow: 0px 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
   width: 100%;
   height: 100%;
-  text-align: center;
-  -webkit-box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.1),
-    0px 8px 8px -4px rgba(16, 24, 40, 0.04);
-  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.1),
-    0px 8px 8px -4px rgba(16, 24, 40, 0.04);
-  border-radius: 4px;
-  padding: 24px;
-  color: #1e3a8a;
-  font-size: 16px;
+  padding: 40px 14px 14px;
+  color: #000000;
+  font-size: 14px;
   font-weight: 500;
+  z-index: 1;
+  position: relative;
+  transition: 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 135px;
+  background: linear-gradient(
+    179.61deg,
+    #0061ff 29.88%,
+    rgba(59, 130, 246, 0) 96.48%
+  );
+  border-radius: 4px;
+}
+
+.service-item:hover {
+  color: #000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 20px 24px -4px rgba(16, 24, 40, 0.1);
+}
+
+.service-item__title {
+  text-align: center;
+  color: #fff;
+  margin: 0 auto 55px;
+  display: block;
+  font-size: 16px;
+}
+
+.service-item .box-text {
+  margin: auto 0 0;
+}
+
+.service-item .box-text span {
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px;
+}
+
+.service-item .box-text span:last-child {
+  margin: 0;
+}
+
+.service-item .box-text img {
+  margin: 0 9px 0 0;
 }
 .service-item__logo {
   display: -webkit-box;
@@ -2283,7 +2354,7 @@
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -2772,6 +2843,341 @@
   margin: 24px 0 0;
 }
 
-input#autopayment-day {padding: 0 15px}
+input#autopayment-day {
+  padding: 0 15px;
+}
 
 /*==========	section admin page end	==========*/
+
+/* page bailiff */
+.bailiff-page .search-base-wrapper__bottom {
+  background: #fef2f2;
+}
+.bailiff-page .search-base-wrapper__bottom .text {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.advantages-bailiff-box {
+  background: #fff;
+  color: #374151;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.advantages-bailiff-box .advantages-box__icon {
+  width: 48px;
+  height: 48px;
+}
+
+.advantages-bailiff-box p {
+  line-height: 120%;
+}
+
+.form-bailiff .checkbox {
+  margin: 0;
+}
+
+.form-bailiff .checkbox.mb-40 {
+  margin-bottom: 40px;
+}
+
+.auto-complection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1e40af;
+  font-size: 14px;
+  margin: 10px 0 0 auto;
+}
+
+.auto-complection img {
+  margin: 0 10px 0 0;
+}
+
+.auto-complection span {
+  border-bottom: 1px dashed #1e40af;
+}
+
+.alert-modal {
+  display: inline-flex;
+  margin: 3px 0 0 6px;
+}
+
+.modal-information .modal-dialog {
+  max-width: 600px;
+}
+
+.modal-information .modal-content {
+  padding: 24px 21.5px;
+  background: #ffffff;
+  box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.2);
+  border-radius: 8px;
+}
+
+.modal-information .modal-header {
+  margin: 0;
+}
+
+.modal-information .modal-title {
+  margin: 0 auto 24px;
+}
+
+.modal-information .modal-body .box-text {
+  margin: 0;
+  color: #6b7280;
+}
+
+.modal-information .modal-body .box-text p {
+  margin: 0 0 20px;
+}
+
+.modal-information .modal-body .box-text p:last-child {
+  margin: 0;
+}
+
+.bailiff-item {
+  width: 100%;
+}
+
+.form-bailiff .form-group {
+  max-width: none;
+}
+
+.form-bailiff .radio-group {
+  margin: 0 0 10px;
+}
+
+.autocomplete-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e40af;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 0 8px;
+  background: rgba(30, 64, 175, 0.1);
+  border-radius: 40px;
+}
+
+.form-bailiff textarea {
+  padding: 12px 14px;
+}
+
+.link-modal {
+  display: inline-flex;
+  margin: 0 24px 0 0;
+}
+
+.link-modal:last-child {
+  margin: 0;
+}
+
+.file-upload-result {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.file-upload-result__item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin: 10px 24px 0 0;
+  padding: 8px 15px 6px;
+  min-width: 223px;
+  color: #111827;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.file-upload-result__item:last-child {
+  margin-right: 0;
+}
+
+.file-upload-result__icon {
+  fill: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin: 0 6px 0 0;
+  stroke: #2563eb;
+}
+
+.file-upload-result__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: none;
+  stroke: #2563eb;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  margin: 0 0 0 auto;
+}
+
+.file-upload-result__size {
+  color: #9ca3af;
+}
+
+.label-file {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  padding: 24px;
+  text-align: center;
+  background: #fff;
+  border: 1px dashed #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 4px;
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.label-file input {
+  display: none;
+}
+
+.label-file__title {
+  display: block;
+  width: 100%;
+  color: #1e40af;
+  margin: 0 auto 8px;
+}
+
+.label-file__description {
+  display: block;
+  margin: 0 auto;
+  max-width: 495px;
+}
+
+.form-bailiff .subtitle {
+  font-size: 18px;
+}
+
+.form-bailiff .text-description {
+  margin: 40px 0;
+  color: #4b5563;
+}
+
+.form-bailiff .text-description p {
+  margin: 0 0 20px;
+}
+
+.form-bailiff .text-description p:last-child {
+  margin: 0;
+}
+
+.form-bailiff-total {
+  position: relative;
+  box-shadow: none;
+  background: url("../img/decor-total.svg") no-repeat center bottom;
+  background-size: cover;
+  padding: 40px 40px 56px;
+}
+
+.form-bailiff-total .details-payments-list {
+  font-size: 14px;
+}
+
+.form-bailiff-total .details-payments-list li {
+  margin: 0 0 12px;
+}
+
+.form-bailiff-total .details-payments-list li:last-child {
+  margin: 0;
+}
+
+.form-bailiff-total .total-payments {
+  color: #111827;
+  font-size: 22px;
+  font-weight: 600;
+}
+.list-result-information {
+  width: 100%;
+  color: #4b5563;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.list-result-information li {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 24px;
+}
+
+.list-result-information li:last-child {
+  margin: 0;
+}
+
+.list-result-information .svg-icon-loader {
+  display: none;
+}
+
+.load-result .svg-icon-loader {
+  display: block;
+}
+
+.load-result .svg-icon-check {
+  display: none;
+}
+
+.status-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  stroke: #2563eb;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  margin: 3px 12px 0 0;
+}
+
+.form-bailiff .btn-group .btn {
+  width: fit-content;
+  flex: none;
+}
+
+.progress-wrapper {
+  width: 100%;
+  display: none;
+}
+
+.progress-steps {
+  color: #6b7280;
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.progress {
+  width: 100%;
+  position: relative;
+  margin: 0 0 20px;
+  height: 8px;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #2563eb;
+  border-radius: 8px 0px 0px 8px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
