@@ -269,35 +269,14 @@ $(function () {
 		return (current / total) * 100
 	}
 
-	$('.next-step-first').click(function () {
-		$('.section-loader-bailiff').fadeIn();
-		$('.progress-wrapper').fadeIn();
-	});
-	
-	setTimeout(function () {
-		$('.section-loader-bailiff').fadeOut();
-	}, 60000);
-
-	setTimeout(function () {
-		$('.bailiff-item-5.active').find('.list-result-information li').removeClass('load-result');
-	}, 30000);
-
-	setTimeout(function () {
-		$('.bailiff-item-5.active').removeClass('active').next('.bailiff-item').addClass('active');
-	}, 31000);
-
 	progress.width(calculate(currentStep, stepsCount) + '%'); // устанавливаем начальную ширину полосы
 	next.on('click', function () {
-		// var currentSection = $(this).parents('.bailiff-item');
 		progress.width(calculate(++currentStep, stepsCount) + '%');
 		$('.progress-steps__cp').text(currentStep); // устанавливаем ширину полосы после изменения шага
 		$('.progress-steps__default').text(stepsCount);
 	});
 
 	prev.on('click', function () {
-		// var currentSection = $(this).parents('.bailiff-item');
-		// currentSection.removeClass('active');
-		// currentSection.next().addClass('active');
 		progress.width(calculate(--currentStep, stepsCount) + '%'); // устанавливаем ширину полосы после изменения шага
 		$('.progress-steps__cp').text(currentStep);
 		$('.progress-steps__default').text(stepsCount);
@@ -306,3 +285,23 @@ $(function () {
 		}
 	});
 });
+
+$(document).ready(function () {
+	$('.next-step-first').click(function () {
+		$('.section-loader-bailiff').fadeIn();
+		$('.progress-wrapper').fadeIn();
+	});
+
+	setTimeout(function () {
+		$('.section-loader-bailiff').fadeOut();
+	}, 60000);
+
+	setTimeout(function () {
+		$('.bailiff-item-5.active').find('.list-result-information li').removeClass('load-result');
+	}, 10000);
+
+	setTimeout(function () {
+		$('.bailiff-item-5.active').removeClass('active').next('.bailiff-item').addClass('active');
+	}, 11000);
+});
+

@@ -385,11 +385,12 @@
 				<div class="col-12">
 					<div class="search-base-wrapper">
 						<div class="search-base-wrapper__top">
-							<h1>Жалоба на судебного пристава онлайн</h1>
+							<h1>Проверка запрета на выезд за границу</h1>
 							<div class="text-title">
-								<p>Онлайн подача жалобы на судебного пристава исполнителя, для подачи жалобы укажите ваше ФИО, регион и
-									номер
-									исполнительного производства. Мы автоматически загрузим все данные и отправим обращение!</p>
+								<p>Онлайн сводный отчет по возможности выезда за границу формируется по официальным базам ФССП, ФНС,
+									ГИБДД. Полная проверка
+									задолженностей и ограничений физических лиц согласно ФЗ "О порядке выезда из РФ и въезда в РФ" от
+									15.08.1996 N 114-Ф</p>
 							</div>
 
 							<form method="post" class="form-search-base form-bailiff">
@@ -418,27 +419,27 @@
 
 										<div class="col-12 col-md-6 col-lg-4 mb-20">
 											<div class="form-group">
-												<div class="input-title">Укажите номер ИП <a href="#" data-toggle="modal"
+												<div class="input-title">Укажите дату рождения <a href="#" data-toggle="modal"
 														data-target="#alertModal" class="alert-modal"><img src="img/alert-icon.svg" alt=""></a>
 												</div>
 												<label>
 													<span class="input-icon"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#hash"></use>
+															<use xlink:href="img/sprite.svg#book"></use>
 														</svg></span>
-													<input type="text" placeholder="123456/23/77001-ИП" name="number_document">
+													<input type="text" placeholder="ДД ММ ГГГГ" class="datepicker1 datepicker">
 												</label>
 											</div>
 										</div>
 
 										<div class="col-12 col-md-6 col-lg-4 mb-20">
 											<div class="form-group form-group-select">
-												<div class="input-title">Выберите регион проверки:</div>
+												<div class="input-title">Выберите регион (прописка или пребывание)</div>
 												<label class="label-region">
 													<span class="input-icon"><svg class="svg-icon">
 															<use xlink:href="img/sprite.svg#location"></use>
 														</svg></span>
 													<input type="text" name="region" data-toggle="dropdown" class="input-region"
-														placeholder="Выберите регион">
+														placeholder="Московская область">
 													<span class="dropdown-menu">
 														<a href="#" class="dropdown-item">Республика Адыгея
 														</a>
@@ -507,298 +508,84 @@
 
 								<div class="bailiff-item js-tab-content" data-tab="2">
 									<div class="row">
-										<div class="col-12 mb-10">
-											<div class="radio-group">
-												<label class="radio">
-													<input type="radio" name="radio1" checked>
-													<div class="radio-custom"></div>
-													<div class="radio-text">Жалоба</div>
-												</label>
-
-												<label class="radio">
-													<input type="radio" name="radio1">
-													<div class="radio-custom"></div>
-													<div class="radio-text">Предложение</div>
-												</label>
-												<label class="radio">
-													<input type="radio" name="radio1">
-													<div class="radio-custom"></div>
-													<div class="radio-text">Заявление</div>
-												</label>
-												<label class="radio">
-													<input type="radio" name="radio1">
-													<div class="radio-custom"></div>
-													<div class="radio-text">Благодарность</div>
-												</label>
-											</div>
-										</div>
-										<div class="col-12 mb-20">
-											<div class="form-group form-group-select">
-												<div class="input-title">Выберите тему обращения</div>
-												<label class="label-region">
-													<span class="input-icon"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#location"></use>
-														</svg></span>
-													<input type="text" name="region" data-toggle="dropdown" class="input-region"
-														placeholder="Выберите тему">
-													<span class="dropdown-menu">
-														<a href="#" class="dropdown-item">Республика Адыгея
-														</a>
-														<a href="#" class="dropdown-item">Республика Башкортостан
-														</a>
-														<a href="#" class="dropdown-item">Республика Бурятия
-														</a>
-														<a href="#" class="dropdown-item">Республика Алтай
-														</a>
-														<a href="#" class="dropdown-item">Республика Дагестан
-														</a>
-														<a href="#" class="dropdown-item">Республика Ингушетия
-														</a>
-														<a href="#" class="dropdown-item">Республика Кабардино-Балкария
-														</a>
-														<a href="#" class="dropdown-item">Республика Калмыкия
-														</a>
-														<a href="#" class="dropdown-item">Республика Карачаево-Черкесия</a>
-
-														<a href="#" class="dropdown-item">Республика Адыгея
-														</a>
-														<a href="#" class="dropdown-item">Республика Башкортостан
-														</a>
-														<a href="#" class="dropdown-item">Республика Бурятия
-														</a>
-														<a href="#" class="dropdown-item">Республика Алтай
-														</a>
-														<a href="#" class="dropdown-item">Республика Дагестан
-														</a>
-														<a href="#" class="dropdown-item">Республика Ингушетия
-														</a>
-														<a href="#" class="dropdown-item">Республика Кабардино-Балкария
-														</a>
-														<a href="#" class="dropdown-item">Республика Калмыкия
-														</a>
-														<a href="#" class="dropdown-item">Республика Карачаево-Черкесия</a>
-													</span>
-												</label>
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="btn-group">
-												<a href="#" class="btn btn-border bailiff-next-step prev-step js-tab-trigger"
-													data-tab="1">Назад</a>
-												<a href="#" class="btn btn-accent bailiff-next-step next-step js-tab-trigger"
-													data-tab="3">Перейти на шаг
-													3</a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="bailiff-item js-tab-content" data-tab="3">
-									<div class="row">
 										<div class="col-12 col-md-6 mb-20">
-											<div class="form-group form-group-select">
-												<div class="input-title">Выберите территориальный огран <span
-														class="autocomplete-box">Автозаполнено</span></div>
-												<label class="label-region">
+											<div class="form-group">
+												<div class="input-title">Укажите номер и серию паспорта (не обязательно) <span
+														class="autocomplete-box">Автозаполнено</span>
+												</div>
+												<label>
 													<span class="input-icon"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#map"></use>
+															<use xlink:href="img/sprite.svg#user-icon"></use>
 														</svg></span>
-													<input type="text" name="region" data-toggle="dropdown" class="input-region"
-														placeholder="Московская область">
-													<span class="dropdown-menu">
-														<a href="#" class="dropdown-item">Республика Адыгея
-														</a>
-														<a href="#" class="dropdown-item">Республика Башкортостан
-														</a>
-														<a href="#" class="dropdown-item">Республика Бурятия
-														</a>
-														<a href="#" class="dropdown-item">Республика Алтай
-														</a>
-														<a href="#" class="dropdown-item">Республика Дагестан
-														</a>
-														<a href="#" class="dropdown-item">Республика Ингушетия
-														</a>
-														<a href="#" class="dropdown-item">Республика Кабардино-Балкария
-														</a>
-														<a href="#" class="dropdown-item">Республика Калмыкия
-														</a>
-														<a href="#" class="dropdown-item">Республика Карачаево-Черкесия</a>
-
-														<a href="#" class="dropdown-item">Республика Адыгея
-														</a>
-														<a href="#" class="dropdown-item">Республика Башкортостан
-														</a>
-														<a href="#" class="dropdown-item">Республика Бурятия
-														</a>
-														<a href="#" class="dropdown-item">Республика Алтай
-														</a>
-														<a href="#" class="dropdown-item">Республика Дагестан
-														</a>
-														<a href="#" class="dropdown-item">Республика Ингушетия
-														</a>
-														<a href="#" class="dropdown-item">Республика Кабардино-Балкария
-														</a>
-														<a href="#" class="dropdown-item">Республика Калмыкия
-														</a>
-														<a href="#" class="dropdown-item">Республика Карачаево-Черкесия</a>
-													</span>
+													<input type="text" placeholder="4117 324234" value="4117 324234" name="name">
 												</label>
 											</div>
 										</div>
-
 										<div class="col-12 col-md-6 mb-20">
-											<div class="form-group form-group-select">
-												<div class="input-title">Структурное подразделение <span
-														class="autocomplete-box">Автозаполнено</span></div>
-												<label class="label-region">
+											<div class="form-group">
+												<div class="input-title">Укажите номер СНИЛС (не обязательно) <span
+														class="autocomplete-box">Автозаполнено</span>
+												</div>
+												<label>
 													<span class="input-icon"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#map"></use>
+															<use xlink:href="img/sprite.svg#hash"></use>
 														</svg></span>
-													<input type="text" name="region" data-toggle="dropdown" class="input-region"
-														placeholder="ОСП по Московской области">
-													<span class="dropdown-menu">
-														<a href="#" class="dropdown-item">Республика Адыгея
-														</a>
-														<a href="#" class="dropdown-item">Республика Башкортостан
-														</a>
-														<a href="#" class="dropdown-item">Республика Бурятия
-														</a>
-														<a href="#" class="dropdown-item">Республика Алтай
-														</a>
-														<a href="#" class="dropdown-item">Республика Дагестан
-														</a>
-														<a href="#" class="dropdown-item">Республика Ингушетия
-														</a>
-														<a href="#" class="dropdown-item">Республика Кабардино-Балкария
-														</a>
-														<a href="#" class="dropdown-item">Республика Калмыкия
-														</a>
-														<a href="#" class="dropdown-item">Республика Карачаево-Черкесия</a>
-
-														<a href="#" class="dropdown-item">Республика Адыгея
-														</a>
-														<a href="#" class="dropdown-item">Республика Башкортостан
-														</a>
-														<a href="#" class="dropdown-item">Республика Бурятия
-														</a>
-														<a href="#" class="dropdown-item">Республика Алтай
-														</a>
-														<a href="#" class="dropdown-item">Республика Дагестан
-														</a>
-														<a href="#" class="dropdown-item">Республика Ингушетия
-														</a>
-														<a href="#" class="dropdown-item">Республика Кабардино-Балкария
-														</a>
-														<a href="#" class="dropdown-item">Республика Калмыкия
-														</a>
-														<a href="#" class="dropdown-item">Республика Карачаево-Черкесия</a>
-													</span>
+													<input type="text" placeholder="32434324324" value="32434324324" name="name">
+												</label>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 mb-20">
+											<div class="form-group">
+												<div class="input-title">Укажите ИНН (не обязательно) <span
+														class="autocomplete-box">Автозаполнено</span>
+												</div>
+												<label>
+													<span class="input-icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#hash"></use>
+														</svg></span>
+													<input type="text" placeholder="32434324324" value="32434324324" name="name">
 												</label>
 											</div>
 										</div>
 
 										<div class="col-12 col-md-6 mb-20">
 											<div class="form-group">
-												<div class="input-title">Сотрудник (пристав) <span class="autocomplete-box">Автозаполнено</span>
+												<div class="input-title">Укажите СТС (не обязательно) <span
+														class="autocomplete-box">Автозаполнено</span>
 												</div>
 												<label>
 													<span class="input-icon"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#user-icon"></use>
+															<use xlink:href="img/sprite.svg#hash"></use>
 														</svg></span>
-													<input type="text" placeholder="Иванов Е.К" value="Иванов Е.К" name="name">
+													<input type="text" placeholder="32434324324" value="32434324324" name="name">
 												</label>
 											</div>
 										</div>
+										<div class="col-12 mb-20">
+											<label class="checkbox checkbox-confirmation mb-40">
+												<input type="checkbox" checked>
+												<span class="checkbox-custom"></span>
+												<span class="checkbox-text">У меня есть автомобиль!</span>
+											</label>
+										</div>
 
 										<div class="col-12">
-											<div class="btn-group">
+											<div class="btn-group align-items-center">
 												<a href="#" class="btn btn-border bailiff-next-step prev-step js-tab-trigger"
-													data-tab="2">Назад</a>
+													data-tab="1">Назад</a>
 												<a href="#" class="btn btn-accent bailiff-next-step next-step js-tab-trigger"
-													data-tab="4">Перейти на шаг
-													4</a>
+													data-tab="3">Перейти на шаг
+													3</a>
+
+													<a href="#" class="color-accent border-dashed link-question" data-toggle="modal" data-target="#exampleForm2">Зачем столько данных? Как мы формируем отчет!</a>
 											</div>
 										</div>
 									</div>
 								</div>
 
-								<div class="bailiff-item js-tab-content" data-tab="4">
-									<div class="row">
-										<div class="col-12 col-md-8 mb-20">
-											<div class="form-group form-group-select">
-												<div class="input-title">Опишите проблему максимально подробно <span
-														class="autocomplete-box">Частично автозаполнено</span>
-												</div>
-												<label>
-													<textarea name="message"
-														placeholder="Меня зовут Иванов Иван Иванович, мой номер исполнительного документа ...."></textarea>
-												</label>
+							
 
-											</div>
-											<div class="example-item">Максимальное кол-во символов 4000</div>
-											<div class="example-item"><a href="#" class="link-modal" data-toggle="modal"
-													data-target="#exampleForm">Пример
-													заполнения</a> <a href="#" class="link-modal" data-toggle="modal"
-													data-target="#exampleForm">Нужна помощь?</a></div>
-										</div>
-
-										<div class="col-12 col-md-8 mb-20">
-											<div class="form-group form-group-select">
-												<div class="input-title">Прикрепить файл (если требуется)
-												</div>
-												<label class="label-file">
-													<input type="file" name="file">
-													<span class="label-file__title">Выберите файл (или перетащите в поле)</span>
-													<span class="label-file__description">Допустимые форматы для прикрепления doc, docx, gif, bmp,
-														jpg, jpeg, png, tif, tiff, zip, 7z, rar, arj, odt, pdf, txt,
-														ods</span>
-												</label>
-
-												<div class="file-upload-result">
-													<div class="file-upload-result__item">
-														<div class="file-upload-result__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#file"></use>
-															</svg></div>
-														<div class="file-upload-result__name">
-															<div class="file-upload-result__title">Название файла</div>
-															<div class="file-upload-result__size">110кб</div>
-														</div>
-
-														<a href="#" class="file-upload-result__close"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#close"></use>
-															</svg></a>
-													</div>
-
-													<div class="file-upload-result__item">
-														<div class="file-upload-result__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#file"></use>
-															</svg></div>
-														<div class="file-upload-result__name">
-															<div class="file-upload-result__title">Название файла</div>
-															<div class="file-upload-result__size">110кб</div>
-														</div>
-
-														<a href="#" class="file-upload-result__close"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#close"></use>
-															</svg></a>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-12">
-											<div class="btn-group">
-												<a href="#" class="btn btn-border bailiff-next-step prev-step js-tab-trigger"
-													data-tab="3">Назад</a>
-												<a href="#" class="btn btn-accent bailiff-next-step next-step js-tab-trigger"
-													data-tab="5">Отправка
-													жалобы</a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="js-tab-content bailiff-item bailiff-item-5" data-tab="5">
+								<div class="js-tab-content bailiff-item bailiff-item-5" data-tab="3">
 									<div class="row">
 										<div class="col-12 mb-20">
 											<ul class="list-result-information my-ul">
@@ -811,7 +598,7 @@
 															<use xlink:href="img/sprite.svg#check"></use>
 														</svg>
 													</div>
-													<p>Предварительная проверка на соответствие ФЗ #59 (проверяем информацию)</p>
+													<p>Поиск по базе ФССП по ФИО (проверяем информацию)</p>
 												</li>
 												<li class="load-result">
 													<div class="status-icon">
@@ -822,7 +609,7 @@
 															<use xlink:href="img/sprite.svg#check"></use>
 														</svg>
 													</div>
-													<p>Сверяем отделение судебного пристава с ИП (проверяем информацию)</p>
+													<p>Проверка по базе ГИС ГМП (проверяем информацию)</p>
 												</li>
 												<li class="load-result">
 													<div class="status-icon">
@@ -833,7 +620,7 @@
 															<use xlink:href="img/sprite.svg#check"></use>
 														</svg>
 													</div>
-													<p>Проверяем готовность отправки обращения на сервер (проверяем информацию)</p>
+													<p>Проверка по базам ГИБДД (проверяем информацию)</p>
 												</li>
 												<li class="load-result">
 													<div class="status-icon">
@@ -844,31 +631,31 @@
 															<use xlink:href="img/sprite.svg#check"></use>
 														</svg>
 													</div>
-													<p>Формируем документ для отправки в ФССП (проверяем информацию)</p>
+													<p>Поиск налоговых задолженностей (<a href="#" class="color-accent d-inline">задолженности не найдены</a>)</p>
 												</li>
 												<li>
-													<div class="status-icon">
+													<div class="status-icon status-icon-block">
 														<svg class="svg-icon svg-icon-loader">
 															<use xlink:href="img/sprite.svg#loader"></use>
 														</svg>
-														<svg class="svg-icon svg-icon-check">
-															<use xlink:href="img/sprite.svg#check"></use>
+														<svg class="svg-icon svg-icon-check svg-icon-check-red">
+															<use xlink:href="img/sprite.svg#check-red"></use>
 														</svg>
 													</div>
-													<p>Проверка на наличие прикрепленных файлов (<a href="#"
-															class="d-inline color-accent">проверено</a>)</p>
+													<p>Проверка задолженности в ФССП (<a href="#"
+															class="d-inline color-red">найдены долги</a>)</p>
 												</li>
 												<li>
-													<div class="status-icon">
+													<div class="status-icon status-icon-block">
 														<svg class="svg-icon svg-icon-loader">
 															<use xlink:href="img/sprite.svg#loader"></use>
 														</svg>
-														<svg class="svg-icon svg-icon-check">
-															<use xlink:href="img/sprite.svg#check"></use>
+														<svg class="svg-icon svg-icon-check svg-icon-check-red">
+															<use xlink:href="img/sprite.svg#check-red"></use>
 														</svg>
 													</div>
-													<p>Проверяем занятость структурного подразделения (<a href="#"
-															class="d-inline color-accent">проверено</a>)
+													<p>Комплексная проверка запрета (<a href="#"
+															class="d-inline color-red">возможен запрет</a>)
 													</p>
 												</li>
 											</ul>
@@ -878,14 +665,14 @@
 										<div class="col-12">
 											<div class="btn-group">
 												<a href="#" class="btn btn-border bailiff-next-step prev-step js-tab-trigger"
-													data-tab="4">Назад</a>
+													data-tab="2">Назад</a>
 											</div>
 										</div>
 
 									</div>
 								</div>
 
-								<div class="bailiff-item js-tab-content" data-tab="6">
+								<div class="bailiff-item js-tab-content" data-tab="4">
 									<div class="row">
 										<div class="col-12 mb-20">
 											<h3 class="subtitle">Укажите ваш адрес эл. почты чтобы получить ответ (мы направим ссылку для
@@ -905,10 +692,10 @@
 											</div>
 
 											<div class="box-text text-description">
-												<p>Согласно ФЗ от 02.05.2006 № 59-ФЗ - обращение рассматривается бесплатно при обращение к
-													судебному приставу лично или
-													заказным письмом.</p>
-												<p>Для формирования электронного обращения оплатите пошлину 229 руб.</p>
+												<p>После формирования документа, мы направим на ваш адрес эл. почты результат с проверкой. С примером отчета можно
+												ознакомите по ссылке <a href="#" class="text-decoration d-inline color-inherit">пример отчета</a></p>
+												<p>Стоимость формируется исходя из кол-ва выполненных проверок, минимальная стоимость
+												276 руб.</p>
 											</div>
 
 											<label class="checkbox mb-40">
@@ -920,7 +707,7 @@
 
 											<div class="btn-group d-none d-sm-flex align-items-start">
 												<a href="#" class="btn btn-border bailiff-next-step prev-step js-tab-trigger"
-													data-tab="5">Назад</a>
+													data-tab="3">Назад</a>
 												<a href="#" class="btn btn-accent">Перейти к
 													оплате обращения</a>
 											</div>
@@ -936,27 +723,27 @@
 												<div class="details-payments__order-body">
 													<ul class="details-payments-list my-ul">
 														<li>
-															<div class="details-payments-list__name">Проверка на соответствие ФЗ от № 59</div>
-															<span>29 ₽</span>
+															<div class="details-payments-list__name">Проверка по базе ФССП</div>
+															<span>100 ₽</span>
 														</li>
 														<li>
-															<div class="details-payments-list__name">Проверка на ошибки в обращение</div>
-															<span>30 ₽</span>
+															<div class="details-payments-list__name">Проверка по базе ФНС</div>
+															<span>100 ₽</span>
 														</li>
 														<li>
-															<div class="details-payments-list__name">Отслеживание статуса обращения</div>
-															<span>45 ₽</span>
+															<div class="details-payments-list__name">Проверка по базе ГИБДД</div>
+															<span>100 ₽</span>
 														</li>
 														<li>
-															<div class="details-payments-list__name">Без личного посещения приставов</div>
-															<span>80 ₽</span>
+															<div class="details-payments-list__name">Проверка по базе ГИС ГМП</div>
+															<span>50 ₽</span>
 														</li>
 														<li>
-															<div class="details-payments-list__name">Ускоренное рассмотрение обращение</div>
-															<span>45 ₽</span>
+															<div class="details-payments-list__name">Автозаполнение документов</div>
+															<span>20 ₽</span>
 														</li>
 														<li>
-															<div class="details-payments-list__name">Гарантированный результат</div>
+															<div class="details-payments-list__name">Формирование в формате (PDF, HTML)</div>
 															<span>0 ₽</span>
 														</li>
 													</ul>
@@ -965,7 +752,7 @@
 													<ul class="details-payments-list my-ul">
 														<li class="total-payments">
 															<div class="details-payments-list__name">Итого</div>
-															<span>229 ₽</span>
+															<span>376 ₽</span>
 														</li>
 													</ul>
 
@@ -976,7 +763,7 @@
 										<div class="col-12 d-block d-sm-none">
 											<div class="btn-group">
 												<a href="#" class="btn btn-border bailiff-next-step prev-step js-tab-trigger"
-													data-tab="5">Назад</a>
+													data-tab="3">Назад</a>
 												<a href="#" class="btn btn-accent">Перейти к
 													оплате обращения</a>
 											</div>
@@ -992,9 +779,8 @@
 						</div>
 						<div class="search-base-wrapper__bottom">
 							<div class="text">
-								<p>Если вы не знаете номер вашего ИП, произведите проверку задолженности по ФИО, региону и дате рождения
-									и подайте запрос
-									из результатов долгов</p>
+								<p>Если вам требуется просто проверка задолженности по ФИО, перейдите в раздел проверки долгов по ФИО
+								</p>
 							</div>
 
 							<a href="#" class="btn btn-accent">Задолженности по ФИО</a>
@@ -1050,145 +836,15 @@
 		</div>
 	</div>
 
-	<section class="statistics">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center mb-32">
-					<h2>Последние поданные жалобы на судебного пристава</h2>
-					<div class="text-title">
-						<p>Статистика обновляется ежедневно, текущая актуальность 2023.02.10</p>
-					</div>
-				</div>
-
-				<div class="col-12">
-					<table class="table">
-						<thead class="thead">
-							<tr class="tr">
-								<td class="td-number">Номер производства</td>
-								<td class="td-department">Отдел</td>
-								<td class="td-base">Основание</td>
-								<td class="td-sum">Сумма к погашению</td>
-								<td class="td-status">Статус жалобы</td>
-							</tr>
-						</thead>
-						<tbody class="tbody">
-							<tr class="tr">
-								<td class="td-number" data-table="Номер производства">
-									<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
-								</td>
-								<td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха
-									(Якутия)
-									от 10.10.2022
-								</td>
-								<td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ
-									УЧАСТОК
-									№ 43 ГОРОДА ЯКУТСКА
-									РЕСПУБЛИКИ САХА 1435153396
-								</td>
-								<td class="td-sum" data-table="Сумма к погашению">
-									<p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
-								</td>
-								<td class="td-status color-green" data-table="Статус жалобы">
-									Рассмотренно
-								</td>
-							</tr>
-							<tr class="tr">
-								<td class="td-number" data-table="Номер производства">
-									<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
-								</td>
-								<td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха
-									(Якутия)
-									от 10.10.2022
-								</td>
-								<td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ
-									УЧАСТОК
-									№ 43 ГОРОДА ЯКУТСКА
-									РЕСПУБЛИКИ САХА 1435153396
-								</td>
-								<td class="td-sum" data-table="Сумма к погашению">
-									<p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
-								</td>
-								<td class="td-status" data-table="Статус жалобы">
-									Формируется
-								</td>
-							</tr>
-							<tr class="tr">
-								<td class="td-number" data-table="Номер производства">
-									<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
-								</td>
-								<td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха
-									(Якутия)
-									от 10.10.2022
-								</td>
-								<td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ
-									УЧАСТОК
-									№ 43 ГОРОДА ЯКУТСКА
-									РЕСПУБЛИКИ САХА 1435153396
-								</td>
-								<td class="td-sum" data-table="Сумма к погашению">
-									<p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
-								</td>
-								<td class="td-status color-green" data-table="Статус жалобы">
-									Отправлено
-								</td>
-							</tr>
-							<tr class="tr">
-								<td class="td-number" data-table="Номер производства">
-									<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
-								</td>
-								<td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха
-									(Якутия)
-									от 10.10.2022
-								</td>
-								<td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ
-									УЧАСТОК
-									№ 43 ГОРОДА ЯКУТСКА
-									РЕСПУБЛИКИ САХА 1435153396
-								</td>
-								<td class="td-sum" data-table="Сумма к погашению">
-									<p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
-								</td>
-								<td class="td-status" data-table="Статус жалобы">
-									Не оплачено
-								</td>
-							</tr>
-							<tr class="tr">
-								<td class="td-number" data-table="Номер производства">
-									<p>238900/22/14042-ИП</p><span>от 10.10.2022</span>
-								</td>
-								<td class="td-department" data-table="Отдел">ОСП по ВАШ по г. Якутску УФССП России по Республике Саха
-									(Якутия)
-									от 10.10.2022
-								</td>
-								<td class="td-base" data-table="Основание">Судебный приказ от 31.03.2022 № 2А-3576/43-2022 СУДЕБНЫЙ
-									УЧАСТОК
-									№ 43 ГОРОДА ЯКУТСКА
-									РЕСПУБЛИКИ САХА 1435153396
-								</td>
-								<td class="td-sum" data-table="Сумма к погашению">
-									<p>20 434.71 руб. </p><span>Взыскание налогов и сборов, включая пени (кроме таможенных) </span>
-								</td>
-								<td class="td-status" data-table="Статус жалобы">
-									Не оплачено
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section class="working bg-light-blue mb-20">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-8 offset-lg-2 text-center mb-32">
-					<h2>Как работает сервис по подаче жалоб</h2>
-					<div class="text-title">Данный сервис предоставляет Пользователю возможность формирования электронного
-						обращение к судебному приставу согласно
-						нормам Федерального закона "О порядке рассмотрения обращений граждан Российской Федерации" от 02.05.2006 N
-						59-ФЗ.
-					</div>
+					<h2>Как работает сервис проверки запрета на выезд</h2>
+					<div class="text-title">Наш сервис формирует сводный отчет из открытых баз данных, в итоговом отчете вы
+						увидите результат по проверке запрета на
+						выезд за границу</div>
 				</div>
 			</div>
 
@@ -1196,31 +852,31 @@
 				<div class="col-12 col-sm-6 col-lg-3 mb-20">
 					<div class="working-box advantages-box">
 						<div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
-						<h3>Находим ваше ИП</h3>
-						<p>После указания вашего номера исполнительного производства мы ищем старшего судебного пристава</p>
+						<h3>Ищем долги</h3>
+						<p>После того как вы указали ФИО, регион, дату рождения мы ищем задолженности аресты и прочее по открытым
+							базам РФ</p>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3 mb-20">
 					<div class="working-box advantages-box">
 						<div class="advantages-box__icon"><img src="img/adv-icon5.svg" alt=""></div>
-						<h3>Формируем запрос</h3>
-						<p>Собрав всю информацию мы заполняем автоматически поля для обращения к судебному приставу</p>
+						<h3>Поиск документов</h3>
+						<p>Собрав задолженности мы находим через базу ГИС ГМП ваши документы и делаем доп запрос именно по ним!</p>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3 mb-20">
 					<div class="working-box advantages-box">
 						<div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
-						<h3>Проверка на ошибки</h3>
-						<p>Перед отправкой заявки мы проверяем вашу заявку на нормы согласно ФЗ - 59
-
-						</p>
+						<h3>Формируем отчет</h3>
+						<p>После того как вы оплачиваете результат мы формируем сводный отчет, в нем будет полная сводка по физ.
+							лицу!</p>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3 mb-20">
 					<div class="working-box advantages-box">
 						<div class="advantages-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
 						<h3>Гарантированный результат</h3>
-						<p>Ваше обращение будет гарантировано рассмотрено и вы получите результат</p>
+						<p>Мы гарантируем что вы получите корректный отчет по указанным данным</p>
 					</div>
 				</div>
 			</div>
@@ -1235,14 +891,18 @@
 						<div class="row">
 							<div class="col-12 col-lg-8">
 								<div class="application-content">
-									<h2>Жалоба на бездействие судебного пристава исполнителя образец заполнения</h2>
+									<h2>Как выглядит сводный отчет о запрете на выезд за границу</h2>
 									<div class="box-text">
-										<p>Примерный образец заполнения жалобы на судебного пристава в 2023 году, это формат бумажного
-											обращения, если вы хотите
-											получить ответ быстро и гарантировано подайте запрос приставу в электронном виде онлайн!</p>
+										<p>Примерный образец отчета который сформирован на “не реальные” данные пользователя, для просмотра
+											нажмите посмотреть
+											пример отчета</p>
 									</div>
 
-									<a href="#" class="btn btn-accent">Подать жалобу онлайн</a>
+									<div class="btn-group align-items-center">
+										<a href="#" class="btn btn-accent">Посмотреть пример отчета</a>
+
+										<a href="#" class="color-accent">Проверить запрет</a>
+									</div>
 								</div>
 							</div>
 							<div class="col-12 col-lg-4">
@@ -1643,8 +1303,38 @@
 		</div>
 	</div>
 
-	<div class="modal fade modal-admin modal-information" id="exampleForm" tabindex="-1"
-		aria-labelledby="exampleFormLabel" aria-hidden="true">
+	<div class="modal fade modal-admin modal-information" id="exampleForm2" tabindex="-1"
+		aria-labelledby="exampleForm2Label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- <div class="modal-title">Пример заполнения жалобы</div> -->
+					<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Для того чтобы получить максимально подробный отчет нам требуется как можно больше данных. Паспорт, СНИЛС, СТС, ИНН
+						Паспорт и СНИЛС нужен для проверки по базе ФССП на предмет задолженностей. <br>ИНН нужен для проверки налоговых
+						задолженностей. <br>СТС нужен для проверки штрафов ГИБДД.</p>
+						<p>Только комплексная проверка может показать реальный результат.
+						Но вы вправе использовать проверку запрета без указания доп. параметров, в таком случае проверка будет проведена по
+						банку данных по ФИО, региону и дате рождения.</p>
+						<p>Также дополнительно мы берем документы из базы ГИС ГМП и проводим
+						проверку по ним, это позволяем нам заполнить форму документов автоматически.</p>
+						<p>Мы ни храним и не передаем ваши
+						персональные данные, они используются строго для формирования отчета!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modal-admin modal-information" id="exampleForm" tabindex="-1" aria-labelledby="exampleFormLabel"
+		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -1672,7 +1362,6 @@
 			</div>
 		</div>
 	</div>
-	
 
 	<script src="js/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"

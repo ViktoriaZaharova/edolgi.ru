@@ -435,6 +435,10 @@ h2,
   color: #1e40af;
 }
 
+.color-inherit {
+	color: inherit;
+}
+
 .color-red {
   color: #dc2626;
 }
@@ -465,6 +469,10 @@ h2,
 
 .bg-light-blue {
   background: #f7fbff;
+}
+
+.border-dashed {
+	border-bottom: 1px dashed #1E40AF;
 }
 
 .font-600 {

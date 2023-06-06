@@ -510,6 +510,8 @@
 		margin: 0 0 10px;
 		justify-content: flex-start;
 	}
+
+	
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px) {
@@ -552,6 +554,10 @@
   .form-status .btn {
     margin: 10px 16px 0 0;
   }
+
+	.link-question {
+		margin: 10px 0 0;
+	}
 }
 
 @media only screen and (max-width: 768px) {

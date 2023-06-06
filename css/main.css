@@ -574,7 +574,7 @@
 }
 
 .application-v2 .application-content {
-  padding: 40px 43px 40px 64px;
+  padding: 50px 43px 50px 64px;
 }
 
 .application-v3 .application-image {
@@ -2815,7 +2815,7 @@
 }
 
 .color-red {
-  color: #ff0000;
+  color: #B90000;
 }
 
 .link-unsubscribe {
@@ -2856,6 +2856,10 @@ input#autopayment-day {
 .bailiff-page .search-base-wrapper__bottom .text {
   font-size: 14px;
   line-height: 150%;
+}
+
+.advantages-bailiff {
+	margin: 0 0 70px;
 }
 
 .advantages-bailiff-box {
@@ -3062,6 +3066,7 @@ input#autopayment-day {
 
 .form-bailiff .text-description {
   margin: 40px 0;
+	line-height: 24px;
   color: #4b5563;
 }
 
@@ -3132,10 +3137,15 @@ input#autopayment-day {
   align-items: center;
   justify-content: center;
   stroke: #2563eb;
+	fill: none;
   width: 24px;
   height: 24px;
   min-width: 24px;
   margin: 3px 12px 0 0;
+}
+
+.status-icon-block {
+	stroke: none
 }
 
 .form-bailiff .btn-group .btn {
@@ -3180,4 +3190,8 @@ input#autopayment-day {
   -moz-transition: 0.5s ease;
   -ms-transition: 0.5s ease;
   -o-transition: 0.5s ease;
+}
+
+.checkbox-confirmation {
+	color: #000
 }
