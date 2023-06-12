@@ -423,6 +423,10 @@ h2,
   margin-bottom: 40px;
 }
 
+.mb-46 {
+	margin-bottom: 46px;
+}
+
 .p-96 {
   padding: 30px 0;
 }
@@ -433,6 +437,10 @@ h2,
 
 .color-accent {
   color: #1e40af;
+}
+
+.color-blue {
+	color: #2563EB;
 }
 
 .color-inherit {
@@ -473,6 +481,10 @@ h2,
 
 .border-dashed {
 	border-bottom: 1px dashed #1E40AF;
+}
+
+.font-500 {
+	font-weight: 500;
 }
 
 .font-600 {

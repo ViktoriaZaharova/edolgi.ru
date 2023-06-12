@@ -355,9 +355,35 @@
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  position: relative;
 }
 .application-image img {
   width: 100%;
+}
+
+.loupe-image:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #fff url("../img/loupe.svg") no-repeat center;
+  background-size: 16px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .application-content {
@@ -2815,7 +2841,7 @@
 }
 
 .color-red {
-  color: #B90000;
+  color: #b90000;
 }
 
 .link-unsubscribe {
@@ -2859,7 +2885,7 @@ input#autopayment-day {
 }
 
 .advantages-bailiff {
-	margin: 0 0 70px;
+  margin: 0 0 70px;
 }
 
 .advantages-bailiff-box {
@@ -2868,6 +2894,10 @@ input#autopayment-day {
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
+}
+
+.advantages-bailiff-box p span {
+  font-weight: normal;
 }
 
 .advantages-bailiff-box .advantages-box__icon {
@@ -3066,7 +3096,7 @@ input#autopayment-day {
 
 .form-bailiff .text-description {
   margin: 40px 0;
-	line-height: 24px;
+  line-height: 24px;
   color: #4b5563;
 }
 
@@ -3137,7 +3167,7 @@ input#autopayment-day {
   align-items: center;
   justify-content: center;
   stroke: #2563eb;
-	fill: none;
+  fill: none;
   width: 24px;
   height: 24px;
   min-width: 24px;
@@ -3145,7 +3175,7 @@ input#autopayment-day {
 }
 
 .status-icon-block {
-	stroke: none
+  stroke: none;
 }
 
 .form-bailiff .btn-group .btn {
@@ -3193,5 +3223,198 @@ input#autopayment-day {
 }
 
 .checkbox-confirmation {
-	color: #000
+  color: #000;
+}
+
+/* report page */
+.header-report {
+  padding: 46px 0;
+}
+
+.header-report .h1 {
+  color: #2563eb;
+  font-size: 22px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.report-sidebar {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 0 46px;
+}
+
+.report-sidebar h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.category-report li {
+  margin: 0 0 12px;
+}
+
+.category-report li:last-child {
+  margin: 0;
+}
+
+.category-report li a {
+  width: 100%;
+  padding: 12px 24px;
+  color: #fff;
+  background: #2563eb;
+  border-radius: 4px;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.page-report {
+  margin: 0 0 80px;
+}
+
+.report-section {
+  margin: 46px 0 0;
+}
+
+.report-section:first-child {
+  margin: 0;
+}
+
+.report-box {
+  width: 100%;
+  background: #dbeafe;
+  padding: 64px;
+}
+
+.report-box__bottom {
+  font-size: 14px;
+}
+
+.report-box__bottom .box-text p {
+  margin: 0 0 16px;
+}
+
+.report-box__bottom .box-text p:last-child {
+  margin: 0;
+}
+
+.report-box__head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 0 40px;
+}
+
+.report-box__head .date {
+  text-align: right;
+  font-size: 14px;
+  color: #4b5563;
+  margin-left: auto;
+}
+
+.report-box__head-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  fill: none;
+  stroke: #2563eb;
+}
+
+.report-box__head-text {
+	width: calc(100% - 20px - 230px);
+	padding: 0 0 0 8px;
+}
+
+.report-box__head-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.report-box__head h2 {
+  margin: 0;
+}
+
+.report-box__body {
+  width: 100%;
+  padding: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  cursor: inherit;
+}
+
+.report-box__body:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.report-box .list-information-company__name,
+.report-box .list-information-company__text {
+  background: #dbeafe;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.report-box .list-information-company__text {
+  min-width: auto;
+  max-width: none;
+}
+
+.report-box .list-information-company li {
+  margin: 0 0 12px;
+}
+
+.report-box .list-information-company li:last-child {
+  margin: 0;
+}
+
+.icon-circe {
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.bg-red {
+  background: #b90000;
+}
+
+.bg-green {
+  background: #3c9804;
+}
+
+.report-box-green {
+  background: #ecfdf5;
+  padding: 40px 64px;
+}
+
+.accordion-report {
+  margin: 0 0 40px;
+}
+
+.accordion-report p {
+  font-size: 14px;
+}
+
+.accordion-report .td-number {
+  width: auto;
+}
+
+.report-box__body .box-text p {
+  margin: 0 0 40px;
+}
+
+.report-box__body .box-text p:last-child {
+  margin: 0;
 }
