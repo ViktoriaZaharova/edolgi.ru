@@ -643,7 +643,13 @@ html .ui-button.ui-state-disabled:active {
   background: transparent url("../img/arrow-select.svg") no-repeat right center;
   size: 16px;
   border: none;
-  radius: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+	outline: none;
+	box-shadow: none
 }
 
 .ui-datepicker .ui-datepicker-prev,

@@ -288,13 +288,13 @@ $(function () {
 
 $(document).ready(function () {
 	$('.next-step-first').click(function () {
-		$('.section-loader-bailiff').fadeIn();
+		// $('.section-loader-bailiff').fadeIn();
 		$('.progress-wrapper').fadeIn();
 	});
 
 	setTimeout(function () {
 		$('.section-loader-bailiff').fadeOut();
-	}, 60000);
+	}, 10000);
 
 	setTimeout(function () {
 		$('.bailiff-item-5.active').find('.list-result-information li').removeClass('load-result');
@@ -305,3 +305,9 @@ $(document).ready(function () {
 	}, 11000);
 });
 
+
+$('.variable-adjustment').click(function (e) {
+	e.preventDefault();
+	$(this).parents('.form-group').find('.label-visible').fadeOut();
+	$(this).parents('.form-group').find('.label-hidden').fadeIn();
+});

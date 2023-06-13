@@ -2939,6 +2939,18 @@ input#autopayment-day {
   margin: 3px 0 0 6px;
 }
 
+.variable-adjustment {
+	/* display: inline-block; */
+	float: right;
+	font-size: 12px;
+	font-weight: 500;
+	margin: 4px 0 0;
+}
+
+.label-hidden {
+	display: none;
+}
+
 .modal-information .modal-dialog {
   max-width: 600px;
 }
