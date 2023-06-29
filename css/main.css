@@ -3430,3 +3430,47 @@ input#autopayment-day {
 .report-box__body .box-text p:last-child {
   margin: 0;
 }
+
+/* iframe */
+.iframe-wrapper {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	background: rgba(0,0,0, .80);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 10px;
+}
+
+.iframe-container {
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.loader-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	filter: invert(1);
+	-webkit-filter: invert(1);
+}
