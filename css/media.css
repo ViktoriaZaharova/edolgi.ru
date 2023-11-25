@@ -1,5 +1,12 @@
 /*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+
+
+.btn-border > div {
+  display: none;
+}
+
+
 @media only screen and (max-width: 1300px) {
   .search-base-wrapper__top {
     padding: 40px;
@@ -544,6 +551,27 @@
 	.page-report {
 		margin: 0 0 40px;
 	}
+
+	.stop-attention__content {
+		padding: 20px 30px;
+		width: calc(100% - 350px);
+	}
+
+	.stop-attention {
+		margin: 40px 0;
+	}
+
+	.stop-attention .btn {
+		margin: 20px 0 0;
+	}
+
+	.stop-attention__img {
+		max-width: 350px;
+	}
+
+	.stop-attention .box-text {
+		font-size: 16px;
+	}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 860px) {
@@ -818,6 +846,33 @@
   .report-section {
     margin: 30px 0 0;
   }
+
+	.stop-attention {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.stop-attention .h3 {
+		font-size: 24px;
+	}
+
+	.stop-attention__content {
+		padding: 35px 30px 0;
+		width: 100%;
+	}
+
+	.stop-attention .btn {
+		margin: 30px auto 0;
+		width: 100%;
+	}
+	
+
+	.stop-attention__img {
+		margin: 16px auto 0;
+		max-width: 361px;
+		height: 202px;
+		overflow: hidden;
+	}
 }
 
 /* Extra Small Devices, Phones */

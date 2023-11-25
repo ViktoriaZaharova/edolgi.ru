@@ -2940,15 +2940,15 @@ input#autopayment-day {
 }
 
 .variable-adjustment {
-	/* display: inline-block; */
-	float: right;
-	font-size: 12px;
-	font-weight: 500;
-	margin: 4px 0 0;
+  /* display: inline-block; */
+  float: right;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 4px 0 0;
 }
 
 .label-hidden {
-	display: none;
+  display: none;
 }
 
 .modal-information .modal-dialog {
@@ -3337,8 +3337,8 @@ input#autopayment-day {
 }
 
 .report-box__head-text {
-	width: calc(100% - 20px - 230px);
-	padding: 0 0 0 8px;
+  width: calc(100% - 20px - 230px);
+  padding: 0 0 0 8px;
 }
 
 .report-box__head-text h3 {
@@ -3431,46 +3431,51 @@ input#autopayment-day {
   margin: 0;
 }
 
-/* iframe */
-.iframe-wrapper {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 10;
-	background: rgba(0,0,0, .80);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px 10px;
+/* stop-attention */
+.stop-attention {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04),
+    0px 20px 24px -4px rgba(16, 24, 40, 0.1);
+  border-radius: 4px;
+  background: #fedbdb;
+	margin: 85px 0;
 }
 
-.iframe-container {
-	max-width: 600px;
-	width: 100%;
-	margin: 0 auto;
-	background: #fff;
-	padding: 20px;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
+.stop-attention__content {
+	padding: 40px 64px;
+	width: calc(100% - 415px);
 }
 
-.loader-img {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	filter: invert(1);
-	-webkit-filter: invert(1);
+.stop-attention .box-text {
+	font-size: 18px;
+	line-height: 150%;
+	color: #4B5563;
+}
+
+.stop-attention .btn {
+	margin: 40px 0 0;
+}
+
+.stop-attention .h3 {
+	margin: 0 0 20px;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.btn-red {
+	background: #EB2525;
+	color: #fff;
+}
+
+.btn-red:hover {
+	background: #2563EB;
+	color: #fff;
+}
+
+.stop-attention__img {
+	margin: -47px 0 0; 
+	max-width: 415px;
+	width: 100%;
 }
